@@ -1,0 +1,21 @@
+{
+  "name": "g-kari-plugins",
+  "owner": {
+    "name": "g-kari"
+  },
+  "metadata": {
+    "description": "g-kari's Claude Code plugin collection"
+  },
+  "plugins": [
+    {
+      "name": "copilot-review",
+      "source": "./copilot-review",
+      "description": "GitHub Copilot CLIを使って観点別に並列コードレビューを実行するプラグイン。差分やPRを複数の専門サブエージェントがcopilot -pで同時にレビューする。",
+      "version": "1.0.0",
+      "author": {
+        "name": "g-kari"
+      },
+      "keywords": ["code-review", "copilot", "github", "diff", "pull-request"]
+    }
+  ]
+}

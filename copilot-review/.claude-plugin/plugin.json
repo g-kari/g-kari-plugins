@@ -1,0 +1,11 @@
+{
+  "name": "copilot-review",
+  "version": "1.0.0",
+  "description": "GitHub Copilot CLIを使って観点別に並列コードレビューを実行するプラグイン。差分やPRを複数の専門サブエージェントがcopilot -pで同時にレビューする。",
+  "author": {
+    "name": "g-kari"
+  },
+  "repository": "https://github.com/g-kari/g-kari-plugins",
+  "license": "MIT",
+  "keywords": ["code-review", "copilot", "github", "diff", "pull-request", "security", "bugs"]
+}
