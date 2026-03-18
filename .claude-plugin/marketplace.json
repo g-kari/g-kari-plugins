@@ -16,6 +16,16 @@
         "name": "g-kari"
       },
       "keywords": ["code-review", "copilot", "github", "diff", "pull-request"]
+    },
+    {
+      "name": "plan-review",
+      "source": "./plan-review",
+      "description": "GitHub Copilot CLIを使って実装計画・設計ドキュメントを観点別に並列レビューするプラグイン。プランファイルや設計書を複数の専門サブエージェントがcopilot -pで同時にレビューする。",
+      "version": "1.0.0",
+      "author": {
+        "name": "g-kari"
+      },
+      "keywords": ["plan-review", "copilot", "github", "plan", "design", "architecture", "feasibility"]
     }
   ]
 }
