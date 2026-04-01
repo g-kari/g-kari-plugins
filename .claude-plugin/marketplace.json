@@ -26,6 +26,16 @@
         "name": "g-kari"
       },
       "keywords": ["plan-review", "copilot", "github", "plan", "design", "architecture", "feasibility"]
+    },
+    {
+      "name": "webauthn-front-design",
+      "source": "./webauthn-front-design",
+      "description": "WebAuthn TODOアプリのフロントエンドデザインシステム（katasu.meインスパイア）をプロジェクトに適用するプラグイン。CSS変数・コンポーネント定義・HTMLパターンをそのまま利用可能。",
+      "version": "1.0.0",
+      "author": {
+        "name": "g-kari"
+      },
+      "keywords": ["design-system", "css", "frontend", "webauthn", "katasu", "vite", "typescript"]
     }
   ]
 }
