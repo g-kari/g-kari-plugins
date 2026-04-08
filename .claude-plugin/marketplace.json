@@ -11,7 +11,7 @@
       "name": "copilot-review",
       "source": "./copilot-review",
       "description": "GitHub Copilot CLIを使って観点別に並列コードレビューを実行するプラグイン。差分やPRを複数の専門サブエージェントがcopilot -pで同時にレビューする。",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "g-kari"
       },
@@ -36,6 +36,16 @@
         "name": "g-kari"
       },
       "keywords": ["design-system", "css", "frontend", "webauthn", "katasu", "vite", "typescript"]
+    },
+    {
+      "name": "claudemd-optimizer",
+      "source": "./claudemd-optimizer",
+      "description": "CLAUDE.mdを注意資源の観点から分析・最適化するプラグイン。内容を4カテゴリ（KEEP/RULES/HOOKS/REMOVE）に分類し、.claude/rulesへの移行、hooksの設定、冗長コンテンツの削除を提案・実行する。",
+      "version": "1.0.0",
+      "author": {
+        "name": "g-kari"
+      },
+      "keywords": ["claude-md", "optimization", "rules", "hooks", "context-window", "attention"]
     }
   ]
 }

@@ -1,0 +1,11 @@
+{
+  "name": "claudemd-optimizer",
+  "version": "1.0.0",
+  "description": "CLAUDE.mdを分析して注意資源の観点から最適化するプラグイン。内容を4カテゴリ（KEEP/RULES/HOOKS/REMOVE）に分類し、.claude/rulesへの移行、hooksの設定、冗長コンテンツの削除を提案・実行する。",
+  "author": {
+    "name": "g-kari"
+  },
+  "repository": "https://github.com/g-kari/g-kari-plugins",
+  "license": "MIT",
+  "keywords": ["claude-md", "optimization", "rules", "hooks", "context-window", "attention"]
+}
