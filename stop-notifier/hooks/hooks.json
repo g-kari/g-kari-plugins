@@ -1,0 +1,22 @@
+{
+  "Stop": [
+    {
+      "hooks": [
+        {
+          "type": "command",
+          "command": "bash \"$HOME/.local/bin/claude-stop-notify\" Stop 2>/dev/null || true"
+        }
+      ]
+    }
+  ],
+  "Notification": [
+    {
+      "hooks": [
+        {
+          "type": "command",
+          "command": "bash \"$HOME/.local/bin/claude-stop-notify\" Notification 2>/dev/null || true"
+        }
+      ]
+    }
+  ]
+}

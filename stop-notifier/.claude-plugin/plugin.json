@@ -1,0 +1,11 @@
+{
+  "name": "stop-notifier",
+  "version": "1.0.0",
+  "description": "Claudeが応答完了したときにWindowsトースト通知+音声再生するプラグイン。WSL2環境向け。BurntToastで画像付きトースト、mpv.exeで音声再生。イベント別・共通の個別設定に対応。",
+  "author": {
+    "name": "g-kari"
+  },
+  "repository": "https://github.com/g-kari/g-kari-plugins",
+  "license": "MIT",
+  "keywords": ["notification", "toast", "wsl2", "windows", "stop-hook", "hook", "image"]
+}
