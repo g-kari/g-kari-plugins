@@ -46,6 +46,16 @@
         "name": "g-kari"
       },
       "keywords": ["claude-md", "optimization", "rules", "hooks", "context-window", "attention"]
+    },
+    {
+      "name": "markitdown",
+      "source": "./markitdown",
+      "description": "Microsoft markitdownを使ってPDF・Word・Excel・PowerPoint・画像・HTMLなど様々なファイルをMarkdownに変換するプラグイン。ローカルファイルだけでなくURLも変換対象にできる。",
+      "version": "1.0.0",
+      "author": {
+        "name": "g-kari"
+      },
+      "keywords": ["markitdown", "markdown", "convert", "pdf", "docx", "xlsx", "pptx", "html", "microsoft"]
     }
   ]
 }

@@ -1,0 +1,11 @@
+{
+  "name": "markitdown",
+  "version": "1.0.0",
+  "description": "Microsoft markitdownを使ってPDF・Word・Excel・PowerPoint・画像・HTMLなど様々なファイルをMarkdownに変換するプラグイン。ローカルファイルだけでなくURLも変換対象にできる。",
+  "author": {
+    "name": "g-kari"
+  },
+  "repository": "https://github.com/g-kari/g-kari-plugins",
+  "license": "MIT",
+  "keywords": ["markitdown", "markdown", "convert", "pdf", "docx", "xlsx", "pptx", "html", "microsoft"]
+}
