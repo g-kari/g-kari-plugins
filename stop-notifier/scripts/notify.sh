@@ -15,8 +15,12 @@
 #     CLAUDE_NOTIFY_DURATION      表示秒数 (デフォルト: 5)
 #     CLAUDE_NOTIFY_CLICKTHROUGH  wpfモードでクリックを透過するか: false (デフォルト) / true
 #
-#   イベント別設定（例: Stop イベント）:
-#     CLAUDE_NOTIFY_STOP_IMAGE_DIR
+#   イベント別ディレクトリ（優先順位）:
+#     1. CLAUDE_NOTIFY_STOP_IMAGE_DIR（env var 明示指定）
+#     2. ~/claude-waiting-images/Stop/（サブディレクトリ規則）
+#     3. ~/claude-waiting-images/（ベースディレクトリ）
+#
+#   その他のイベント別設定:
 #     CLAUDE_NOTIFY_STOP_AUDIO_DIR
 #     CLAUDE_NOTIFY_STOP_TITLE
 #     CLAUDE_NOTIFY_STOP_TEXT
@@ -37,8 +41,25 @@ get_config() {
     echo "${!event_var:-${!generic_var:-$default}}"
 }
 
-IMAGE_DIR=$(get_config IMAGE_DIR "$HOME/claude-waiting-images")
-AUDIO_DIR=$(get_config AUDIO_DIR "$HOME/claude-waiting-sounds")
+# ディレクトリ解決: env var → サブディレクトリ規則 → ベースディレクトリ
+_resolve_dir() {
+    local base="$1"
+    local key="$2"
+    local event_var="CLAUDE_NOTIFY_${EVENT_KEY}_${key}"
+    if [ -n "${!event_var}" ]; then
+        echo "${!event_var}"
+    elif [ -d "${base}/${EVENT}" ]; then
+        echo "${base}/${EVENT}"
+    else
+        echo "$base"
+    fi
+}
+
+BASE_IMAGE_DIR="${CLAUDE_NOTIFY_IMAGE_DIR:-$HOME/claude-waiting-images}"
+BASE_AUDIO_DIR="${CLAUDE_NOTIFY_AUDIO_DIR:-$HOME/claude-waiting-sounds}"
+IMAGE_DIR=$(_resolve_dir "$BASE_IMAGE_DIR" IMAGE_DIR)
+AUDIO_DIR=$(_resolve_dir "$BASE_AUDIO_DIR" AUDIO_DIR)
+
 TITLE=$(get_config TITLE "Claude Code")
 TEXT=$(get_config TEXT "入力待ちです 👁")
 MPV_PATH="${CLAUDE_NOTIFY_MPV_PATH:-mpv.exe}"

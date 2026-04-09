@@ -88,10 +88,24 @@ sequenceDiagram
 環境変数で動作をカスタマイズできる。**イベント別設定が共通設定より優先される。**
 
 ```mermaid
-flowchart LR
-    A["CLAUDE_NOTIFY_STOP_IMAGE_DIR\n（イベント別）"] -->|優先| C[実際の値]
-    B["CLAUDE_NOTIFY_IMAGE_DIR\n（共通）"] -->|フォールバック| C
-    D["~/claude-waiting-images\n（デフォルト）"] -->|最終フォールバック| C
+flowchart TD
+    A{"CLAUDE_NOTIFY_STOP_IMAGE_DIR\n（env var 明示指定）"}
+    A -- 設定あり --> Z[そのディレクトリを使用]
+    A -- 未設定 --> B{"~/claude-waiting-images/Stop/\n（サブディレクトリ規則）"}
+    B -- 存在する --> Z
+    B -- 存在しない --> C["~/claude-waiting-images/\n（ベースディレクトリ）"]
+    C --> Z
+```
+
+**サブディレクトリ規則の使い方（ゼロコンフィグ）:**
+
+```
+~/claude-waiting-images/
+├── Stop/           ← Stop イベント専用
+│   └── waiting.gif
+├── Notification/   ← Notification イベント専用
+│   └── alert.png
+└── default.png     ← イベント専用がなければこちら
 ```
 
 ### 共通設定
