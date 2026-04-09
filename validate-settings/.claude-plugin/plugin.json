@@ -1,0 +1,11 @@
+{
+  "name": "validate-settings",
+  "version": "1.0.0",
+  "description": "Claude Codeのsettings.jsonやsettings.local.jsonをJSON Schemaでバリデートするプラグイン。schemastore.orgのスキーマを使って構文・構造の問題を検出する。",
+  "author": {
+    "name": "g-kari"
+  },
+  "repository": "https://github.com/g-kari/g-kari-plugins",
+  "license": "MIT",
+  "keywords": ["settings", "validation", "json-schema", "claude-code", "lint"]
+}
