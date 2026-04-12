@@ -1,7 +1,7 @@
 {
   "name": "claudemd-optimizer",
-  "version": "1.0.0",
-  "description": "CLAUDE.mdを分析して注意資源の観点から最適化するプラグイン。内容を4カテゴリ（KEEP/RULES/HOOKS/REMOVE）に分類し、.claude/rulesへの移行、hooksの設定、冗長コンテンツの削除を提案・実行する。",
+  "version": "2.0.0",
+  "description": "CLAUDE.mdを公式ベストプラクティスに基づいて分析・最適化するプラグイン。内容を5カテゴリ（KEEP/RULES/SKILLS/HOOKS/REMOVE）に分類し、.claude/rulesへの移行、skillsへの分離、hooksの設定、冗長コンテンツの削除を提案・実行する。",
   "author": {
     "name": "g-kari"
   },

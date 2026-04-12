@@ -1,0 +1,23 @@
+{
+  "SessionStart": [
+    {
+      "hooks": [
+        {
+          "type": "command",
+          "command": "bash \"$(dirname \"$0\")/session-start.sh\" 2>/dev/null || true"
+        }
+      ]
+    }
+  ],
+  "PostToolUse": [
+    {
+      "matcher": "Edit|Write|Bash",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "bash \"$(dirname \"$0\")/post-tool-use.sh\" 2>/dev/null || true"
+        }
+      ]
+    }
+  ]
+}

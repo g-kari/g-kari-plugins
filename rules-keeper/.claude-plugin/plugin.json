@@ -1,0 +1,11 @@
+{
+  "name": "rules-keeper",
+  "version": "1.0.0",
+  "description": "CLAUDE.mdと.claude/rules/の整備をゆるくリマインドするプラグイン。セッション開始時の状態チェック、計画なし実装の警告、ファイルパターン別リマインドを提供。",
+  "author": {
+    "name": "g-kari"
+  },
+  "repository": "https://github.com/g-kari/g-kari-plugins",
+  "license": "MIT",
+  "keywords": ["rules", "claude-md", "reminder", "session", "hooks", "audit"]
+}

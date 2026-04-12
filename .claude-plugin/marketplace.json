@@ -40,8 +40,8 @@
     {
       "name": "claudemd-optimizer",
       "source": "./claudemd-optimizer",
-      "description": "CLAUDE.mdを注意資源の観点から分析・最適化するプラグイン。内容を4カテゴリ（KEEP/RULES/HOOKS/REMOVE）に分類し、.claude/rulesへの移行、hooksの設定、冗長コンテンツの削除を提案・実行する。",
-      "version": "1.0.0",
+      "description": "CLAUDE.mdを公式ベストプラクティスに基づいて分析・最適化するプラグイン。内容を5カテゴリ（KEEP/RULES/SKILLS/HOOKS/REMOVE）に分類し、.claude/rulesへの移行、skillsへの分離、hooksの設定、冗長コンテンツの削除を提案・実行する。",
+      "version": "2.0.0",
       "author": {
         "name": "g-kari"
       },
@@ -76,6 +76,16 @@
         "name": "g-kari"
       },
       "keywords": ["notification", "toast", "wsl2", "windows", "stop-hook", "hook", "image"]
+    },
+    {
+      "name": "rules-keeper",
+      "source": "./rules-keeper",
+      "description": "CLAUDE.mdと.claude/rules/の整備をゆるくリマインドするプラグイン。セッション開始時の状態チェック、計画なし実装の警告、ファイルパターン別リマインドを提供。",
+      "version": "1.0.0",
+      "author": {
+        "name": "g-kari"
+      },
+      "keywords": ["rules", "claude-md", "reminder", "session", "hooks", "audit"]
     }
   ]
 }
