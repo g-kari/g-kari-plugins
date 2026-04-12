@@ -1,0 +1,11 @@
+{
+  "name": "commit",
+  "version": "1.0.0",
+  "description": "git commitのワークフローを自動化するプラグイン。差分の分析、コミットメッセージ生成、pre-commitチェックの実行、コミット作成までを一貫して行う。",
+  "author": {
+    "name": "g-kari"
+  },
+  "repository": "https://github.com/g-kari/g-kari-plugins",
+  "license": "MIT",
+  "keywords": ["git", "commit", "workflow", "automation"]
+}
