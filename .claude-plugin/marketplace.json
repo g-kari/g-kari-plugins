@@ -96,6 +96,16 @@
         "name": "g-kari"
       },
       "keywords": ["git", "commit", "workflow", "automation"]
+    },
+    {
+      "name": "retrospective-codify",
+      "source": "./retrospective-codify",
+      "description": "タスク完了時に試行錯誤の学びを抽出し、ast-grepルール・CLAUDE.mdルール・スキルに分類して再利用可能な形に固定するプラグイン。",
+      "version": "1.0.0",
+      "author": {
+        "name": "g-kari"
+      },
+      "keywords": ["retrospective", "learning", "ast-grep", "rules", "knowledge", "codify"]
     }
   ]
 }
