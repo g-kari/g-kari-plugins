@@ -1,37 +1,18 @@
 ---
 name: setup-stop-notifier
-description: "stop-notifier プラグインのセットアップスキル。notify.shを~/.local/bin/claude-stop-notifyにインストールし、BurntToast・mpv.exeの導入手順を案内する。ユーザーが「stop-notifierをセットアップ」「通知スクリプトをインストール」などと言ったときに使用する。"
+description: "stop-notifier プラグインのセットアップスキル。BurntToast・mpv.exeの導入手順を案内する。ユーザーが「stop-notifierをセットアップ」「通知スクリプトをインストール」などと言ったときに使用する。"
 ---
 
 # Setup Stop Notifier
 
-`stop-notifier` プラグインの通知スクリプトをインストールするスキル。
+`stop-notifier` プラグインの依存ツールをインストールするスキル。
+
+プラグインインストール後、hooks は自動で有効になります。
+BurntToast と mpv.exe を入れると通知品質が上がります。
 
 ## ワークフロー
 
-### Step 1: インストール先ディレクトリの確認
-
-```bash
-mkdir -p ~/.local/bin
-```
-
-### Step 2: notify.sh を ~/.local/bin/claude-stop-notify にコピー
-
-プラグインの `scripts/notify.sh` の内容を `~/.local/bin/claude-stop-notify` として書き出す。
-
-### Step 3: 実行権限を付与
-
-```bash
-chmod +x ~/.local/bin/claude-stop-notify
-```
-
-### Step 4: PATH 確認
-
-```bash
-echo $PATH | grep -q "$HOME/.local/bin" || echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
-```
-
-### Step 5: BurntToast のインストール（推奨）
+### Step 1: BurntToast のインストール（推奨）
 
 BurntToast があると画像付きトースト通知が使えて綺麗。なければ WinRT 直接呼び出しにフォールバックする（画像も使えるが手書き XML）。
 
@@ -44,7 +25,7 @@ powershell.exe -NoProfile -c "Install-Module -Name BurntToast -Force -Scope Curr
 powershell.exe -NoProfile -c "Get-Module -ListAvailable BurntToast"
 ```
 
-### Step 6: mpv.exe のインストール（推奨）
+### Step 2: mpv.exe のインストール（推奨）
 
 mpv.exe があると WAV/MP3/M4A/OGG/FLAC ほぼ全形式の音声再生が使える。なければ PowerShell の SoundPlayer (WAV のみ) / MediaPlayer (MP3 等) にフォールバックする。
 
@@ -58,21 +39,21 @@ powershell.exe -NoProfile -c "winget install mpv-player.mpv"
 echo 'export CLAUDE_NOTIFY_MPV_PATH="/mnt/c/tools/mpv/mpv.exe"' >> ~/.bashrc
 ```
 
-### Step 7: 画像・音声ディレクトリの作成（任意）
+### Step 3: 画像・音声ディレクトリの作成（任意）
 
 ```bash
 mkdir -p ~/claude-waiting-images  # PNG / JPG / GIF → ランダムでトーストに表示
 mkdir -p ~/claude-waiting-sounds  # WAV / MP3 / M4A / OGG / FLAC → ランダムで再生
 ```
 
-### Step 8: 動作確認
+### Step 4: 動作確認
+
+プラグインインストール済みであれば、Claude が応答を完了するたびに自動で通知が飛ぶ。
+手動テストする場合：
 
 ```bash
-source ~/.bashrc
-claude-stop-notify Stop
+bash "$(claude plugin path stop-notifier)/scripts/notify.sh" Stop
 ```
-
-Windowsトースト通知が表示されれば成功。
 
 ## 完了後のメッセージ
 
