@@ -106,6 +106,16 @@
         "name": "g-kari"
       },
       "keywords": ["retrospective", "learning", "ast-grep", "rules", "knowledge", "codify"]
+    },
+    {
+      "name": "issue-handler",
+      "source": "./issue-handler",
+      "description": "GitHub Issueの作成・一覧・処理を自動化するプラグイン。プロンプトインジェクション対策として、自分が作成またはコメントで承認したIssueのみを処理する安全機構を備える。",
+      "version": "1.0.0",
+      "author": {
+        "name": "g-kari"
+      },
+      "keywords": ["github", "issue", "automation", "security", "prompt-injection", "gh-cli"]
     }
   ]
 }

@@ -1,0 +1,11 @@
+{
+  "name": "issue-handler",
+  "version": "1.0.0",
+  "description": "GitHub Issueの作成・一覧・処理を自動化するプラグイン。プロンプトインジェクション対策として、自身が作成したIssueまたは承認済みIssueのみを処理する安全機構を備える。",
+  "author": {
+    "name": "g-kari"
+  },
+  "repository": "https://github.com/g-kari/g-kari-plugins",
+  "license": "MIT",
+  "keywords": ["github", "issue", "automation", "security", "prompt-injection", "gh-cli"]
+}
