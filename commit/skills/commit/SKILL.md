@@ -3,6 +3,10 @@ name: commit
 description: "git commitのワークフローを自動化するスキル。差分の確認、コミットメッセージの生成、pre-commitチェック、コミット作成を一貫して行う。「コミットして」「commit」「変更をコミット」「git commit」などと言ったときに使用する。引数でコミットメッセージを指定することもできる（例: /commit -m 'メッセージ'）。"
 ---
 
+## ホストの指示
+
+Codex では適用される `AGENTS.md` / `AGENTS.override.md` とプロジェクトのチェック指示を優先する。Claude Code では `CLAUDE.md` / `.claude/rules/` も参照する。例の `/commit` は Claude の呼び方で、Codex では `$commit` または自然言語でメッセージ・push の希望を指定できる。
+
 # Commit
 
 git commit のワークフローを自動化するスキル。
@@ -36,7 +40,7 @@ git log --oneline -5  # 直近のコミットメッセージスタイル確認
 | `CLAUDE.md` / `.claude/rules/git.md` | コミット前の指示 | 記載されたコマンド |
 
 **検出の優先順位:**
-1. `CLAUDE.md` や `.claude/rules/` にコミット前の指示があればそれに従う
+1. 適用中の `AGENTS.md` / `CLAUDE.md` などにコミット前の指示があればそれに従う
 2. `package.json` に `check-all` があればそれを実行
 3. 個別の `lint` / `type-check` / `format:check` があればそれぞれ実行
 4. 何も見つからなければチェックをスキップ

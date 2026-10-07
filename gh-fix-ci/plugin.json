@@ -1,0 +1,28 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "gh-fix-ci",
+  "version": "1.0.0",
+  "description": "GitHub Actions の PR チェック失敗を診断し、依頼された範囲で修正・再検証する。外部 CI は URL と制約を報告する。",
+  "author": {
+    "name": "g-kari"
+  },
+  "repository": "https://github.com/g-kari/g-kari-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "gh-fix-ci",
+    "codex",
+    "testing"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "gh-fix-ci",
+        "shortDescription": "gh-fix-ci",
+        "longDescription": "GitHub Actions の PR チェック失敗を診断し、依頼された範囲で修正・再検証する。外部 CI は URL と制約を報告する。",
+        "developerName": "g-kari",
+        "category": "Developer Tools"
+      },
+      "hooks": []
+    }
+  }
+}

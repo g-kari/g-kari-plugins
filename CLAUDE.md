@@ -28,3 +28,7 @@ claude plugin validate .
 ## Current Plugins
 
 - **copilot-review** — Uses `gh copilot -- -p` to run parallel code reviews across 5 perspectives (bugs, security, error handling, performance, maintainability) via subagents
+
+## Codex and shared skill maintenance
+
+Read `AGENTS.md` for shared validation, generated metadata and upstream provenance. Claude's `.claude-plugin` manifests/catalog remain supported; Codex uses the parallel `.agents/plugins` catalog and portable manifests. Run `npm run sync:metadata` after changing package metadata, then `npm run check`.

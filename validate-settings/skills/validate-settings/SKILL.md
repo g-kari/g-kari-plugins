@@ -1,11 +1,15 @@
 ---
 name: validate-settings
-description: "Claude Codeのsettings.jsonやsettings.local.jsonをJSON Schemaでバリデートするスキル。schemastore.orgの公式スキーマを使い、設定ファイルの構文エラー・不正なプロパティ・型の不一致を検出する。ユーザーが「設定をバリデートして」「settings.jsonを確認」「設定ファイルをチェック」「validate settings」などと言ったときに使用する。"
+description: "Claude Code の settings.json または Codex の config.toml を、それぞれの構文と対象バージョンのスキーマで検証するときに使う。設定値を外部へ送信しない。"
 ---
+
+## 対象フォーマットの選択
+
+`config.toml` / Codex 設定には [Codex の検証手順](references/codex.md) を使う。JSON 設定には以下の Claude Code 手順を使い、Claude 用 JSON Schema やイベント名一覧を Codex に流用しない。
 
 # Validate Settings
 
-Claude Code の `settings.json` / `settings.local.json` を [schemastore.org の公式 JSON Schema](https://json.schemastore.org/claude-code-settings.json) でバリデートするスキル。
+Claude Code の `settings.json` / `settings.local.json` を [schemastore.org の JSON Schema](https://json.schemastore.org/claude-code-settings.json) でバリデートするスキル。
 
 ## ワークフロー
 
@@ -65,34 +69,9 @@ npx ajv-cli validate -s /tmp/claude-code-settings-schema.json -d <対象ファ�
 
 ### Step 3c: Hook イベント名の検証
 
-スキーマバリデーションでカバーされない hook イベント名の妥当性を検証する。対象ファイルに `hooks` キーが存在する場合、そのキーを以下の有効なイベント名リストと照合する。
+対象の `claude --version` と [Claude Code 公式 hook reference](https://code.claude.com/docs/en/hooks#hook-events) に合わせてイベント名を確認する。古い固定一覧（全25種など）で未知の名前を即エラーにしない。SchemaStore の更新が runtime より遅れている可能性があるため、不一致は対象バージョンと公式資料で確認し、確認できなければ未検証として報告する。
 
-**有効な Hook Event Types（全25種）:**
-
-| カテゴリ | イベント名 |
-|---|---|
-| セッション・状態 | `SessionStart`, `Stop`, `StopFailure`, `CwdChanged`, `ConfigChange` |
-| プロンプト | `UserPromptSubmit` |
-| ツール実行 | `PreToolUse`, `PostToolUse`, `PostToolUseFailure` |
-| パーミッション | `PermissionRequest`, `PermissionDenied` |
-| 通知 | `Notification` |
-| Subagent・タスク | `SubagentStart`, `SubagentStop`, `TaskCreated`, `TaskCompleted`, `TeammateIdle` |
-| ファイル・Worktree | `FileChanged`, `WorktreeCreate`, `WorktreeRemove` |
-| コンテキスト | `InstructionsLoaded`, `PreCompact`, `PostCompact` |
-| MCP | `Elicitation`, `ElicitationResult` |
-
-**検証手順:**
-1. 対象ファイルの `hooks` オブジェクトのキーを列挙する
-2. 各キーが上記リストに含まれるか確認する
-3. 含まれないキーがあれば **不正な hook イベント名** として報告する
-
-**よくある間違いの例:**
-- `PreCommit` → 存在しない。コミット前のチェックは `PreToolUse`（matcher: `Bash`）を使う
-- `PostEdit` → 存在しない。編集後のチェックは `PostToolUse`（matcher: `Edit|Write`）を使う
-- `PreBuild` → 存在しない
-- `OnError` → 存在しない。API エラー時は `StopFailure` を使う
-
-不正なイベント名が検出された場合は、正しいイベント名の候補も合わせて提案する。
+`PreCommit` / `PostEdit` のような独自名を作らず、目的に合う実在イベント・matcher を提案する。この検証のために hooks を実行・登録・許可しない。
 
 ### Step 4: 結果の報告
 
@@ -126,7 +105,7 @@ npx ajv-cli validate -s /tmp/claude-code-settings-schema.json -d <対象ファ�
 - **enum値**: 許可された値の範囲チェック（例: `apiProvider` の値）
 - **パターン**: 正規表現パターンのマッチング
 - **ネスト構造**: hooks, permissions, mcpServers などの深い構造の検証
-- **Hook イベント名**: `hooks` のキーが有効なイベント名（全25種）であることの検証
+- **Hook イベント名**: 対象バージョンの公式資料で `hooks` のキーを確認
 
 ## 注意事項
 

@@ -1,7 +1,11 @@
 ---
 name: claudemd-optimizer
-description: "CLAUDE.mdを公式ベストプラクティスに基づいて分析・最適化するスキル。内容を5カテゴリ（KEEP/RULES/SKILLS/HOOKS/REMOVE）に分類し、.claude/rulesへの移行、skillsへの分離、hooksの設定、冗長コンテンツの削除を提案・実行する。ユーザーが「CLAUDE.mdを最適化して」「CLAUDE.mdを圧縮して」「rulesに移行して」「claudemdが長い」「注意資源を節約」などと言ったときに使用する。"
+description: "CLAUDE.md または Codex の AGENTS.md を分析・最適化する。長い指示を整理し、適切な階層の指示・スキル・既存チェックへ分離するときに使う。"
 ---
+
+## ホストと対象の選択
+
+対象が `AGENTS.md`、または Codex の指示整理なら [Codex 向け手順](references/codex.md) を読み、その手順だけを実行する。`CLAUDE.md` が明示された場合は以下の Claude Code 手順を使う。Codex で `EnterPlanMode` / `ExitPlanMode` を仮定しない。
 
 # CLAUDE.md Optimizer
 
@@ -15,7 +19,7 @@ Claude Code 公式ドキュメントのベストプラクティスに基づき�
 
 ## 最初にやること
 
-**必ず `EnterPlanMode` ツールを呼び出してから作業を開始すること。** 分析・プラン提示まではPlanモードで行い、ユーザーの承認後に `ExitPlanMode` で実行に移る。
+利用可能な計画機能があれば分析・プラン提示に使う（Claude Code の `EnterPlanMode` / `ExitPlanMode` など）。ツールがなければ会話で計画を示す。対象の変更が承認された範囲で実行に移る。
 
 ## ワークフロー
 

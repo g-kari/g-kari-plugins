@@ -1,0 +1,34 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "markitdown",
+  "version": "1.1.0",
+  "description": "Microsoft markitdownを使ってPDF・Word・Excel・PowerPoint・画像・HTMLなど様々なファイルをMarkdownに変換するプラグイン。ローカルファイルだけでなくURLも変換対象にできる。",
+  "author": {
+    "name": "g-kari"
+  },
+  "repository": "https://github.com/g-kari/g-kari-plugins",
+  "license": "MIT",
+  "keywords": [
+    "markitdown",
+    "markdown",
+    "convert",
+    "pdf",
+    "docx",
+    "xlsx",
+    "pptx",
+    "html",
+    "microsoft"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "markitdown",
+        "shortDescription": "markitdown",
+        "longDescription": "Microsoft markitdownを使ってPDF・Word・Excel・PowerPoint・画像・HTMLなど様々なファイルをMarkdownに変換するプラグイン。ローカルファイルだけでなくURLも変換対象にできる。",
+        "developerName": "g-kari",
+        "category": "Developer Tools"
+      },
+      "hooks": []
+    }
+  }
+}

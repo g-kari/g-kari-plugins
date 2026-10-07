@@ -1,12 +1,18 @@
+---
+name: retrospective-codify
+description: "ユーザーが振り返りの学びを lint・指示・スキルに固定するよう明示的に依頼したときに使う。失敗と成功の理由を対応づけ、既存知見と重複確認する。タスク完了だけでは自動実行しない。"
+license: MIT
+---
+
 # retrospective-codify
 
-タスク完了時に試行錯誤を通じた学びを抽出し、将来再利用可能な形（lint ルール、CLAUDE.md ルール、skill）に固定するワークフロー。
+タスク完了時に試行錯誤を通じた学びを抽出し、将来再利用可能な形（lint ルール、AGENTS.md / CLAUDE.md ルール、skill）に固定するワークフロー。
 
 失敗と成功を対応付けて「最初に知るべきだった知見」を言語化し、静的ルール・ドキュメント・スキルのいずれかに落とします。プロンプト依存ではなく機械的に再現可能な形を優先します。
 
 ## トリガー
 
-「振り返って」「retrospectして」「学びを記録して」「codifyして」などと言われたとき。タスク完了後に自発的に提案してもよい。
+「振り返って」「retrospectして」「学びを記録して」「codifyして」などと言われたとき。タスク完了だけでは自動起動しない。
 
 ## 主要プロセス
 
@@ -15,15 +21,27 @@
 1. **失敗⇄成功の対応付け** — 試みたこと・最終解・気付きを列挙
 2. **知見を指示形で言語化** — 「〜すること」「〜を使うこと」の形で1〜3文
 3. **下記の判定表に従って出力先を分類**
-4. **重複チェック（必須）** — 既存 skill / ルール / CLAUDE.md を検索し、既出知見を確認
+4. **重複チェック（必須）** — 既存 skill / ルール / AGENTS.md / CLAUDE.md を検索し、既出知見を確認
 5. **提案フォーマットで提示し、ユーザー承認後に書き出し**
+
+## ホストと重複確認
+
+Codex では適用中の AGENTS.md / AGENTS.override.md と `.agents/skills`、必要な個人スキルを調べる。Claude Code では CLAUDE.md / `.claude/skills` を使う。存在しない Skill / Grep / superpowers ツールを必須にせず、利用可能な検索・編集手段を使う。
+
+学びからツール名・API・症状など 2〜3 語を抽出し、既存指示・SKILL.md・rules を検索する。結果を次の4段階に分類する:
+- 新規: 同じ知見がない
+- 既存へ追記: 関連する知見があり、新しい部分のみ追記する（部分重複もここ）
+- 完全重複: 追加せず、既存ファイルの節・行など根拠を示す
+- 判断不能: ヒット内容と差分を示してユーザーに判断を求める
+
+特定バージョンや一回限りの解決を汎用ルールにしない。プロジェクトの packageManager と lockfile を尊重する。静的検出は既存 linter または ast-grep を使う。設定・学びの書き出しは採用が承認されたものだけ。
 
 ## 分類判定
 
 | 対象 | 出力先 | 判定基準の例 |
 |---|---|---|
 | コード構文レベルで検出可能 | `ast-grep` ルール | `Array.from(set).length → set.size` |
-| 短く、常時適用、判断なし | CLAUDE.md ルール | `pnpm は v10 以上を使う` |
+| 短く、常時適用、判断なし | AGENTS.md / CLAUDE.md ルール | `pnpm は v10 以上を使う` |
 | 手順・文脈判断・テンプレ必要 | 新規/既存 skill | `MoonBit の C binding 手順` |
 
 **原則**: 静的検出可能なものはプロンプトでなく必ず `ast-grep` ルールにすること。
@@ -55,7 +73,7 @@
 **ユーザー承認後の書き出し:**
 
 - `ast-grep`: `rules/` に YAML + テスト
-- `CLAUDE.md`: 既存セクションに「理由」付き追記
+- `AGENTS.md` / `CLAUDE.md`: ホストと適用範囲に合う既存セクションに「理由」付き追記
 - `skill`: 新規テンプレートまたは既存の該当節に追記
 
 ## Red Flags
@@ -68,4 +86,4 @@
 
 ---
 
-Original skill by [mizchi](https://github.com/mizchi/chezmoi-dotfiles)
+Original skill by [mizchi](https://github.com/mizchi/skills/tree/62f580819410cb1d398e4d7f234bbd0aad1c1a15/retrospective-codify) (MIT). The former chezmoi-dotfiles source moved to mizchi/skills.

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "validate-settings",
+  "version": "1.1.0",
+  "description": "Claude Code の settings.json または Codex の config.toml を対象別に構文・スキーマ検証する。ホスト固有の設定と hook 仕様を区別。",
+  "author": {
+    "name": "g-kari"
+  },
+  "repository": "https://github.com/g-kari/g-kari-plugins",
+  "license": "MIT",
+  "keywords": [
+    "settings",
+    "validation",
+    "json-schema",
+    "claude-code",
+    "lint"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "validate-settings",
+        "shortDescription": "validate-settings",
+        "longDescription": "Claude Code の settings.json または Codex の config.toml を対象別に構文・スキーマ検証する。ホスト固有の設定と hook 仕様を区別。",
+        "developerName": "g-kari",
+        "category": "Developer Tools"
+      },
+      "hooks": []
+    }
+  }
+}

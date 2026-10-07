@@ -1,0 +1,14 @@
+{
+  "name": "gh-fix-ci",
+  "version": "1.0.0",
+  "description": "GitHub Actions の PR チェック失敗を診断し、依頼された範囲で修正・再検証する。外部 CI は URL と制約を報告する。",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "gh-fix-ci",
+    "shortDescription": "gh-fix-ci",
+    "longDescription": "GitHub Actions の PR チェック失敗を診断し、依頼された範囲で修正・再検証する。外部 CI は URL と制約を報告する。",
+    "developerName": "g-kari",
+    "category": "Developer Tools"
+  },
+  "hooks": []
+}

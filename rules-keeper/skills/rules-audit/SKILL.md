@@ -1,7 +1,11 @@
 ---
 name: rules-audit
-description: "CLAUDE.mdと.claude/rules/の現状を監査し、改善ポイントを報告するスキル。「rulesを監査して」「CLAUDE.mdの状態を確認」「rules auditして」などと言ったときに使用する。"
+description: "CLAUDE.md / .claude/rules または Codex の AGENTS.md / .agents/skills の指示構成を監査し、重複・矛盾・適用範囲・壊れた参照を報告するときに使う。"
 ---
+
+## ホストと対象の選択
+
+Codex の指示監査には [Codex 向け監査](references/codex.md) を使う。Claude の指示が対象なら以下を使う。`rules-keeper` の Claude 用 hooks は Codex では自動登録しない。
 
 # Rules Audit
 

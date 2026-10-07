@@ -1,0 +1,14 @@
+{
+  "name": "stop-notifier",
+  "version": "1.1.0",
+  "description": "WSL2 + Windows 向け通知スクリプトと依存のセットアップ。Claude 用 hooks を保持し、Codex は依存確認・手動テストまで。",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "stop-notifier",
+    "shortDescription": "stop-notifier",
+    "longDescription": "WSL2 + Windows 向け通知スクリプトと依存のセットアップ。Claude 用 hooks を保持し、Codex は依存確認・手動テストまで。",
+    "developerName": "g-kari",
+    "category": "Developer Tools"
+  },
+  "hooks": []
+}

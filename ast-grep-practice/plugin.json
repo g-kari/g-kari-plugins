@@ -1,0 +1,28 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ast-grep-practice",
+  "version": "1.0.0",
+  "description": "ast-grep の構造検索・lint・安全な rewrite・ルールテストをプロジェクトで使う。一般的な linter で表現しにくい構文パターンに適用する。",
+  "author": {
+    "name": "g-kari"
+  },
+  "repository": "https://github.com/g-kari/g-kari-plugins",
+  "license": "MIT",
+  "keywords": [
+    "ast-grep-practice",
+    "codex",
+    "testing"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "ast-grep-practice",
+        "shortDescription": "ast-grep-practice",
+        "longDescription": "ast-grep の構造検索・lint・安全な rewrite・ルールテストをプロジェクトで使う。一般的な linter で表現しにくい構文パターンに適用する。",
+        "developerName": "g-kari",
+        "category": "Developer Tools"
+      },
+      "hooks": []
+    }
+  }
+}

@@ -11,111 +11,232 @@
       "name": "copilot-review",
       "source": "./copilot-review",
       "description": "GitHub Copilot CLIを使って観点別に並列コードレビューを実行するプラグイン。差分やPRを複数の専門サブエージェントがcopilot -pで同時にレビューする。",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "author": {
         "name": "g-kari"
       },
-      "keywords": ["code-review", "copilot", "github", "diff", "pull-request"]
+      "keywords": [
+        "code-review",
+        "copilot",
+        "github",
+        "diff",
+        "pull-request"
+      ]
     },
     {
       "name": "plan-review",
       "source": "./plan-review",
       "description": "GitHub Copilot CLIを使って実装計画・設計ドキュメントを観点別に並列レビューするプラグイン。プランファイルや設計書を複数の専門サブエージェントがcopilot -pで同時にレビューする。",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "g-kari"
       },
-      "keywords": ["plan-review", "copilot", "github", "plan", "design", "architecture", "feasibility"]
+      "keywords": [
+        "plan-review",
+        "copilot",
+        "github",
+        "plan",
+        "design",
+        "architecture",
+        "feasibility"
+      ]
     },
     {
       "name": "webauthn-front-design",
       "source": "./webauthn-front-design",
       "description": "WebAuthn TODOアプリのフロントエンドデザインシステム（katasu.meインスパイア）をプロジェクトに適用するプラグイン。CSS変数・コンポーネント定義・HTMLパターンをそのまま利用可能。",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "g-kari"
       },
-      "keywords": ["design-system", "css", "frontend", "webauthn", "katasu", "vite", "typescript"]
+      "keywords": [
+        "design-system",
+        "css",
+        "frontend",
+        "webauthn",
+        "katasu",
+        "vite",
+        "typescript"
+      ]
     },
     {
       "name": "claudemd-optimizer",
       "source": "./claudemd-optimizer",
-      "description": "CLAUDE.mdを公式ベストプラクティスに基づいて分析・最適化するプラグイン。内容を5カテゴリ（KEEP/RULES/SKILLS/HOOKS/REMOVE）に分類し、.claude/rulesへの移行、skillsへの分離、hooksの設定、冗長コンテンツの削除を提案・実行する。",
-      "version": "2.0.0",
+      "description": "CLAUDE.md または Codex AGENTS.md を分析し、必須指示・階層指示・スキル・既存チェックを適切に整理する。ホスト固有の paths とツールを混同しない。",
+      "version": "2.1.0",
       "author": {
         "name": "g-kari"
       },
-      "keywords": ["claude-md", "optimization", "rules", "hooks", "context-window", "attention"]
+      "keywords": [
+        "claude-md",
+        "optimization",
+        "rules",
+        "hooks",
+        "context-window",
+        "attention"
+      ]
     },
     {
       "name": "markitdown",
       "source": "./markitdown",
       "description": "Microsoft markitdownを使ってPDF・Word・Excel・PowerPoint・画像・HTMLなど様々なファイルをMarkdownに変換するプラグイン。ローカルファイルだけでなくURLも変換対象にできる。",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "g-kari"
       },
-      "keywords": ["markitdown", "markdown", "convert", "pdf", "docx", "xlsx", "pptx", "html", "microsoft"]
+      "keywords": [
+        "markitdown",
+        "markdown",
+        "convert",
+        "pdf",
+        "docx",
+        "xlsx",
+        "pptx",
+        "html",
+        "microsoft"
+      ]
     },
     {
       "name": "validate-settings",
       "source": "./validate-settings",
-      "description": "Claude Codeのsettings.jsonやsettings.local.jsonをJSON Schemaでバリデートするプラグイン。schemastore.orgのスキーマを使って構文・構造の問題を検出する。",
-      "version": "1.0.0",
+      "description": "Claude Code の settings.json または Codex の config.toml を対象別に構文・スキーマ検証する。ホスト固有の設定と hook 仕様を区別。",
+      "version": "1.1.0",
       "author": {
         "name": "g-kari"
       },
-      "keywords": ["settings", "validation", "json-schema", "claude-code", "lint"]
+      "keywords": [
+        "settings",
+        "validation",
+        "json-schema",
+        "claude-code",
+        "lint"
+      ]
     },
     {
       "name": "stop-notifier",
       "source": "./stop-notifier",
-      "description": "Claudeが応答完了したときにWindowsトースト通知+音声再生するプラグイン。WSL2環境向け。BurntToastで画像付きトースト、mpv.exeで音声再生。イベント別・共通の個別設定に対応。",
-      "version": "1.0.0",
+      "description": "WSL2 + Windows 向け通知スクリプトと依存のセットアップ。Claude 用 hooks を保持し、Codex は依存確認・手動テストまで。",
+      "version": "1.1.0",
       "author": {
         "name": "g-kari"
       },
-      "keywords": ["notification", "toast", "wsl2", "windows", "stop-hook", "hook", "image"]
+      "keywords": [
+        "notification",
+        "toast",
+        "wsl2",
+        "windows",
+        "stop-hook",
+        "hook",
+        "image"
+      ]
     },
     {
       "name": "rules-keeper",
       "source": "./rules-keeper",
-      "description": "CLAUDE.mdと.claude/rules/の整備をゆるくリマインドするプラグイン。セッション開始時の状態チェック、計画なし実装の警告、ファイルパターン別リマインドを提供。",
-      "version": "1.0.0",
+      "description": "CLAUDE.md / .claude/rules または Codex AGENTS.md / .agents/skills を監査する。既存リマインダー hooks は Claude 用として保持。",
+      "version": "1.1.0",
       "author": {
         "name": "g-kari"
       },
-      "keywords": ["rules", "claude-md", "reminder", "session", "hooks", "audit"]
+      "keywords": [
+        "rules",
+        "claude-md",
+        "reminder",
+        "session",
+        "hooks",
+        "audit"
+      ]
     },
     {
       "name": "commit",
       "source": "./commit",
       "description": "git commitのワークフローを自動化するプラグイン。差分の分析、コミットメッセージ生成、pre-commitチェックの実行、コミット作成までを一貫して行う。",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "g-kari"
       },
-      "keywords": ["git", "commit", "workflow", "automation"]
+      "keywords": [
+        "git",
+        "commit",
+        "workflow",
+        "automation"
+      ]
     },
     {
       "name": "retrospective-codify",
       "source": "./retrospective-codify",
-      "description": "タスク完了時に試行錯誤の学びを抽出し、ast-grepルール・CLAUDE.mdルール・スキルに分類して再利用可能な形に固定するプラグイン。",
-      "version": "1.0.0",
+      "description": "明示依頼された試行錯誤の学びを、重複確認後に ast-grep・AGENTS.md / CLAUDE.md・スキルとして固定する。タスク完了だけでは自動実行しない。",
+      "version": "1.1.0",
       "author": {
         "name": "g-kari"
       },
-      "keywords": ["retrospective", "learning", "ast-grep", "rules", "knowledge", "codify"]
+      "keywords": [
+        "retrospective",
+        "learning",
+        "ast-grep",
+        "rules",
+        "knowledge",
+        "codify"
+      ]
     },
     {
       "name": "issue-handler",
       "source": "./issue-handler",
-      "description": "GitHub Issueの作成・一覧・処理を自動化するプラグイン。プロンプトインジェクション対策として、自分が作成またはコメントで承認したIssueのみを処理する安全機構を備える。",
+      "description": "GitHub Issueの作成・一覧・処理を自動化するプラグイン。プロンプトインジェクション対策として、自身が作成したIssueまたは承認済みIssueのみを処理する安全機構を備える。",
+      "version": "1.1.0",
+      "author": {
+        "name": "g-kari"
+      },
+      "keywords": [
+        "github",
+        "issue",
+        "automation",
+        "security",
+        "prompt-injection",
+        "gh-cli"
+      ]
+    },
+    {
+      "name": "ast-grep-practice",
+      "source": "./ast-grep-practice",
+      "description": "ast-grep の構造検索・lint・安全な rewrite・ルールテストをプロジェクトで使う。一般的な linter で表現しにくい構文パターンに適用する。",
       "version": "1.0.0",
       "author": {
         "name": "g-kari"
       },
-      "keywords": ["github", "issue", "automation", "security", "prompt-injection", "gh-cli"]
+      "keywords": [
+        "ast-grep-practice",
+        "codex",
+        "testing"
+      ]
+    },
+    {
+      "name": "gh-fix-ci",
+      "source": "./gh-fix-ci",
+      "description": "GitHub Actions の PR チェック失敗を診断し、依頼された範囲で修正・再検証する。外部 CI は URL と制約を報告する。",
+      "version": "1.0.0",
+      "author": {
+        "name": "g-kari"
+      },
+      "keywords": [
+        "gh-fix-ci",
+        "codex",
+        "testing"
+      ]
+    },
+    {
+      "name": "playwright-test",
+      "source": "./playwright-test",
+      "description": "Playwright E2E テストの作成・レビュー・CI 設定を支援する。待機、ネットワーク、認証、ダイアログ、再試行の不安定さを扱う。",
+      "version": "1.0.0",
+      "author": {
+        "name": "g-kari"
+      },
+      "keywords": [
+        "playwright-test",
+        "codex",
+        "testing"
+      ]
     }
   ]
 }

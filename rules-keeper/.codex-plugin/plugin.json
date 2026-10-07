@@ -1,0 +1,14 @@
+{
+  "name": "rules-keeper",
+  "version": "1.1.0",
+  "description": "CLAUDE.md / .claude/rules または Codex AGENTS.md / .agents/skills を監査する。既存リマインダー hooks は Claude 用として保持。",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "rules-keeper",
+    "shortDescription": "rules-keeper",
+    "longDescription": "CLAUDE.md / .claude/rules または Codex AGENTS.md / .agents/skills を監査する。既存リマインダー hooks は Claude 用として保持。",
+    "developerName": "g-kari",
+    "category": "Developer Tools"
+  },
+  "hooks": []
+}
