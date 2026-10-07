@@ -1,0 +1,31 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "issue-handler",
+  "version": "1.1.0",
+  "description": "GitHub Issueの作成・一覧・処理を自動化するプラグイン。プロンプトインジェクション対策として、自身が作成したIssueまたは承認済みIssueのみを処理する安全機構を備える。",
+  "author": {
+    "name": "g-kari"
+  },
+  "repository": "https://github.com/g-kari/g-kari-plugins",
+  "license": "MIT",
+  "keywords": [
+    "github",
+    "issue",
+    "automation",
+    "security",
+    "prompt-injection",
+    "gh-cli"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "issue-handler",
+        "shortDescription": "issue-handler",
+        "longDescription": "GitHub Issueの作成・一覧・処理を自動化するプラグイン。プロンプトインジェクション対策として、自身が作成したIssueまたは承認済みIssueのみを処理する安全機構を備える。",
+        "developerName": "g-kari",
+        "category": "Developer Tools"
+      },
+      "hooks": []
+    }
+  }
+}

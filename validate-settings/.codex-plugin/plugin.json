@@ -1,0 +1,14 @@
+{
+  "name": "validate-settings",
+  "version": "1.1.0",
+  "description": "Claude Code の settings.json または Codex の config.toml を対象別に構文・スキーマ検証する。ホスト固有の設定と hook 仕様を区別。",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "validate-settings",
+    "shortDescription": "validate-settings",
+    "longDescription": "Claude Code の settings.json または Codex の config.toml を対象別に構文・スキーマ検証する。ホスト固有の設定と hook 仕様を区別。",
+    "developerName": "g-kari",
+    "category": "Developer Tools"
+  },
+  "hooks": []
+}

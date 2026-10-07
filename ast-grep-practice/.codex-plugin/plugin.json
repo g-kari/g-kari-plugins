@@ -1,0 +1,14 @@
+{
+  "name": "ast-grep-practice",
+  "version": "1.0.0",
+  "description": "ast-grep の構造検索・lint・安全な rewrite・ルールテストをプロジェクトで使う。一般的な linter で表現しにくい構文パターンに適用する。",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "ast-grep-practice",
+    "shortDescription": "ast-grep-practice",
+    "longDescription": "ast-grep の構造検索・lint・安全な rewrite・ルールテストをプロジェクトで使う。一般的な linter で表現しにくい構文パターンに適用する。",
+    "developerName": "g-kari",
+    "category": "Developer Tools"
+  },
+  "hooks": []
+}

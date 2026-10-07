@@ -1,0 +1,15 @@
+{
+  "name": "ast-grep-practice",
+  "version": "1.0.0",
+  "description": "ast-grep の構造検索・lint・安全な rewrite・ルールテストをプロジェクトで使う。一般的な linter で表現しにくい構文パターンに適用する。",
+  "author": {
+    "name": "g-kari"
+  },
+  "repository": "https://github.com/g-kari/g-kari-plugins",
+  "license": "MIT",
+  "keywords": [
+    "ast-grep-practice",
+    "codex",
+    "testing"
+  ]
+}

@@ -3,9 +3,13 @@ name: plan-review
 description: "GitHub Copilot CLIを使って実装計画・設計ドキュメントを観点別に並列レビューするスキル。プランファイル、設計書、アーキテクチャドキュメントを複数のサブエージェントがcopilot -pで同時にレビューする。ユーザーが「計画をレビュー」「プランを確認」「設計を見て」「計画の問題点を指摘」などと言ったときに使用する。"
 ---
 
+## 実行環境
+
+Claude Code では `Agent`、Codex では利用可能な委譲ツールを使う。委譲がなければ同じ観点を順に確認できる。Copilot にコード・計画を渡す前に、その利用がユーザーの指示・許可に含まれることを確認する。Codex の最新計画は会話とユーザー指定ファイルを優先し、`~/.claude/plans/` を既定にしない。対象が分からなければパスを尋ねる。利用可能な Copilot CLI を `copilot --help` で確認し、基本は `copilot -p`、既存の `gh copilot` が対応している環境ではその経路を保持する。
+
 # Plan Review
 
-GitHub Copilot CLI (`gh copilot -- -p`) を使い、**観点別にサブエージェントを並列起動**して実装計画・設計ドキュメントをレビューするスキル。
+GitHub Copilot CLI (`copilot -p`) を使い、**観点別にサブエージェントを並列起動**して実装計画・設計ドキュメントをレビューするスキル。
 
 各サブエージェントがそれぞれ専門の観点で `copilot -p` を実行し、結果を統合して報告する。これにより、単一プロンプトでは見落としがちな問題を多角的に検出できる。
 
@@ -21,14 +25,21 @@ GitHub Copilot CLI (`gh copilot -- -p`) を使い、**観点別にサブエー�
 | 「最新のプラン」「直近の計画」 | `~/.claude/plans/` 内の最新ファイルを使用 |
 | 会話中の計画内容 | 会話に含まれるプラン内容を抽出 |
 
-明示的な指定がなければ `~/.claude/plans/` 内のファイルを確認し、最新のものを対象とする。それも存在しない場合はユーザーにファイルパスを尋ねる。
+Claude Code で明示的な指定がなければ `~/.claude/plans/` 内を確認する。Codex では会話の計画または指定されたファイルを使い、対象がなければパスを尋ねる。
 
 ### Step 2: 計画内容を一時ファイルに保存
+
+一意な一時ファイルを作り、完了後に削除する。委譲先には変数名ではなく解決済みの具体的なパスを伝える。
+
+```bash
+plan_file=$(mktemp "${TMPDIR:-/tmp}/plan_file.XXXXXX")
+```
+
 
 サブエージェントから参照できるよう、計画内容を一時ファイルに書き出す：
 
 ```bash
-cat <対象ファイル> > /tmp/plan-review-content.md
+cat <対象ファイル> > "$plan_file"
 # または会話内容の場合は直接書き込む
 ```
 
@@ -36,7 +47,7 @@ cat <対象ファイル> > /tmp/plan-review-content.md
 
 ### Step 3: 観点別サブエージェントを並列起動
 
-以下の5つのサブエージェントを **同時に** Agent toolで起動する。各サブエージェントは独立して `copilot -p` を実行する。
+以下の5つの観点を利用可能な委譲ツールで並列に確認する（委譲がない場合は順番に実行する）。各サブエージェントは独立して `copilot -p` を実行する。
 
 #### サブエージェント一覧
 
@@ -51,10 +62,10 @@ cat <対象ファイル> > /tmp/plan-review-content.md
 各サブエージェントへ渡すプロンプトは以下のテンプレートに従う：
 
 ```
-/tmp/plan-review-content.md に実装計画・設計ドキュメントがある。
+$plan_file に実装計画・設計ドキュメントがある。
 以下のコマンドを実行し、その出力をそのまま報告せよ：
 
-cat /tmp/plan-review-content.md | gh copilot -- -p \
+cat "$plan_file" | copilot -p \
   "<観点別の専門プロンプト>
   計画内容はstdinから渡される。
   問題が見つかった場合は、該当箇所・問題の説明・改善案を含めること。
@@ -98,10 +109,10 @@ cat /tmp/plan-review-content.md | gh copilot -- -p \
 
 ```bash
 # 基本形
-cat /tmp/plan-review-content.md | gh copilot -- -p "<プロンプト>" -s
+cat "$plan_file" | copilot -p "<プロンプト>" -s
 
 # モデル指定
-cat /tmp/plan-review-content.md | gh copilot -- -p "<プロンプト>" --model claude-opus-4.6 -s
+cat "$plan_file" | copilot -p "<プロンプト>" --model claude-opus-4.6 -s
 ```
 
 - `-p`: 非対話モード（プロンプトを渡して実行、完了後終了）
@@ -111,7 +122,7 @@ cat /tmp/plan-review-content.md | gh copilot -- -p "<プロンプト>" --model c
 ## 注意事項
 
 - 計画内容が空の場合はcopilotを呼ばず、ユーザーに通知して終了する
-- `gh copilot` が未インストールの環境では `gh copilot` のインストールを案内する
+- Copilot CLI が使えない場合は実行不能な部分を報告し、ユーザーの許可なく別の外部サービスへ送らない
 - 計画書が非常に大きい場合（5000行超）はセクション単位で分割してレビューを検討する
 - 各サブエージェントのcopilot実行はタイムアウト（3分）を設定する
 - コードレビュー（差分レビュー）は `copilot-review` スキルを使用すること

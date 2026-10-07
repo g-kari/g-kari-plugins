@@ -1,0 +1,218 @@
+{
+  "name": "g-kari-plugins",
+  "interface": {
+    "displayName": "g-kari plugins"
+  },
+  "plugins": [
+    {
+      "name": "copilot-review",
+      "source": {
+        "source": "local",
+        "path": "./copilot-review"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Developer Tools",
+      "interface": {
+        "displayName": "copilot-review"
+      }
+    },
+    {
+      "name": "plan-review",
+      "source": {
+        "source": "local",
+        "path": "./plan-review"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Developer Tools",
+      "interface": {
+        "displayName": "plan-review"
+      }
+    },
+    {
+      "name": "webauthn-front-design",
+      "source": {
+        "source": "local",
+        "path": "./webauthn-front-design"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Developer Tools",
+      "interface": {
+        "displayName": "webauthn-front-design"
+      }
+    },
+    {
+      "name": "claudemd-optimizer",
+      "source": {
+        "source": "local",
+        "path": "./claudemd-optimizer"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Developer Tools",
+      "interface": {
+        "displayName": "claudemd-optimizer"
+      }
+    },
+    {
+      "name": "markitdown",
+      "source": {
+        "source": "local",
+        "path": "./markitdown"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Developer Tools",
+      "interface": {
+        "displayName": "markitdown"
+      }
+    },
+    {
+      "name": "validate-settings",
+      "source": {
+        "source": "local",
+        "path": "./validate-settings"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Developer Tools",
+      "interface": {
+        "displayName": "validate-settings"
+      }
+    },
+    {
+      "name": "stop-notifier",
+      "source": {
+        "source": "local",
+        "path": "./stop-notifier"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Developer Tools",
+      "interface": {
+        "displayName": "stop-notifier"
+      }
+    },
+    {
+      "name": "rules-keeper",
+      "source": {
+        "source": "local",
+        "path": "./rules-keeper"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Developer Tools",
+      "interface": {
+        "displayName": "rules-keeper"
+      }
+    },
+    {
+      "name": "commit",
+      "source": {
+        "source": "local",
+        "path": "./commit"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Developer Tools",
+      "interface": {
+        "displayName": "commit"
+      }
+    },
+    {
+      "name": "retrospective-codify",
+      "source": {
+        "source": "local",
+        "path": "./retrospective-codify"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Developer Tools",
+      "interface": {
+        "displayName": "retrospective-codify"
+      }
+    },
+    {
+      "name": "issue-handler",
+      "source": {
+        "source": "local",
+        "path": "./issue-handler"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Developer Tools",
+      "interface": {
+        "displayName": "issue-handler"
+      }
+    },
+    {
+      "name": "ast-grep-practice",
+      "source": {
+        "source": "local",
+        "path": "./ast-grep-practice"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Developer Tools",
+      "interface": {
+        "displayName": "ast-grep-practice"
+      }
+    },
+    {
+      "name": "gh-fix-ci",
+      "source": {
+        "source": "local",
+        "path": "./gh-fix-ci"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Developer Tools",
+      "interface": {
+        "displayName": "gh-fix-ci"
+      }
+    },
+    {
+      "name": "playwright-test",
+      "source": {
+        "source": "local",
+        "path": "./playwright-test"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Developer Tools",
+      "interface": {
+        "displayName": "playwright-test"
+      }
+    }
+  ]
+}

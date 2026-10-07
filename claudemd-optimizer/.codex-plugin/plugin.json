@@ -1,0 +1,14 @@
+{
+  "name": "claudemd-optimizer",
+  "version": "2.1.0",
+  "description": "CLAUDE.md または Codex AGENTS.md を分析し、必須指示・階層指示・スキル・既存チェックを適切に整理する。ホスト固有の paths とツールを混同しない。",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "claudemd-optimizer",
+    "shortDescription": "claudemd-optimizer",
+    "longDescription": "CLAUDE.md または Codex AGENTS.md を分析し、必須指示・階層指示・スキル・既存チェックを適切に整理する。ホスト固有の paths とツールを混同しない。",
+    "developerName": "g-kari",
+    "category": "Developer Tools"
+  },
+  "hooks": []
+}

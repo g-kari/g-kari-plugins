@@ -1,0 +1,14 @@
+{
+  "name": "webauthn-front-design",
+  "version": "1.1.0",
+  "description": "WebAuthn TODOアプリのフロントエンドデザインシステム（katasu.meインスパイア）をプロジェクトに適用するプラグイン。CSS変数・コンポーネント定義・HTMLパターンをそのまま利用可能。",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "webauthn-front-design",
+    "shortDescription": "webauthn-front-design",
+    "longDescription": "WebAuthn TODOアプリのフロントエンドデザインシステム（katasu.meインスパイア）をプロジェクトに適用するプラグイン。CSS変数・コンポーネント定義・HTMLパターンをそのまま利用可能。",
+    "developerName": "g-kari",
+    "category": "Developer Tools"
+  },
+  "hooks": []
+}

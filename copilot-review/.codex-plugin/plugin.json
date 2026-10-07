@@ -1,0 +1,14 @@
+{
+  "name": "copilot-review",
+  "version": "1.2.0",
+  "description": "GitHub Copilot CLIを使って観点別に並列コードレビューを実行するプラグイン。差分やPRを複数の専門サブエージェントがcopilot -pで同時にレビューする。",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "copilot-review",
+    "shortDescription": "copilot-review",
+    "longDescription": "GitHub Copilot CLIを使って観点別に並列コードレビューを実行するプラグイン。差分やPRを複数の専門サブエージェントがcopilot -pで同時にレビューする。",
+    "developerName": "g-kari",
+    "category": "Developer Tools"
+  },
+  "hooks": []
+}

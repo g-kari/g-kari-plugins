@@ -1,0 +1,32 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "webauthn-front-design",
+  "version": "1.1.0",
+  "description": "WebAuthn TODOアプリのフロントエンドデザインシステム（katasu.meインスパイア）をプロジェクトに適用するプラグイン。CSS変数・コンポーネント定義・HTMLパターンをそのまま利用可能。",
+  "author": {
+    "name": "g-kari"
+  },
+  "repository": "https://github.com/g-kari/g-kari-plugins",
+  "license": "MIT",
+  "keywords": [
+    "design-system",
+    "css",
+    "frontend",
+    "webauthn",
+    "katasu",
+    "vite",
+    "typescript"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "webauthn-front-design",
+        "shortDescription": "webauthn-front-design",
+        "longDescription": "WebAuthn TODOアプリのフロントエンドデザインシステム（katasu.meインスパイア）をプロジェクトに適用するプラグイン。CSS変数・コンポーネント定義・HTMLパターンをそのまま利用可能。",
+        "developerName": "g-kari",
+        "category": "Developer Tools"
+      },
+      "hooks": []
+    }
+  }
+}

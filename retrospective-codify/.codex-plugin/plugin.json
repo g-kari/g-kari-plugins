@@ -1,0 +1,14 @@
+{
+  "name": "retrospective-codify",
+  "version": "1.1.0",
+  "description": "明示依頼された試行錯誤の学びを、重複確認後に ast-grep・AGENTS.md / CLAUDE.md・スキルとして固定する。タスク完了だけでは自動実行しない。",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "retrospective-codify",
+    "shortDescription": "retrospective-codify",
+    "longDescription": "明示依頼された試行錯誤の学びを、重複確認後に ast-grep・AGENTS.md / CLAUDE.md・スキルとして固定する。タスク完了だけでは自動実行しない。",
+    "developerName": "g-kari",
+    "category": "Developer Tools"
+  },
+  "hooks": []
+}

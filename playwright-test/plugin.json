@@ -1,0 +1,28 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "playwright-test",
+  "version": "1.0.0",
+  "description": "Playwright E2E テストの作成・レビュー・CI 設定を支援する。待機、ネットワーク、認証、ダイアログ、再試行の不安定さを扱う。",
+  "author": {
+    "name": "g-kari"
+  },
+  "repository": "https://github.com/g-kari/g-kari-plugins",
+  "license": "MIT",
+  "keywords": [
+    "playwright-test",
+    "codex",
+    "testing"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "playwright-test",
+        "shortDescription": "playwright-test",
+        "longDescription": "Playwright E2E テストの作成・レビュー・CI 設定を支援する。待機、ネットワーク、認証、ダイアログ、再試行の不安定さを扱う。",
+        "developerName": "g-kari",
+        "category": "Developer Tools"
+      },
+      "hooks": []
+    }
+  }
+}

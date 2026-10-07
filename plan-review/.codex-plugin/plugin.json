@@ -1,0 +1,14 @@
+{
+  "name": "plan-review",
+  "version": "1.1.0",
+  "description": "GitHub Copilot CLIを使って実装計画・設計ドキュメントを観点別に並列レビューするプラグイン。プランファイルや設計書を複数の専門サブエージェントがcopilot -pで同時にレビューする。",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "plan-review",
+    "shortDescription": "plan-review",
+    "longDescription": "GitHub Copilot CLIを使って実装計画・設計ドキュメントを観点別に並列レビューするプラグイン。プランファイルや設計書を複数の専門サブエージェントがcopilot -pで同時にレビューする。",
+    "developerName": "g-kari",
+    "category": "Developer Tools"
+  },
+  "hooks": []
+}

@@ -1,0 +1,190 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-07",
+  "sources": [
+    {
+      "name": "ast-grep-practice",
+      "repository": "https://github.com/mizchi/skills",
+      "commit": "62f580819410cb1d398e4d7f234bbd0aad1c1a15",
+      "sourcePath": "ast-grep-practice",
+      "license": "MIT",
+      "licenseEvidence": "https://github.com/mizchi/skills/blob/62f580819410cb1d398e4d7f234bbd0aad1c1a15/README.md",
+      "files": [
+        {
+          "source": "ast-grep-practice/README.md",
+          "snapshot": "third_party/mizchi-skills/62f580819410cb1d398e4d7f234bbd0aad1c1a15/ast-grep-practice/README.md",
+          "gitBlobSha": "9d17d8ba15196746662373b8994f3e2bd237a26e",
+          "sha256": "ac16fc64a6c240a3868275437d30832f8ef6f5e67252c7c3ae10dc8bcf352c11"
+        },
+        {
+          "source": "ast-grep-practice/SKILL-ja.md",
+          "snapshot": "third_party/mizchi-skills/62f580819410cb1d398e4d7f234bbd0aad1c1a15/ast-grep-practice/SKILL-ja.md",
+          "gitBlobSha": "82d5a4c92d44c1bc761e6413fb3f315b472a9a8b",
+          "sha256": "be2fe0f3543aa71bbc97bec4d9c3c7a8392bcb979e0d7ec92edf03e1de8563a1"
+        },
+        {
+          "source": "ast-grep-practice/SKILL.md",
+          "snapshot": "third_party/mizchi-skills/62f580819410cb1d398e4d7f234bbd0aad1c1a15/ast-grep-practice/SKILL.md",
+          "gitBlobSha": "37be2dee2a13ae117613982362d9e90081d0fbf7",
+          "sha256": "1609695594f0563ae3a7b14759610a06dab5128a56042785c5dc77c171c938e0"
+        },
+        {
+          "source": "ast-grep-practice/references/cli.md",
+          "snapshot": "third_party/mizchi-skills/62f580819410cb1d398e4d7f234bbd0aad1c1a15/ast-grep-practice/references/cli.md",
+          "gitBlobSha": "012eb9a7506f7a2867f3e9c2b1b10e38b0b618c8",
+          "sha256": "20f47f7693019f6e392cf59a2bb0f938c3763ff177f7eb5f6ed1360bc9b78938"
+        },
+        {
+          "source": "ast-grep-practice/references/kind-catalog.md",
+          "snapshot": "third_party/mizchi-skills/62f580819410cb1d398e4d7f234bbd0aad1c1a15/ast-grep-practice/references/kind-catalog.md",
+          "gitBlobSha": "7513fe554f8d81355a7bb56ceaa153e96876180b",
+          "sha256": "0a616ac78efa38aeeee5b8afc939bee0489c5d1d92b82475480e429d03a14ec4"
+        },
+        {
+          "source": "ast-grep-practice/references/rule-yaml.md",
+          "snapshot": "third_party/mizchi-skills/62f580819410cb1d398e4d7f234bbd0aad1c1a15/ast-grep-practice/references/rule-yaml.md",
+          "gitBlobSha": "7fb32248b07386aca833a75b883c750b4fc57aec",
+          "sha256": "1b801dd897252f442384980235eaf06354bb6dc0ac8378f196e4e20746e1c7c0"
+        },
+        {
+          "source": "ast-grep-practice/references/testing.md",
+          "snapshot": "third_party/mizchi-skills/62f580819410cb1d398e4d7f234bbd0aad1c1a15/ast-grep-practice/references/testing.md",
+          "gitBlobSha": "fa101b75dbc5f7b4785d2bf35ac63366686dbf66",
+          "sha256": "d7e2282b5b6ef954891af059adbe9b8ae23edcc385ba00f6a9e80e42ac6607d7"
+        }
+      ],
+      "adaptations": [
+        "Progressive-disclosure router and host-neutral local tooling.",
+        "Correct --json, --error=<rule-id>, interactive mutation semantics.",
+        "Repair duplicate Go has keys / expression-list nesting and unsupported TypeScript async field.",
+        "Remove unsafe non-capturing lodash fix.",
+        "Add independently forward-tested callee-only migration guidance for byte-preserving arguments.",
+        "CI replays reviewed snapshots; classification-only tests demonstrably miss wrong fix templates.",
+        "Use registered nonmatching Red stubs and reject missing rule registrations / zero executed tests despite CLI exit 0."
+      ]
+    },
+    {
+      "name": "gh-fix-ci",
+      "repository": "https://github.com/mizchi/skills",
+      "commit": "62f580819410cb1d398e4d7f234bbd0aad1c1a15",
+      "sourcePath": "gh-fix-ci",
+      "license": "Apache-2.0",
+      "licenseEvidence": "https://github.com/mizchi/skills/blob/62f580819410cb1d398e4d7f234bbd0aad1c1a15/gh-fix-ci/LICENSE.txt",
+      "files": [
+        {
+          "source": "gh-fix-ci/LICENSE.txt",
+          "snapshot": "third_party/mizchi-skills/62f580819410cb1d398e4d7f234bbd0aad1c1a15/gh-fix-ci/LICENSE.txt",
+          "gitBlobSha": "13e25df86ce06eb6488e6a6bc5c5847f5dedc352",
+          "sha256": "4dd13869245e356246a5b770723247bbb80a8f07a181d1d3d873a1734297cdb9"
+        },
+        {
+          "source": "gh-fix-ci/README.md",
+          "snapshot": "third_party/mizchi-skills/62f580819410cb1d398e4d7f234bbd0aad1c1a15/gh-fix-ci/README.md",
+          "gitBlobSha": "fec14d03794483e76fad3edfb9a90f944ab36cac",
+          "sha256": "f1ba1875d9f0a9ac77ec8216d2bca4f6dc5ca8a6ed90bc78491844ba7f2a243a"
+        },
+        {
+          "source": "gh-fix-ci/SKILL.md",
+          "snapshot": "third_party/mizchi-skills/62f580819410cb1d398e4d7f234bbd0aad1c1a15/gh-fix-ci/SKILL.md",
+          "gitBlobSha": "23cfe3535d659f643984399ff926f8414838b4f0",
+          "sha256": "9bb7f0a67de15a4b69ad793e8169cae34ae5e0ac76a9403a483bafd418233ea4"
+        },
+        {
+          "source": "gh-fix-ci/agents/openai.yaml",
+          "snapshot": "third_party/mizchi-skills/62f580819410cb1d398e4d7f234bbd0aad1c1a15/gh-fix-ci/agents/openai.yaml",
+          "gitBlobSha": "262bd70c8214ffc8fcc698465a8122d69066fe4f",
+          "sha256": "36f73b9450504983d1647c960689596f59bf9147c14b1b43162912ed7ada9af6"
+        },
+        {
+          "source": "gh-fix-ci/assets/github-small.svg",
+          "snapshot": "third_party/mizchi-skills/62f580819410cb1d398e4d7f234bbd0aad1c1a15/gh-fix-ci/assets/github-small.svg",
+          "gitBlobSha": "828e9d9d1d29e1a525a1aeee5eb1e4162249c77e",
+          "sha256": "ee05e92d373d4d84f4612af3c1090ef67698d421bbe30896a4ed5a00cb86a069"
+        },
+        {
+          "source": "gh-fix-ci/assets/github.png",
+          "snapshot": "third_party/mizchi-skills/62f580819410cb1d398e4d7f234bbd0aad1c1a15/gh-fix-ci/assets/github.png",
+          "gitBlobSha": "e23dbe59099a594c06a46081ce48b82aa409b0e7",
+          "sha256": "d55a9baa41798d8b5108e3058df3a5bda09914ea9fd73b49929cc38a8832424f"
+        },
+        {
+          "source": "gh-fix-ci/scripts/inspect_pr_checks.py",
+          "snapshot": "third_party/mizchi-skills/62f580819410cb1d398e4d7f234bbd0aad1c1a15/gh-fix-ci/scripts/inspect_pr_checks.py",
+          "gitBlobSha": "06cd03c5fc61c784d082e1c25a533c94e0912b3f",
+          "sha256": "9459e5b03f86785d184a83e5cd8d621b832e918ec04158a2962d867785812c6c"
+        }
+      ],
+      "adaptations": [
+        "Existing-access connector fallback; no credential/scope expansion.",
+        "Honor prior explicit fix authorization; verify exact PR head and pending checks.",
+        "Correct gh checks exit 1/8 handling, pending/no-check status, and external URL classification with offline regressions."
+      ]
+    },
+    {
+      "name": "playwright-test",
+      "repository": "https://github.com/mizchi/skills",
+      "commit": "62f580819410cb1d398e4d7f234bbd0aad1c1a15",
+      "sourcePath": "playwright-test",
+      "license": "MIT",
+      "licenseEvidence": "https://github.com/mizchi/skills/blob/62f580819410cb1d398e4d7f234bbd0aad1c1a15/README.md",
+      "files": [
+        {
+          "source": "playwright-test/README.md",
+          "snapshot": "third_party/mizchi-skills/62f580819410cb1d398e4d7f234bbd0aad1c1a15/playwright-test/README.md",
+          "gitBlobSha": "70dcbcf609cab5292f20fd190ec5b589a771bddf",
+          "sha256": "141c613a3e57a9fc211730097b6acd07d02dab66f2d05785185754bdaf64d799"
+        },
+        {
+          "source": "playwright-test/SKILL-ja.md",
+          "snapshot": "third_party/mizchi-skills/62f580819410cb1d398e4d7f234bbd0aad1c1a15/playwright-test/SKILL-ja.md",
+          "gitBlobSha": "4ca73c57b2b66ffae51baed1555c12914da8aa72",
+          "sha256": "75c90702964f2cec081dcfc2ff9045e4f28ddcea0943f8090999adbdfd00c022"
+        },
+        {
+          "source": "playwright-test/SKILL.md",
+          "snapshot": "third_party/mizchi-skills/62f580819410cb1d398e4d7f234bbd0aad1c1a15/playwright-test/SKILL.md",
+          "gitBlobSha": "1c438400a5d17be99e49fbfbf8e64bf2feca2cbc",
+          "sha256": "ac4eb9c54c1b99a1bd1ee01465c189aaa3202e8c45d0be062a6e1e19fd5e9b01"
+        }
+      ],
+      "adaptations": [
+        "Progressive-disclosure router and test-scope/auth-data safeguards.",
+        "Correct flaky API, discouraged networkidle wait and popup trigger ordering.",
+        "Align browser projects and CI browser installation; import setup in authentication example."
+      ]
+    },
+    {
+      "name": "retrospective-codify",
+      "repository": "https://github.com/mizchi/skills",
+      "commit": "62f580819410cb1d398e4d7f234bbd0aad1c1a15",
+      "sourcePath": "retrospective-codify",
+      "license": "MIT",
+      "licenseEvidence": "https://github.com/mizchi/skills/blob/62f580819410cb1d398e4d7f234bbd0aad1c1a15/README.md",
+      "files": [
+        {
+          "source": "retrospective-codify/README.md",
+          "snapshot": "third_party/mizchi-skills/62f580819410cb1d398e4d7f234bbd0aad1c1a15/retrospective-codify/README.md",
+          "gitBlobSha": "6b80acc8b934b9753cbf7ee5e1552b8825144edb",
+          "sha256": "77a51f2096aa51722ff927ff4908a4c824e5b82ab0c74dce2564239d7fab5aa5"
+        },
+        {
+          "source": "retrospective-codify/SKILL-ja.md",
+          "snapshot": "third_party/mizchi-skills/62f580819410cb1d398e4d7f234bbd0aad1c1a15/retrospective-codify/SKILL-ja.md",
+          "gitBlobSha": "f97047d5cfa412917edbd4555ca99ae649103cf3",
+          "sha256": "c55610bfe5ac589d43a6f2199d3b9226a46fef41c0e3f6d02958f69da4c240e9"
+        },
+        {
+          "source": "retrospective-codify/SKILL.md",
+          "snapshot": "third_party/mizchi-skills/62f580819410cb1d398e4d7f234bbd0aad1c1a15/retrospective-codify/SKILL.md",
+          "gitBlobSha": "07abe385c6037f1e70fb7c26941225cbfc1c8475",
+          "sha256": "70bd226087028461f1e208ac5497593cdf6a0dc1e074d80f970addc1e36e5afa"
+        }
+      ],
+      "adaptations": [
+        "Preserve existing Japanese workflow.",
+        "Add required metadata and current upstream explicit invocation policy.",
+        "Import four-tier dedup and host-aware paths without unavailable skill dependencies."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "g-kari-plugins-validation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Reproducible plugin validation and structural-search tooling",
+  "scripts": {
+    "sync:metadata": "node scripts/sync-metadata.mjs",
+    "validate": "node scripts/validate-plugins.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:ast-grep": "node --test tests/ast-grep.test.mjs",
+    "check": "npm run validate && npm test",
+    "test:codex": "node scripts/test-codex.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "@ast-grep/cli": "0.45.3",
+    "yaml": "2.9.1"
+  }
+}

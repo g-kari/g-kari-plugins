@@ -46,4 +46,6 @@ retrospectして
 
 ---
 
-Original skill by [mizchi](https://github.com/mizchi/chezmoi-dotfiles)
+Original skill by [mizchi](https://github.com/mizchi/skills/tree/62f580819410cb1d398e4d7f234bbd0aad1c1a15/retrospective-codify)
+
+Codex では `$retrospective-codify` で明示起動します。現在の upstream に合わせ、タスク完了だけでは自動実行しません。

@@ -1,0 +1,14 @@
+{
+  "name": "commit",
+  "version": "1.1.0",
+  "description": "git commitのワークフローを自動化するプラグイン。差分の分析、コミットメッセージ生成、pre-commitチェックの実行、コミット作成までを一貫して行う。",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "commit",
+    "shortDescription": "commit",
+    "longDescription": "git commitのワークフローを自動化するプラグイン。差分の分析、コミットメッセージ生成、pre-commitチェックの実行、コミット作成までを一貫して行う。",
+    "developerName": "g-kari",
+    "category": "Developer Tools"
+  },
+  "hooks": []
+}
