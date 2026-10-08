@@ -228,6 +228,21 @@
       "interface": {
         "displayName": "anything-else"
       }
+    },
+    {
+      "name": "security-audit",
+      "source": {
+        "source": "local",
+        "path": "./security-audit"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Developer Tools",
+      "interface": {
+        "displayName": "security-audit"
+      }
     }
   ]
 }

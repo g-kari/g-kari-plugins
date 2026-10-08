@@ -255,6 +255,23 @@
         "codex",
         "claude-code"
       ]
+    },
+    {
+      "name": "security-audit",
+      "source": "./security-audit",
+      "description": "Cloudflare のソース主導セキュリティ監査。通常は関連するガイダンスを使い、明示されたコードベース監査だけ六段階の検証・報告を実行する。",
+      "version": "1.0.0",
+      "author": {
+        "name": "Cloudflare, Inc."
+      },
+      "keywords": [
+        "security",
+        "audit",
+        "vulnerabilities",
+        "cloudflare",
+        "codex",
+        "claude-code"
+      ]
     }
   ]
 }

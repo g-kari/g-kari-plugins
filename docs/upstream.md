@@ -50,3 +50,7 @@ MIT は upstream README の「個別 LICENSE がなければ MIT」という明�
 5. `npm run sync:metadata`、`npm run check`、`npm run test:codex` を実行する。バージョンを同期し、新しい commit の CI を確認する。
 
 既存 Microsoft MarkItDown や katasu.me のリンクはツール・デザインの参照で、取得元 Skill の識別子ではありません。存在しない upstream Skill を推定して置換していません。
+
+## Cloudflare security-audit (2026-10-08)
+
+Source: [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill/tree/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8). MIT copyright notice and full license are included in security-audit/LICENSE. All tracked upstream files have immutable snapshots under third_party/cloudflare-security-audit-skill/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/ and Git blob/SHA-256 records in upstream-lock.json. The runtime skills/security-audit tree is copied without edits, including companion files, schema, validators and their tests. Only host package/catalog metadata and integration documentation are added. No audit was run during integration. The offline validators use fixture records and temporary directories; they do not scan a repository or call external services.

@@ -1,0 +1,19 @@
+{
+  "name": "security-audit",
+  "version": "1.0.0",
+  "description": "Cloudflare のソース主導セキュリティ監査。通常は関連するガイダンスを使い、明示されたコードベース監査だけ六段階の検証・報告を実行する。",
+  "author": {
+    "name": "Cloudflare, Inc."
+  },
+  "repository": "https://github.com/g-kari/g-kari-plugins",
+  "homepage": "https://github.com/cloudflare/security-audit-skill",
+  "license": "MIT",
+  "keywords": [
+    "security",
+    "audit",
+    "vulnerabilities",
+    "cloudflare",
+    "codex",
+    "claude-code"
+  ]
+}
