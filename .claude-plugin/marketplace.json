@@ -237,6 +237,24 @@
         "codex",
         "testing"
       ]
+    },
+    {
+      "name": "anything-else",
+      "source": "./anything-else",
+      "description": "開発セッションの終わりに、関連Issue・未着手タスク・Issue作成案・追加テストや軽微な整理を確認する。",
+      "version": "1.0.0",
+      "author": {
+        "name": "g-kari"
+      },
+      "keywords": [
+        "session",
+        "wrap-up",
+        "github",
+        "issue",
+        "testing",
+        "codex",
+        "claude-code"
+      ]
     }
   ]
 }

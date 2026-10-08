@@ -213,6 +213,21 @@
       "interface": {
         "displayName": "playwright-test"
       }
+    },
+    {
+      "name": "anything-else",
+      "source": {
+        "source": "local",
+        "path": "./anything-else"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Developer Tools",
+      "interface": {
+        "displayName": "anything-else"
+      }
     }
   ]
 }

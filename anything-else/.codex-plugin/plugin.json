@@ -1,0 +1,14 @@
+{
+  "name": "anything-else",
+  "version": "1.0.0",
+  "description": "開発セッションの終わりに、関連Issue・未着手タスク・Issue作成案・追加テストや軽微な整理を確認する。",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "anything-else",
+    "shortDescription": "anything-else",
+    "longDescription": "開発セッションの終わりに、関連Issue・未着手タスク・Issue作成案・追加テストや軽微な整理を確認する。",
+    "developerName": "g-kari",
+    "category": "Developer Tools"
+  },
+  "hooks": []
+}

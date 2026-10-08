@@ -47,6 +47,7 @@ codex plugin marketplace add /absolute/path/to/g-kari-plugins
 | validate-settings | validate-settings | Claude JSON / Codex TOML を対象別に検証 |
 | commit | commit | 差分、既存チェック、個別ステージング、コミット |
 | retrospective-codify | retrospective-codify | 明示依頼された学びの固定、4段階の重複確認 |
+| anything-else | anything-else | セッション終了時の関連Issue・未着手タスク・Issue作成案・テスト／軽微な整理の確認 |
 | markitdown | markitdown | Microsoft MarkItDown で各種ファイルを Markdown に変換 |
 | stop-notifier | setup-stop-notifier | WSL2 + Windows の通知依存導入と手動テスト |
 | webauthn-front-design | front-design | katasu.me インスパイアの既存 CSS デザインシステム |

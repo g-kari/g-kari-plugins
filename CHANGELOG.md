@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-08
+
+- Add anything-else for evidence-backed end-of-session task and Issue review, Issue proposals, and focused test/refactoring suggestions.
+- Share the same skill across Claude Code and Codex with portable manifests and both marketplace entries; keep execution explicit and hooks disabled.
+- Add static package contracts and manual behavioral evaluation scenarios.
+
 ## 2026-10-07
 
 - Add portable Agent Plugins manifests, Codex compatibility overlays and a Codex repository marketplace for every plugin.
