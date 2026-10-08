@@ -79,4 +79,4 @@ npm run check
 
 公式仕様: [Codex skills](https://developers.openai.com/codex/skills)、[プラグイン構造・マーケットプレイス](https://developers.openai.com/plugins/build/plugins)。
 
-security-audit は固定 upstream を同梱したスキル専用プラグインです。インストールだけでは監査は始まりません。通常はガイダンス、明示したコードベース監査では六段階フローを使います。sandbox の全条件を満たせない場合、対象コードを実行せず needs_validation として報告します。API キー、MCP サーバー、外部サービス接続、hook は追加しません。
+security-audit は固定 upstream を同梱したスキル専用プラグインです。インストールだけでは監査は始まりません。通常はガイダンス、明示したコードベース監査・包括的レビュー・報告成果物の依頼では六段階フローを使います。sandbox の全条件を満たせない場合、対象コードを実行せず needs_validation として報告します。API キー、MCP サーバー、外部サービス接続、hook は追加しません。
