@@ -2,6 +2,10 @@
 
 ## 2026-10-08
 
+- Add Cloudflare security-audit 1.0.0 to both catalogs with an unmodified pinned upstream skill, domain companions, schema and offline validators.
+- Preserve Cloudflare MIT notices and immutable source hashes; installation does not start an audit or add hooks, credentials or external services.
+- Exercise packaged validator regressions in the aggregate check.
+
 - Add anything-else for evidence-backed end-of-session task and Issue review, Issue proposals, and focused test/refactoring suggestions.
 - Share the same skill across Claude Code and Codex with portable manifests and both marketplace entries; keep execution explicit and hooks disabled.
 - Add static package contracts and manual behavioral evaluation scenarios.

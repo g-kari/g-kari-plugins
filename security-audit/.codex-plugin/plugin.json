@@ -1,0 +1,14 @@
+{
+  "name": "security-audit",
+  "version": "1.0.0",
+  "description": "Cloudflare のソース主導セキュリティ監査。通常は関連ガイダンス、明示されたコードベース監査・包括的レビュー・報告成果物の依頼では六段階の検証と報告を実行する。",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "security-audit",
+    "shortDescription": "security-audit",
+    "longDescription": "Cloudflare のソース主導セキュリティ監査。通常は関連ガイダンス、明示されたコードベース監査・包括的レビュー・報告成果物の依頼では六段階の検証と報告を実行する。",
+    "developerName": "Cloudflare, Inc.",
+    "category": "Developer Tools"
+  },
+  "hooks": []
+}
