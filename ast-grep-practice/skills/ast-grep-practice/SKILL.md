@@ -11,7 +11,7 @@ Codex / Claude Code のどちらでも、実際の AST とテストで構造ル�
 ## 最初に確認すること
 
 - ユーザー指定の範囲と対象言語、既存 `sgconfig.yml` / rules / rule-tests を読む
-- packageManager と lockfile に合わせる。このリポジトリでは `npm ci --ignore-scripts` で固定の `@ast-grep/cli@0.45.3` を導入し、`npm exec -- ast-grep --version` で確認する
+- packageManager と lockfile に合わせる。このリポジトリでは `pnpm install --frozen-lockfile --ignore-scripts` で固定の `@ast-grep/cli@0.45.3` を導入し、`pnpm exec ast-grep --version` で確認する
 - `sg` という名前は Unix の別コマンドと衝突することがある。常にプロジェクトの `ast-grep` を使う
 - 検出から始め、valid / invalid の分類テストを先に書く。必要なら snapshot で位置と fix の結果も固定する
 - 読み取りの `run` / `scan` は rewrite 候補を表示できる。`--interactive` は実際に書き換えるモードで、dry-run ではない

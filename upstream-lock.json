@@ -60,7 +60,8 @@
         "Remove unsafe non-capturing lodash fix.",
         "Add independently forward-tested callee-only migration guidance for byte-preserving arguments.",
         "CI replays reviewed snapshots; classification-only tests demonstrably miss wrong fix templates.",
-        "Use registered nonmatching Red stubs and reject missing rule registrations / zero executed tests despite CLI exit 0."
+        "Use registered nonmatching Red stubs and reject missing rule registrations / zero executed tests despite CLI exit 0.",
+        "Use the repository-pinned pnpm and frozen lock for local ast-grep tooling."
       ]
     },
     {

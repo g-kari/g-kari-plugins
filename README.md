@@ -61,22 +61,26 @@ codex plugin marketplace add /absolute/path/to/g-kari-plugins
 Node.js 22+ と Python 3 を使い、公式 npm パッケージをプロジェクト内に固定して導入します。グローバルな `sg` は別コマンドの場合があるため使用しません。
 
 ```bash
-npm ci --ignore-scripts
-npm exec -- ast-grep --version
-npm run test:ast-grep
-npm run check
+pnpm install --frozen-lockfile --ignore-scripts
+pnpm exec ast-grep --version
+pnpm run test:ast-grep
+pnpm run check
 ```
 
 `@ast-grep/cli` は 0.45.3、YAML パーサーは 2.9.1 に固定しています。`--ignore-scripts` でもプラットフォーム別の公式バイナリが解決できることを検証済みです。別プロジェクトで ast-grep を追加するときは、そのプロジェクトの packageManager と lockfile を優先します。
 
 ## 更新と検証
 
-- metadata 変更後: `npm run sync:metadata`
-- 検証: `npm run check`、`git diff --check`
-- Codex 実機能のローカル検証: `npm run test:codex`（Codex CLI 必須、隔離した HOME を使用）
+- metadata 変更後: `pnpm run sync:metadata`
+- 検証: `pnpm run check`、`git diff --check`
+- Codex 実機能のローカル検証: `pnpm run test:codex`（Codex CLI 必須、隔離した HOME を使用）
 - upstream とライセンス: [docs/upstream.md](docs/upstream.md)
 - 変更履歴: [CHANGELOG.md](CHANGELOG.md)
 
 公式仕様: [Codex skills](https://developers.openai.com/codex/skills)、[プラグイン構造・マーケットプレイス](https://developers.openai.com/plugins/build/plugins)。
 
 security-audit は固定 upstream を同梱したスキル専用プラグインです。インストールだけでは監査は始まりません。通常はガイダンス、明示したコードベース監査・包括的レビュー・報告成果物の依頼では六段階フローを使います。sandbox の全条件を満たせない場合、対象コードを実行せず needs_validation として報告します。API キー、MCP サーバー、外部サービス接続、hook は追加しません。
+
+## Package manager
+
+Use pnpm 10.34.7, pinned in package.json. With Corepack available, run `corepack enable` once, then `pnpm install --frozen-lockfile --ignore-scripts` in this directory. Keep pnpm-lock.yaml committed; do not regenerate it with npm or Yarn.

@@ -30,4 +30,4 @@ codex plugin add anything-else@g-kari-plugins
 
 ## 検証
 
-repoルートで `npm run check` と `npm run test:codex` を実行します。`tests/anything-else.test.mjs` はメタデータと指示の契約を確認する静的テストです。モデル応答の意味的な動作は [評価シナリオ](evals.md) で確認します。
+repoルートで `pnpm run check` と `pnpm run test:codex` を実行します。`tests/anything-else.test.mjs` はメタデータと指示の契約を確認する静的テストです。モデル応答の意味的な動作は [評価シナリオ](evals.md) で確認します。

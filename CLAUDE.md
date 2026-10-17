@@ -31,4 +31,4 @@ claude plugin validate .
 
 ## Codex and shared skill maintenance
 
-Read `AGENTS.md` for shared validation, generated metadata and upstream provenance. Claude's `.claude-plugin` manifests/catalog remain supported; Codex uses the parallel `.agents/plugins` catalog and portable manifests. Run `npm run sync:metadata` after changing package metadata, then `npm run check`.
+Read `AGENTS.md` for shared validation, generated metadata and upstream provenance. Claude's `.claude-plugin` manifests/catalog remain supported; Codex uses the parallel `.agents/plugins` catalog and portable manifests. Run `pnpm run sync:metadata` after changing package metadata, then `pnpm run check`.
