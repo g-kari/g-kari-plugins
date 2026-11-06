@@ -28,7 +28,7 @@ function rules() {
   return result;
 }
 test('official local ast-grep version is pinned', () => {
-  const result = run(['--version']); assert.equal(result.status, 0); assert.equal(result.stdout.trim(), 'ast-grep 0.45.3');
+  const result = run(['--version']); assert.equal(result.status, 0); assert.equal(result.stdout.trim(), 'ast-grep 0.51.0');
 });
 test('structural TypeScript search excludes matching strings and preserves input', () => fixture(dir => {
   const code = "const text = 'oldFunc(1)';\noldFunc (1, 2);\notherFunc(3);\n";

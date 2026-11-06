@@ -67,7 +67,7 @@ npm run test:ast-grep
 npm run check
 ```
 
-`@ast-grep/cli` は 0.45.3、YAML パーサーは 2.9.1 に固定しています。`--ignore-scripts` でもプラットフォーム別の公式バイナリが解決できることを検証済みです。別プロジェクトで ast-grep を追加するときは、そのプロジェクトの packageManager と lockfile を優先します。
+`@ast-grep/cli` は 0.51.0、YAML パーサーは 2.9.1 に固定しています。`--ignore-scripts` でもプラットフォーム別の公式バイナリが解決できることを検証済みです。別プロジェクトで ast-grep を追加するときは、そのプロジェクトの packageManager と lockfile を優先します。
 
 ## 更新と検証
 
