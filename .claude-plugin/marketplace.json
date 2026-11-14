@@ -272,6 +272,38 @@
         "codex",
         "claude-code"
       ]
+    },
+    {
+      "name": "owasp-code-security",
+      "source": "./owasp-code-security",
+      "description": "OWASP Secure Agent Playbook による Web/API/モバイル/IaC/依存関係のセキュリティレビュー。OWASP Top 10 と ASVS の観点を使う。",
+      "version": "1.0.0",
+      "author": {
+        "name": "OWASP Secure Agent Playbook contributors"
+      },
+      "keywords": [
+        "owasp",
+        "security",
+        "code-review",
+        "asvs",
+        "api"
+      ]
+    },
+    {
+      "name": "owasp-ai-security",
+      "source": "./owasp-ai-security",
+      "description": "OWASP Secure Agent Playbook による LLM、AI Agent、MCP、プロンプトインジェクションのセキュリティ評価。",
+      "version": "1.0.0",
+      "author": {
+        "name": "OWASP Secure Agent Playbook contributors"
+      },
+      "keywords": [
+        "owasp",
+        "ai-security",
+        "agent",
+        "llm",
+        "mcp"
+      ]
     }
   ]
 }
