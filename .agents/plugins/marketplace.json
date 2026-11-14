@@ -243,6 +243,36 @@
       "interface": {
         "displayName": "security-audit"
       }
+    },
+    {
+      "name": "owasp-code-security",
+      "source": {
+        "source": "local",
+        "path": "./owasp-code-security"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Developer Tools",
+      "interface": {
+        "displayName": "owasp-code-security"
+      }
+    },
+    {
+      "name": "owasp-ai-security",
+      "source": {
+        "source": "local",
+        "path": "./owasp-ai-security"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Developer Tools",
+      "interface": {
+        "displayName": "owasp-ai-security"
+      }
     }
   ]
 }

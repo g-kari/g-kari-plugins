@@ -1,6 +1,6 @@
 # g-kari-plugins
 
-Claude Code と Codex 向けのスキル・プラグイン集。同じ `skills/` を両ホストで利用し、ホスト固有の指示と設定を区別します。
+Claude Code、Codex、DSH (DeepSeek Harness) 向けのスキル・プラグイン集。Claude Code と Codex は同じ `skills/` を利用し、DSH へは必要なSkillを直接読み込める形にエクスポートします。
 
 ## Codex へのインストール
 
@@ -13,6 +13,8 @@ codex plugin add ast-grep-practice@g-kari-plugins
 codex plugin add gh-fix-ci@g-kari-plugins
 codex plugin add playwright-test@g-kari-plugins
 codex plugin add security-audit@g-kari-plugins
+codex plugin add owasp-code-security@g-kari-plugins
+codex plugin add owasp-ai-security@g-kari-plugins
 ```
 
 インストール後は新しいセッションで `$ast-grep-practice` などを指定するか、自然言語で依頼します。CLI の `/skills` でも確認できます。Codex のデスクトップアプリでは登録したマーケットプレイスからプラグインを選択します。IDE 拡張で単独スキルを使う場合は、対象の `skills/<name>/` をプロジェクトの `.agents/skills/` または個人の `~/.agents/skills/` に配置します。同名スキルの二重インストールは避けてください。
@@ -34,11 +36,27 @@ codex plugin marketplace add /absolute/path/to/g-kari-plugins
 /plugin install ast-grep-practice@g-kari-plugins
 ```
 
+## DSH (DeepSeek Harness) への導入
+
+DSH はプロジェクト直下の `.dsh/skills/<skill-name>/SKILL.md` を読み込みます。Cloudflare の `security-audit` と OWASP の18 Skillを、共有する `plays/`、`templates/`、`data/` を含む19個の独立バンドルにエクスポートします。
+
+```bash
+# g-kari-plugins のルートで実行。--output は対象DSHプロジェクトの絶対パスを指定。
+npm run export:dsh -- --output /absolute/path/to/dsh-project/.dsh/skills --dry-run
+npm run export:dsh -- --output /absolute/path/to/dsh-project/.dsh/skills
+```
+
+既存Skillは上書きしません。同名Skillがある場合は、書き込み前にエラーとなるため、対象を確認してから導入します。DSH のプロジェクトルートは `.git` の最も近い親ディレクトリで判定されます。個人設定に入れる場合は、自身の DSH ホームの `skills` ディレクトリを `--output` に指定してください。既存のSkillとの重複は先に確認してください。DSH の `/skills` 相当の一覧から認識を確認し、実際の監査実行は別途明示依頼してください。
+
+この操作は g-kari-plugins のコードを変更せず、指定された保存先にSkillを展開します。追加のMCP、hook、認証情報、権限は付与しません。特にCloudflareの監査Skillは隔離実行条件を満たすまで対象コードを実行しないでください。DSHホストへの実際のインストールおよび稼働テストは、対象環境で別途確認が必要です。
+
 ## プラグイン一覧
 
 | Plugin | Skill | 用途・前提 |
 |---|---|---|
 | security-audit | security-audit | Cloudflare のソース主導監査。Node.js / 並列サブエージェント。対象コード実行にはネットワーク遮断・環境 allowlist・書込隔離・資源制限の OS sandbox が必須 |
+| owasp-code-security | 11種のOWASP監査Skill | OWASP Secure Agent Playbook のWeb/API/モバイル/IaC/コード・依存関係監査。CC-BY-4.0 |
+| owasp-ai-security | 7種のOWASP監査Skill | OWASP Secure Agent Playbook のLLM/エージェント/MCP/プロンプトインジェクション評価。CC-BY-4.0 |
 | ast-grep-practice | ast-grep-practice | AST 構造検索、lint、rewrite、分類・snapshot テスト。ローカル ast-grep |
 | gh-fix-ci | gh-fix-ci | GitHub Actions の PR 失敗診断と依頼された修正。既存 GitHub 接続 / gh |
 | playwright-test | playwright-test | E2E、web-first assertion、ネットワーク、ダイアログ、CI。対象プロジェクトの Playwright |

@@ -1,0 +1,10 @@
+{
+  "name": "owasp-ai-security",
+  "version": "1.0.0",
+  "description": "OWASP Secure Agent Playbook による LLM、AI Agent、MCP、プロンプトインジェクションのセキュリティ評価。",
+  "author": { "name": "OWASP Secure Agent Playbook contributors" },
+  "repository": "https://github.com/g-kari/g-kari-plugins",
+  "homepage": "https://github.com/OWASP/secure-agent-playbook",
+  "license": "CC-BY-4.0",
+  "keywords": ["owasp", "ai-security", "agent", "llm", "mcp"]
+}

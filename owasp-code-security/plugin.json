@@ -1,0 +1,31 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "owasp-code-security",
+  "version": "1.0.0",
+  "description": "OWASP Secure Agent Playbook による Web/API/モバイル/IaC/依存関係のセキュリティレビュー。OWASP Top 10 と ASVS の観点を使う。",
+  "author": {
+    "name": "OWASP Secure Agent Playbook contributors"
+  },
+  "homepage": "https://github.com/OWASP/secure-agent-playbook",
+  "repository": "https://github.com/g-kari/g-kari-plugins",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "owasp",
+    "security",
+    "code-review",
+    "asvs",
+    "api"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "owasp-code-security",
+        "shortDescription": "owasp-code-security",
+        "longDescription": "OWASP Secure Agent Playbook による Web/API/モバイル/IaC/依存関係のセキュリティレビュー。OWASP Top 10 と ASVS の観点を使う。",
+        "developerName": "OWASP Secure Agent Playbook contributors",
+        "category": "Developer Tools"
+      },
+      "hooks": []
+    }
+  }
+}

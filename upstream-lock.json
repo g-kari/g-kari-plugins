@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "checkedAt": "2026-10-08",
+  "checkedAt": "2026-11-14",
   "sources": [
     {
       "name": "ast-grep-practice",
@@ -329,6 +329,2414 @@
       ],
       "adaptations": [
         "No changes to runtime skill, companions, schema or validators; package metadata and MIT notice added for Claude Code and Codex."
+      ]
+    },
+    {
+      "name": "owasp-code-security-skills",
+      "repository": "https://github.com/OWASP/secure-agent-playbook",
+      "commit": "65d4efd2cd0b081d52101e9708792b944e4ddebb",
+      "sourcePath": "plugins/code-security-skills",
+      "license": "CC-BY-4.0",
+      "licenseEvidence": "https://github.com/OWASP/secure-agent-playbook/blob/65d4efd2cd0b081d52101e9708792b944e4ddebb/LICENSE.md",
+      "files": [
+        {
+          "source": "plugins/code-security-skills/.codex-plugin/plugin.json",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/.codex-plugin/plugin.json",
+          "gitBlobSha": "a106d0f1e4f2557d4a47bde68a86f562615ca770",
+          "sha256": "6b13309a0ac9dd4837181a0b10b89c97ef1b9bc755d22a1f116b6ccb44d271b2"
+        },
+        {
+          "source": "plugins/code-security-skills/agents/api-security-reviewer.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/agents/api-security-reviewer.md",
+          "gitBlobSha": "e4433f6a2568c9fbfd343e73e1ba4ab7f235fa0f",
+          "sha256": "dfa3bbd03f270f2da9663736a940b5ef20573934812667aeb97a427e0b5afe8c"
+        },
+        {
+          "source": "plugins/code-security-skills/agents/code-security-reviewer.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/agents/code-security-reviewer.md",
+          "gitBlobSha": "8470f8910a14edccb1c91160c48834f306ee8576",
+          "sha256": "ecd1dd65f407b0586c9be44af562cda6098de25f89549d6d0c382e42b5c6a20e"
+        },
+        {
+          "source": "plugins/code-security-skills/agents/dependency-auditor.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/agents/dependency-auditor.md",
+          "gitBlobSha": "c515746c3e0780469bfee352068e2fd4cfd6ef65",
+          "sha256": "2f58441345644f6b990ea945536581ec7dfdd7ebd151b22bf1079c27555c4005"
+        },
+        {
+          "source": "plugins/code-security-skills/agents/mobile-security-reviewer.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/agents/mobile-security-reviewer.md",
+          "gitBlobSha": "020acdc461b8b5af8df2b5f8feadd245adb59846",
+          "sha256": "5f993304ee2fe3ff61f8dddb05f6f7df6a01def6490110aec4584aa50028311a"
+        },
+        {
+          "source": "plugins/code-security-skills/agents/security-team-lead.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/agents/security-team-lead.md",
+          "gitBlobSha": "4aab92ba3d70b808ecc554136521e7b0eef0587b",
+          "sha256": "cd955ccb2bebb97019f7ae5670f28d8bb6799798d4ca9768e32a90c9fd1eb90b"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/README.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/README.md",
+          "gitBlobSha": "fc94bf77fab82a9f1d02597b8ee8632466a6a9b0",
+          "sha256": "6261e945936ed8d2287c47db4f022bd922df35a12afae607b531029cfe115e2b"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V1.1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V1.1.md",
+          "gitBlobSha": "5e88b35d2be046a29bf05233a88ea5936e4c448d",
+          "sha256": "8af731f7a1b69e939e14860ef7f0a0c277f820554e45a85a72f6e30ac5c9dd36"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V1.2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V1.2.md",
+          "gitBlobSha": "b1a762632a1c3217fc4d8be1357bba1c76bb9c7e",
+          "sha256": "169822d3348c7900a2fac47ba8afeb38c86a3e531933d53feab075e06526a149"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V1.3.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V1.3.md",
+          "gitBlobSha": "9a5b32a12682b5872626131833b3ec8afed23b06",
+          "sha256": "53fd0eb8b8f49d886d5a9ef12d619da27d1af1d9cb84ddd0a4b8022182e93ab8"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V1.4.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V1.4.md",
+          "gitBlobSha": "edb84efbd6f5a32d71188c1c8548c26c7efbe71f",
+          "sha256": "2ea846b2baa58c03c463d09d308ae6216511e2396635ac8609b3fc7fc5bd7cc7"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V1.5.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V1.5.md",
+          "gitBlobSha": "f092addd0356deb0d12395ec758db17c4cc17667",
+          "sha256": "15743e1fc43d239c6a90109443d6176423fe305d6466047dc1cc5ae0e2bea8d3"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V10.1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V10.1.md",
+          "gitBlobSha": "28ea9b5d2b05c720cce361ffe65ef02a9c2090ef",
+          "sha256": "4b49793a1b87ae3e785fa0aa543edc9b4057e0d79eef580cb865d22eeedd47b5"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V10.2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V10.2.md",
+          "gitBlobSha": "97a2f642218be0ec1089eb070b631b7cc70e184c",
+          "sha256": "a79e9b696fb3d30f74466a1fad141fcea3883e583b9c9c046da074e1a5fda409"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V10.3.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V10.3.md",
+          "gitBlobSha": "f8ae97acca7b35b7d53dad22c12f443157aa94a6",
+          "sha256": "ec4a78d2f8ad2b96086c189a0283a328871fac89ff0216047edd8548f01cfdac"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V10.4.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V10.4.md",
+          "gitBlobSha": "edce10f86921e062e00c09e42003fa897b5885d2",
+          "sha256": "cd6e1a3fa45c5bc94b42f944d30d63b10ec7f29c06b03a8102def1297fabf166"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V10.5.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V10.5.md",
+          "gitBlobSha": "66a0646251dc32f9bcc40813949fa03e5cc6e7b8",
+          "sha256": "84a4d1b3903b7d6f6e3261b140c63ad4e00dd7741de28c0f4670f2b720404c0f"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V10.6.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V10.6.md",
+          "gitBlobSha": "1ab91ac4a72a5e8c0f117ca59212198c20ac956d",
+          "sha256": "1765fdab58b96f721949945cdd415b069bef35b625f73acc30469ec0b82e993b"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V10.7.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V10.7.md",
+          "gitBlobSha": "7f1c5e1fc41f4d71227e79ef5ef5fee3fbe80832",
+          "sha256": "71fae06fc56872d592b39b40fe6278fef3a1df0875d3ea0687c322dc615f9f57"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V11.1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V11.1.md",
+          "gitBlobSha": "cd3601229b9a158886fe7a50f843a16e56dfbfb3",
+          "sha256": "10b1250af3a485a9bf02dfc75eeac2758b1368d8ec89edc5dd65b69babb32884"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V11.2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V11.2.md",
+          "gitBlobSha": "2e83b0f285db5acc4115d0c971c721719d822e44",
+          "sha256": "6320d956ad0373f62baf6356dc0f30770bd475ea1b927c9fd99df08fe4940d78"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V11.3.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V11.3.md",
+          "gitBlobSha": "e1192ef15570c0ea89542626d8a5039832b42a0f",
+          "sha256": "2dbfe0dc67b2818292a31d31a3044d0a534525ccfbbdf5e6491c4fb9d5b13c18"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V11.4.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V11.4.md",
+          "gitBlobSha": "aa992b2b8da245a2f54a4a0fcd753ff4762f9a35",
+          "sha256": "e9012d16c0fe2f5476805385a36af5fcea592804cbafa631606a33d2143691bb"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V11.5.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V11.5.md",
+          "gitBlobSha": "f5b7b14722a00cff225ab87f9eab903a815a3c8e",
+          "sha256": "577c59f3d4a59adb130f58e14ebf66cb75a89b225a17695d4bf08c96668ea69d"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V11.6.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V11.6.md",
+          "gitBlobSha": "e21e2f1afd9439548c4a573c0abb5caeb3e90288",
+          "sha256": "e6174cb17ea962e8f5e20c166ae82111613672118a48d0bcd867fbc7997a5915"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V11.7.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V11.7.md",
+          "gitBlobSha": "dd64d022ac5c0f6b23bd8db4717506ccd1020a54",
+          "sha256": "8b81dad95f29c32c233f96c46106259fbef10d6f276dac53c5717eff6b56ccdf"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V12.1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V12.1.md",
+          "gitBlobSha": "8319185ee2e5dec09abf8df9c1cfa3166489566b",
+          "sha256": "6be343535dcc479dd3050500ea3113bf27cb3a79bba99022d553a7251a5f48c2"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V12.2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V12.2.md",
+          "gitBlobSha": "f79ec3bfbd1e9f529ce85b48c953be000832bdd4",
+          "sha256": "b9b18db04a67f567438dcd9025039be1779a4b289ae2a8e0d1013d07ef475f78"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V12.3.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V12.3.md",
+          "gitBlobSha": "ab1b809f4d9840181bef8b7b630066d9f0e06131",
+          "sha256": "20c0b62c21f0e68956e9999ac232fa16b4a3bb78d5048f1e9d1f87fb72d763bf"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V13.1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V13.1.md",
+          "gitBlobSha": "a8f9dae14c40b626f62eb210e4d00e7a0ea85489",
+          "sha256": "235e081c1bf43d8b454e00105af7ec751bc99974e92bd6f2ece089859a62043a"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V13.2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V13.2.md",
+          "gitBlobSha": "4bee183584d47c988a182cd2c985128b2adcd51c",
+          "sha256": "1bb4841c1c4d1a2366b092138c5e7d8a500ba3117fcadca376fd81f46f64a5ab"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V13.3.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V13.3.md",
+          "gitBlobSha": "211898b77ffaf32096b5edcb2976be6b4b9d98e7",
+          "sha256": "56f3430461ad8b02faea97e92428f8f61d1d17d3187b8b314a72ed808a40da5e"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V13.4.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V13.4.md",
+          "gitBlobSha": "b9231e9fd173df9c7ad1498c2591d51a9cc1a3a4",
+          "sha256": "a9fca7d948e5249cba7ce55961539ede9ffdbc83cf291e92b981c5121765b74c"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V14.1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V14.1.md",
+          "gitBlobSha": "f9b03914fe8de20b4a4526602f00f1d7efc6a291",
+          "sha256": "7228c6b65eff4e13ef9e59e6ed8773ab66c4a298647b5d7c594c1e74637dfcb6"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V14.2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V14.2.md",
+          "gitBlobSha": "1ebbfb7b92e2d3db8689cf156d15780554e3b34e",
+          "sha256": "e83fd2881144959d60ff26fdf5a44368d3750429de172257d4a95f3cc569994a"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V14.3.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V14.3.md",
+          "gitBlobSha": "3d68a48594b486637b3f1358911e792e668f86cc",
+          "sha256": "c0f458ded2353e68f32e9f9720aedf7c4646e49fb135ed65130099b8e2c5ecf7"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V15.1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V15.1.md",
+          "gitBlobSha": "87f887a78d312dda177fdaac57dddc6d5e1b284b",
+          "sha256": "5c6ef01a45f90ba64d63bad282438424ca5401a8baaac117c80fdc710e3c3782"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V15.2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V15.2.md",
+          "gitBlobSha": "857b47de172582819a8d09cc31f10191fec13b2b",
+          "sha256": "7d67519a545c1e91033b850a9e51ce8ac8055d0bda7c2da710fc8bd64ebd8322"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V15.3.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V15.3.md",
+          "gitBlobSha": "f59a879e8f9760d12a9145cc4a954899ab71a0a2",
+          "sha256": "273f27fdd1fd82999463ebfc352e74fa04c568ded4d15d87515e3cefe525233c"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V15.4.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V15.4.md",
+          "gitBlobSha": "f475afbc1fedfde78461e056e1b25ef96c2f707c",
+          "sha256": "cbf8aa11c0e47d38b7ae0e87024b5d4fff091269149206fb4711ba161cd4a61b"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V16.1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V16.1.md",
+          "gitBlobSha": "070e63b742670be807755d636b3373b2c7a85a48",
+          "sha256": "9c81ef090b772c6b6c140c3522a02c53e9adeee4793001b959f1ca8ba37396d4"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V16.2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V16.2.md",
+          "gitBlobSha": "ef33a1e3e447946186ff4701ccc08a7d8540341d",
+          "sha256": "2235f0a8e96e7029d2dd11df69d2304077de08b4066d4e9eab3d1ed0c9f98ab7"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V16.3.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V16.3.md",
+          "gitBlobSha": "3d7de0a05cb41100b0b9b16f48ee8824ea5fca69",
+          "sha256": "7823fd567237b288dde386a51dbc1e0357c462df3d69f4f1f17184bec7130d83"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V16.4.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V16.4.md",
+          "gitBlobSha": "c2bcac30b7c553cef73d593e9c442046d3dae3c1",
+          "sha256": "c3198c6271d98c2e87ea28309c112fbb3710cdf5a26a0c27a09a2b090f2738e1"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V16.5.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V16.5.md",
+          "gitBlobSha": "e3b594f1aa636bfd9aa76993288801cf6f4f582c",
+          "sha256": "d90002587890f5a8e3185123564fdb53c85097d9c6dec681511f0ea1028c347d"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V17.1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V17.1.md",
+          "gitBlobSha": "df211066112c894a2f015a708c416c63025f4e5c",
+          "sha256": "46b840788bbac1cab168ad1bcd085f5599273e8c345d5fb9398a1921a5a4a076"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V17.2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V17.2.md",
+          "gitBlobSha": "eea443793c8b22a02df22401e8233f1803a145bc",
+          "sha256": "0549cbc4fe5462489667fbd5c606a4dd3ba7efcc11d640b464641bee1953d6d5"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V17.3.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V17.3.md",
+          "gitBlobSha": "cdc289342038a378a2aaa64e08806b92854f6540",
+          "sha256": "05bf0389ce32e38453d45f4b55ad43b1a1e6bf753fb421f9b98a71629832b803"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V2.1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V2.1.md",
+          "gitBlobSha": "66bd1f527f6e0b760fef8c8b26e2a267d3015f5c",
+          "sha256": "460b7578d22c9845e4ab678291ff2623822fd57369834546f2b7c49d37f94fdb"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V2.2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V2.2.md",
+          "gitBlobSha": "adaa02b67d4b43ff9d42924ce5ba22b817ed10b3",
+          "sha256": "d830652c6d89f76e3111767105c9e8a37406573ca6aec6c45ced945f37a95e5f"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V2.3.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V2.3.md",
+          "gitBlobSha": "d659e661360f04a1eaa70db540fb6754c76df3a5",
+          "sha256": "551c327417289eb567e86067da51abc468ca968d6d6ed81d950ea862980c45d8"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V2.4.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V2.4.md",
+          "gitBlobSha": "2a3bb915c3e923f1635fcd8029acc0fcec6b4f9c",
+          "sha256": "7515269608d1542f29d3b9cbe9fe6a361eb9d50efbc262a030cea73c27521547"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V3.1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V3.1.md",
+          "gitBlobSha": "e70631648220d62d56a7028741f59c6fc7c75edc",
+          "sha256": "83134960ce5b27cc2a8d5c890dd9d5ca75977e9dd241706b98768bf4ac07ddf7"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V3.2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V3.2.md",
+          "gitBlobSha": "640a5559b1a3bcd3fa7ed5cbe229bd9a26fbb1da",
+          "sha256": "296527cb259684d3b1dc02124876c84335c64dfe5a1c5879e97bee8e7f5b7d2a"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V3.3.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V3.3.md",
+          "gitBlobSha": "45d3e918539797583906f33db8145bf914dbb336",
+          "sha256": "013c33dc75818705c18b27a36916b84b81174c6aee9754236947b5ed938c93bf"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V3.4.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V3.4.md",
+          "gitBlobSha": "53880349ec0abf39f364b2575fd8cef62b5b5ca3",
+          "sha256": "99a99c4fbda660322b3e79a4ce89b393e3167fa18b12dcd834b459a3cf1ca67d"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V3.5.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V3.5.md",
+          "gitBlobSha": "07922a4c11733fa3f3ccdd991336f79f9938a5b8",
+          "sha256": "a734efa08c8b009a3a42522c454c73fa7629bd20992014787e802032f0f2bc85"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V3.6.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V3.6.md",
+          "gitBlobSha": "168fc9f3c87acacd332b21f660e77ec7ec5c4167",
+          "sha256": "aefcfe5eb5ddf25ea211838047bb8372b1228cb0fba2abea98c3b831d085ea41"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V3.7.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V3.7.md",
+          "gitBlobSha": "9b17490c67a7744e543e0df833922e9b2aeb8af1",
+          "sha256": "47f58e0202a4374dd48faa9615c39bad884d0ba7e077c82fa71870962131c5b8"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V4.1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V4.1.md",
+          "gitBlobSha": "fc482768be750f38bc857d11490bee7bef555987",
+          "sha256": "1e196339194f33fc0e2572ee27b5109e85cc8157d8a2315bc6300d2dfe625a9d"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V4.2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V4.2.md",
+          "gitBlobSha": "b2a6ba882ab23daca5023835a943d70664f37eb0",
+          "sha256": "48864333a575737b00960bf5372ec3aff9fc5e3be20d866fcce589badc54fcbd"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V4.3.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V4.3.md",
+          "gitBlobSha": "de40cd18a5bb9371b9a156d155ad99fc14b0f1fd",
+          "sha256": "6b96714cb6f522ea42e1b6704fde4828eaedd2cd4a750e5d1e9541033f797a29"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V4.4.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V4.4.md",
+          "gitBlobSha": "dc1654f7206726c316ab7db371bef204d62a4671",
+          "sha256": "052abf6bd10740a837a9746e27158ed3c037bb8cb40438b4f0e1e483c677452d"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V5.1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V5.1.md",
+          "gitBlobSha": "5fd7db0d6ba975ced7f4274a86f844b2110ddec0",
+          "sha256": "1736911dcd5eb2cefa32ad02b69eed20c25e14c78d10810f1e547e8ae8d4c45e"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V5.2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V5.2.md",
+          "gitBlobSha": "200c6b71e5a442287fd8aafd6a31d979104fe155",
+          "sha256": "47f017240b3eb59804712a60cc8dece5b59bc3376692ec7be69532176f46558f"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V5.3.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V5.3.md",
+          "gitBlobSha": "abd157c5208447e12eb6d16d9b05cd74e052ce93",
+          "sha256": "5bf5687d843d9fa7f82c8900f0c07bfa066523ce8225d190eeb69467176c90e4"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V5.4.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V5.4.md",
+          "gitBlobSha": "5bff6a7cd0ead4e862c2ac25c1d80db349bc0769",
+          "sha256": "ea02be272a688c93b073e4a2732873a7db5db54c902f3316a1fe013dafbffd52"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V6.1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V6.1.md",
+          "gitBlobSha": "a9d0e1fbdbd96a504fdcfd36da56b55b16ef3afd",
+          "sha256": "1deef19fbbb65e7b5e6bcf40f9209c3e851dd5a1eb39346ab1634379aa8e38c8"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V6.2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V6.2.md",
+          "gitBlobSha": "40925074c8bf81cd7aa7a532a4020eabbc48e5c9",
+          "sha256": "3ad0ec5deed0e10eb6c16941b19b4d962aac5ef5f6470e0f65e5c184a9ec4e55"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V6.3.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V6.3.md",
+          "gitBlobSha": "85abb021999dad27f7eac7a1372629c537b8e886",
+          "sha256": "8a6889967b5e711ebc13f1b6967398d50242cb6b0278faa518bd84424c7d9322"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V6.4.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V6.4.md",
+          "gitBlobSha": "fb3706b83ac5e628cf1572153457e281171b0b09",
+          "sha256": "084df37c2ef952bd862c549eee3de42605b2963fd38dea4f78ad9c80ec139e26"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V6.5.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V6.5.md",
+          "gitBlobSha": "8a6027ef3bc4cf5d23d7e8acd32a277706591d90",
+          "sha256": "a4f8c29e05d259c858dd5e349d12dce6c5af256a97a05d2b87dc1ecb8145568f"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V6.6.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V6.6.md",
+          "gitBlobSha": "6d77cf0e5d72c57570e3c3cfbdf7b7ded2bb9de9",
+          "sha256": "d2053e380ab54650c2ec1899cde8844897af8a08907d835138c48f19c0625f64"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V6.7.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V6.7.md",
+          "gitBlobSha": "141a53d9cdafd79ddd13338663db76e81dd71a4b",
+          "sha256": "20cb1636bdc4ca7a006517accacd84fd50a2b6b7dceecb9ed8d0c26c98c6f25d"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V6.8.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V6.8.md",
+          "gitBlobSha": "37e0535eaaa5889676dc7ec04f0b44edab42186b",
+          "sha256": "83132a35fcf37379b371c98bd935bfa8401026acca4d041cab2b6508e0c5ee49"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V7.1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V7.1.md",
+          "gitBlobSha": "dafbaed8baae8d736f9d405136cfb621af3fced0",
+          "sha256": "921808630ce896942fae2bc2f3fc84b403cbc6dc96d60e4c02a811efeec0fd51"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V7.2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V7.2.md",
+          "gitBlobSha": "33f9ae3951c678f9d06ad543f9dc42d1e48e6e6f",
+          "sha256": "0158402c36ab13aaed21fa34cd24209dcd8c36a56b7598261418defab0b3fe04"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V7.3.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V7.3.md",
+          "gitBlobSha": "4c1febe944a0d756c3930ab155715fe4cffd5116",
+          "sha256": "9914052d98392042d10d3fcb762ff8555bb9cc3edb569c848bd5480bd02c0dfe"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V7.4.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V7.4.md",
+          "gitBlobSha": "ddaa5a5dcd12e2479262d4963524402297c17206",
+          "sha256": "b0263e5464458187b5ef40c781648948c86dd199be4a6639598b6b71eeea5b8f"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V7.5.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V7.5.md",
+          "gitBlobSha": "4decbb3344aa25bfdc7dcbf688a9484a6bb78921",
+          "sha256": "3f2a0ec8d32548256b9cfabaa620abe08b8c0719106bffc2a2f13be91fe68178"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V7.6.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V7.6.md",
+          "gitBlobSha": "056a263b7b767b8fec2c170ad90f0b8810bb995e",
+          "sha256": "0afcde224736d964d92f0c5805063c414626dd54d31f3add8c9ec9d53e5c95ae"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V8.1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V8.1.md",
+          "gitBlobSha": "308547deeb05a19bb59822fafd3ce00bcfd48504",
+          "sha256": "eed00016f68a96c7ce082946d7351fd98884d46531bef5544ec505a973fb6e60"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V8.2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V8.2.md",
+          "gitBlobSha": "54f7a36cb230756564ebb52cdb60fb9ee6ca4aa4",
+          "sha256": "805f45abee4b3f43b7165e29a7ac607bf7cccf66e65463ebebd375ef320b358f"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V8.3.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V8.3.md",
+          "gitBlobSha": "066a2efb211a9496d0d397d1d13bbb42f7b3a7bf",
+          "sha256": "a22e604dd151c52e5007a198addab9494932334bac07d4d8de0ec955be98d736"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V8.4.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V8.4.md",
+          "gitBlobSha": "6b8686a1c4fce73c87731f3c299a0a58a1d32477",
+          "sha256": "32011f754224312964aaecbbd0c067c6bb1327657bc9d6c5db05ab06b799b13f"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V9.1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V9.1.md",
+          "gitBlobSha": "c26209f3f731e6f9ebbf4f6d1903d5976b24e654",
+          "sha256": "ab79957174203a6021ea738d8d72fcf90f30585ba9086dd5b3990ab994ea1bae"
+        },
+        {
+          "source": "plugins/code-security-skills/data/asvs/V9.2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/asvs/V9.2.md",
+          "gitBlobSha": "f27bbbea5952c6e4c798ebd912cacc3e4d4825f8",
+          "sha256": "a141cc4e1f8ed950d409826741750715477082c5a0b28e7eb07746132fe9f4e7"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/README.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/README.md",
+          "gitBlobSha": "c488725f03ee8ff00edb2c0126926f0c3d037afe",
+          "sha256": "a79907b595d9d986f241c0a2758809c5071a76af911366683903f88fd2290af7"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S1.1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S1.1.md",
+          "gitBlobSha": "8fca5b76b8fd1c31e7aa338bda91597e65216881",
+          "sha256": "e2aa9a4d4fed89701703737e63c07a626e69a989b602f410896138adfb229b95"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S1.2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S1.2.md",
+          "gitBlobSha": "c9e84680616be6674e9787e4bcce3776f238659b",
+          "sha256": "0dc9ef1425ee34df84c6d95692ef132017d7d23b35591a2285483a5e7dc8e4c2"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S2.1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S2.1.md",
+          "gitBlobSha": "e025b47bdaf69f2f2d143fc12e8d8c547f6e250b",
+          "sha256": "af2a9e265a8a433ef3244c4e46998ad0777009f64a5e30f7bf5364e4dc562a13"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S2.2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S2.2.md",
+          "gitBlobSha": "d3b85064e53e968b78d4a7b5df1182dddb1eb157",
+          "sha256": "1841c267c39e308076e5f91080213b7a2598fb7a66e66789afe2385d5b59279d"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S2.3.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S2.3.md",
+          "gitBlobSha": "c219d9d568c375bb24347ad9e73724833c86e3f2",
+          "sha256": "fc013f42a5dcf6ae90b8a1e339bfe1fac1ad659ca7b7fd1f075e76acf5092a53"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S2.4.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S2.4.md",
+          "gitBlobSha": "caa156264a433510dd6a648626bc88bbda056f76",
+          "sha256": "1d2fd35ca6b32915579f75f706523f953ccce633f5e45b4a6d8a08a0f3be853c"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S2.5.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S2.5.md",
+          "gitBlobSha": "aa302d89354cbad0d17855ab1a9d38c736a985e5",
+          "sha256": "482c3beb2c7a7c653c423e39196e06b5c9e8e9ef79a46f091c689c9e4dcd2fbc"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S2.6.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S2.6.md",
+          "gitBlobSha": "8fa2c0a5fd150fd98a7a06a33b826c9e09925044",
+          "sha256": "255392c2f7f06dc35d31ad5e37df3a4277f20d6bf710b92ad43e8eb83fd06710"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S3.1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S3.1.md",
+          "gitBlobSha": "53d00d5b7a3e6c3b29969f99796331b516419144",
+          "sha256": "cdfb13ae95de8c112b13ffd4c7f537a6b588171b8d7cf11385e433b13306ba3c"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S3.2.1.1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S3.2.1.1.md",
+          "gitBlobSha": "d63bedff1688ce38682912b161d1aa5b6a60d73b",
+          "sha256": "3a9cea5215090d205b46e9b1523184fbd84963db51fb30e7f26509ab639acf0e"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S3.2.1.2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S3.2.1.2.md",
+          "gitBlobSha": "508f3854fef2c0d8c2c14423ee154ba9df401afc",
+          "sha256": "f02e7dd5877b2b6175c597e99f0b8b3546fc7988e8e7b8d0e3c9021c26b4613f"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S3.2.1.3.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S3.2.1.3.md",
+          "gitBlobSha": "726190ba39dca283d51976e1d899c01d96bd882b",
+          "sha256": "bce74cb0509cf6f724605438c1b4616f471399ccfe52bd8b0ab1566eaef9d3fe"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S3.2.1.4.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S3.2.1.4.md",
+          "gitBlobSha": "a9cd2a56e00dc2951eea9469533577a09bb49c46",
+          "sha256": "7409ad85f88ed86eb45bc29e764c833ed47b66daa905deac43cc1b4789f11250"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S3.2.1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S3.2.1.md",
+          "gitBlobSha": "9c9da473f1614fd0a7f3883a61711ce2352e368d",
+          "sha256": "a330793ad44251cff87315b05b0df8e68489436dd15d1e919fa2d7105a05832b"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S3.2.2.1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S3.2.2.1.md",
+          "gitBlobSha": "2fa6de4fce412110f47e3d8f7db21bfdf5410af0",
+          "sha256": "587f6f186e829ff21c643655c5a2e5fb524a65f0f0b1dc3c8e6b03682aec6bb9"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S3.2.2.2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S3.2.2.2.md",
+          "gitBlobSha": "d9edac5e4dc9b2a8b2b4b62e72c1bbf3fe0ffbdb",
+          "sha256": "8a7d0a03467ba58c3b6aa706fa06a2651f82b1641f6100aa4ca56ce5205f98a0"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S3.2.2.3.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S3.2.2.3.md",
+          "gitBlobSha": "d97eb5055d77633823e8ffca9620510cb675d670",
+          "sha256": "6af3c3a4b41def0b55c4d163195a80fea9ee49a254f3ab015f4bafeb046e2b2a"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S3.2.2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S3.2.2.md",
+          "gitBlobSha": "80fe2177d2a47fe1da84f6a78ae2960032afef27",
+          "sha256": "1b0cfed2ab1c7a06dec2ea214b1f9cf55247f61471dc7be1d1e8634b92472612"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S3.2.3.1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S3.2.3.1.md",
+          "gitBlobSha": "dd00dc73c6c88b332f18aa189350f6ba703f5098",
+          "sha256": "889ba14c5cb6caf718d30ae01a6b068fa2bcb29fa03c46d650045134e4777fd6"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S3.2.3.2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S3.2.3.2.md",
+          "gitBlobSha": "d8bbbdae598479d510a0a129596d013a0ae3a993",
+          "sha256": "d932fc5a0ff3b8d32d12bb96bbddeb8edef33d7af80ca36f5253f0ac7767da78"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S3.2.3.3.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S3.2.3.3.md",
+          "gitBlobSha": "4ea03bf33f362d7898b83440163d0e19a73c309a",
+          "sha256": "433d0a5f76458e2d8b244c2f68ab9d1d4ef9b82cccf63c040ca0ed84964dc362"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S3.2.3.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S3.2.3.md",
+          "gitBlobSha": "14a2d54836426a716d9aa6fc1b0afaf85cc6b36f",
+          "sha256": "c237e8ba508848fd4d6275e4196f00a5ddb5084f8384ae989249acfc6beafd00"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S3.2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S3.2.md",
+          "gitBlobSha": "57bc041571e5914bc3c44680ae01a10e3ec8b990",
+          "sha256": "4bdc028e703d5c73d0e9ddcc3b03772dd1458c39cacbbf988bcdde33128fd8d2"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S4.1.1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S4.1.1.md",
+          "gitBlobSha": "08898d61b74522ef04d2b2be52356ca9995fb080",
+          "sha256": "5a52c4d44a78026b10500abb04c9cf4b07f722aa5efa9fd2b309c6733f868df2"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S4.1.2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S4.1.2.md",
+          "gitBlobSha": "f422045d1f1e781af170fe4bf931d9dcaf6af8bb",
+          "sha256": "5fbc29995c695f68600ab7c5d115e2bb078c47001fa6363d36f63d9a18dfb470"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S4.1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S4.1.md",
+          "gitBlobSha": "d3aa8700ae0439eee400e3788dd70bcebecd1b5d",
+          "sha256": "be7f23f17d85f26ee09804fa68b8c4db6d94f94f3bb1e1d2d6d6e2d5e70ccc77"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S4.2.1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S4.2.1.md",
+          "gitBlobSha": "27626c861b5ce0a625b5c3f8c800fedcc79dda33",
+          "sha256": "996425d0044f472ac9643114a4e853e94b0e01af1f1c1cc894bfb0afc7e9607d"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S4.2.2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S4.2.2.md",
+          "gitBlobSha": "d8058be1d4daa7975305261673f58f5e47edcf8e",
+          "sha256": "0ee749e6017da65fad3ba6ef42774463060ca90b7c753846b0acb603f293d9df"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S4.2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S4.2.md",
+          "gitBlobSha": "e1c0f8694753aac3d54abcea12df2764b4ee3022",
+          "sha256": "0a1c35fad0c69521e863e76863b036004d411422593eb4ba43ae76a85b162372"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S4.3.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S4.3.md",
+          "gitBlobSha": "c1cbc78670b0f7784184c6819ea499f038a76704",
+          "sha256": "46dcbec8d330d16e03e261ac1e40e771a51b768bc9d455baad27dca5b0041115"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S4.4.1.1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S4.4.1.1.md",
+          "gitBlobSha": "37c7d2936dd8b249a2f52f2aa7c6d7cec15ed99f",
+          "sha256": "46399f841b88dba8c34ec4b236dec2eade745c1172c09c913fb9a23641e77c64"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S4.4.1.2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S4.4.1.2.md",
+          "gitBlobSha": "e5b65ddcfc7e8ba5a3c9222c87804cef44a4dfcc",
+          "sha256": "92cf17a2526a212fa455f7964d0067070c59228d519c1a2fbf69a0f160092e90"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S4.4.1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S4.4.1.md",
+          "gitBlobSha": "a3cc087ecc45ca000c953566cb15b1864a579d34",
+          "sha256": "ab2b21384bc0403553a91894e31f5198aebe47cef636574051ab5cafba3aa83f"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S4.4.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S4.4.md",
+          "gitBlobSha": "4b33a1c198b243019ec0a8d34f50cf3fb99a130e",
+          "sha256": "a03eddb602a916d4415a6bf66dd36069e2e37251b4461648d8f7a647da46ae2d"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S4.5.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S4.5.md",
+          "gitBlobSha": "8d0ecdee3024153fb4313b8061a903b71f131371",
+          "sha256": "a4fa2e4930cf325af5def11707bf4666b1a7a4e526283307630b5a608e122458"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S4.6.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S4.6.md",
+          "gitBlobSha": "a63d7401b9840eeeb661264304a2df82f07e3dc1",
+          "sha256": "c460b99a2b5b1c87f8c1839e6edcd5d2ff3f3494d1683616deb09376fe00c919"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S5.1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S5.1.md",
+          "gitBlobSha": "9c5af216c27a925e2d78512808c4a8ae2257c9a2",
+          "sha256": "a07c5edbc9406fe1d2b190f1146c096ffece4cc6a4c9cc69732809b5e3e55611"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S5.2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S5.2.md",
+          "gitBlobSha": "d75bbd12cfc66b4623ef8cf72db8cbc43938bbad",
+          "sha256": "3c712a8ba5768794e0fc7d6890f9a66f080daf4c0daef7fd34dfb8984c98d62d"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S5.3.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S5.3.md",
+          "gitBlobSha": "4b7c4d13c8aade471f5a829b4c5c9d6b443f6220",
+          "sha256": "544a863173015f3eb7b3bec2406ab72c62d50f2e88888f2b31b2e02e0a781cc0"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S6.1.1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S6.1.1.md",
+          "gitBlobSha": "b2ba9be404b46e1f702300d29fcf44581e9cf510",
+          "sha256": "05cf0df710ce013d52cff3bb792d0825ef738e340e3e9ef91296a4d5f699c165"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S6.1.2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S6.1.2.md",
+          "gitBlobSha": "b3d25e85dc70499c55cff55a6a789ec5d135d151",
+          "sha256": "b89d16faac97f7be6983bc5097f616c454964f200f54898b84238083606a794e"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S6.1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S6.1.md",
+          "gitBlobSha": "991de90f51811ce71257ed4ce01f2aa0db5717e0",
+          "sha256": "923eb46679d354071869a2ee8cdd08ad0d260c61815aa24e233da1f7104fc595"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S6.2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S6.2.md",
+          "gitBlobSha": "e355155db4578a0773588b82d3607cb019b7c550",
+          "sha256": "3c345529067edd4f4bb9a126f175f312f90c239ab9dba86b33795c8975823ad2"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S7.1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S7.1.md",
+          "gitBlobSha": "552748e91ddd519bbc69f00da5d1618928725e93",
+          "sha256": "5442e237f2303b41a2ea8e710c68df26cb1aca41023eb65bad21b73b482b4cd4"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S7.2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S7.2.md",
+          "gitBlobSha": "18829b8d6e864bd126322ae1a2b026700ade032f",
+          "sha256": "dff60819314c3504d07aa34c553cde12c40d4f8310c773f1d24bd480a155abea"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S7.3.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S7.3.md",
+          "gitBlobSha": "7800ba3bfbd85c322bd6ec94aa8d7b6d250d0119",
+          "sha256": "607f9938dba46db03782ab9d5e01f5e91f379e8c632c7484ea6ba5e3b71cddaa"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S7.4.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S7.4.md",
+          "gitBlobSha": "833243a35b902e8e47e82572ecb76025634486bc",
+          "sha256": "d917cdc826005ad912f622d8cf6ff8a9b7534ee33d023f6ec43e053c1cdebf04"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/S8.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/S8.md",
+          "gitBlobSha": "d7c8d54750796cba091e62a789b82d3559745a39",
+          "sha256": "ce1e70b418c0b71541e7c144448dee84b9cc229dd93511faa4730a43d0c5cc8b"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/SA.1.1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/SA.1.1.md",
+          "gitBlobSha": "1d88eaa459dd6421b3b7c912fc63c4c8a7151e31",
+          "sha256": "ec14d2b75ac0eee6f4d463e1a55f6e9f1340d098ae77e99779c9b97169a679f9"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/SA.1.2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/SA.1.2.md",
+          "gitBlobSha": "5c44732b85a5de580efd1f084162c8e20891cf2a",
+          "sha256": "914b747fcd0e2e5bb8f2ab1ca5dffe76584c732bc2e69fc16c8f9a60ac4cd03e"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/SA.1.3.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/SA.1.3.md",
+          "gitBlobSha": "0a2ee818acb2fb45a54e6d9235b1c1d734e2d7fe",
+          "sha256": "bf3beab11e7bbc0b243b311f4f24b7e9c165a1de068401416a6c6da520da49ef"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/SA.1.4.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/SA.1.4.md",
+          "gitBlobSha": "94b7805c35587c0c6d4b57e649fccf0a29bc07cf",
+          "sha256": "f8369c8ba052ed237929b507ffa6dfb9748ecf5a1ede97f36c4ade493155566a"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/SA.1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/SA.1.md",
+          "gitBlobSha": "96c1bc6b4960d27e314e91e00c1e3d54054cc621",
+          "sha256": "f5749835ffc1d8bdde7dadc1f3094d9dc8d77d36a5fff7cd1d6fb8763ac227e2"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/SA.2.1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/SA.2.1.md",
+          "gitBlobSha": "24299e0fbfe1e8412be29533f55406b51d8c2360",
+          "sha256": "6c0c0dd03c835ef01209147c902e081ae8489993aeadf0b85c1a9ca534489470"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/SA.2.2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/SA.2.2.md",
+          "gitBlobSha": "f0d0d525f9b5b8da229895c684a30b523ed2535f",
+          "sha256": "b13ff8c5041cd5a337a5aa3e8e6ad57af92c84bd29a02cd23d0e10aa6b078381"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/SA.2.3.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/SA.2.3.md",
+          "gitBlobSha": "3c0d618ed14fefe3327bc85bee1035f50e2c1910",
+          "sha256": "c073e77bd0ecc7b4f95620ee301d27e5cc54c655f4ffc377abbeec653dc090a7"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/SA.2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/SA.2.md",
+          "gitBlobSha": "b68340e6596e85e1410c3eeddc86ea266b6f2a03",
+          "sha256": "9dce80f05f08b96d8731547a918faddc1eabc8b6163fad3edd808b7a58f6ef02"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/SA.3.1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/SA.3.1.md",
+          "gitBlobSha": "bc6bdfa26c0aa00a13cc05611b29c13ab609514f",
+          "sha256": "508adee2996fc26e6babb522b3f0944ab7ec681f24931aa560cd2c6979af3184"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/SA.3.2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/SA.3.2.md",
+          "gitBlobSha": "529af0d63d928bfbd22f95057aba285c9bad26df",
+          "sha256": "58fc97986f4077b520018856d72d0aa01d90d54cf62a58677bb0d6b0584e466e"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/SA.3.3.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/SA.3.3.md",
+          "gitBlobSha": "d03d8cdbf9e435b3ad86421e76720d26770aa30f",
+          "sha256": "db8cb767808a8b3b1587618285ff05ce619bb5eb9f700c7f8d1188c765c066b9"
+        },
+        {
+          "source": "plugins/code-security-skills/data/fiasse/SA.3.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/fiasse/SA.3.md",
+          "gitBlobSha": "caa65d64426ce51c248f5b1ec314046686921b38",
+          "sha256": "65fcd0b1883d39c37ce8eef2af79957e3c77c2d41a2666e73373e6c9f982289e"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0007.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0007.md",
+          "gitBlobSha": "d8e25ae1ad4e8ac88f1c6b6ac3042d6018bb03f9",
+          "sha256": "8ab97847ac6020f464512fe4daa9f8012a290eb7f38f77a3e863e364f5165f19"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0011.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0011.md",
+          "gitBlobSha": "4b6fae2df45573e4b5f45ae142de8d40526502c9",
+          "sha256": "7947683899983d55ce46bb58518a72d5800188f716d29a8b414f458c56cad923"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0026.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0026.md",
+          "gitBlobSha": "673123d1320184c8ea86a5b91afbc2d41ab0a01e",
+          "sha256": "78ea1a627361d2417cd8e2f54974e8cad06be5fb038e52c8daea5871d9dee81f"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0027.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0027.md",
+          "gitBlobSha": "70e9bd24d9a6c77d112f43a4ce1bd617ab933677",
+          "sha256": "2a6ae4e93400047d1607a4995032c41175721369bf3f40fdfe7b2485204893de"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0028.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0028.md",
+          "gitBlobSha": "287e7408f69c5288e189994ec437262574adef04",
+          "sha256": "f6b7bb2ead5cbb9c07b2e957b63edc71bc7160874acc741e9cfe48d7cdd8ed78"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0029.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0029.md",
+          "gitBlobSha": "354861897bf53b7afc42f91f93cca26d4771c60e",
+          "sha256": "c93eaf779189ab78a61c441e069f4ac2dc031c54664cda462b09bf76ebef777e"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0030.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0030.md",
+          "gitBlobSha": "beb202415c04669ad5227960c18488dcde3104c7",
+          "sha256": "949aaf962a58e4977d18379bfc5a532794de8e7766b4298aa3aee6fb134af56d"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0031.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0031.md",
+          "gitBlobSha": "a9a02acb4ece4dec1d2910f03c85556e99c6cb19",
+          "sha256": "1c407c7c3ed2e2cdab5d71a3e9b8f727016437d041c1b54f9cc5f156affec2b9"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0036.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0036.md",
+          "gitBlobSha": "4910c53a80c0a3bdc580f3e2be740431effd7b3b",
+          "sha256": "3d7a8670112fe80b1c9f3bda99d34a071b4a6d24147d180175f0302572c3a4db"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0043.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0043.md",
+          "gitBlobSha": "2e49183db3ca1dfa72bad0a2b3bebab21428f58d",
+          "sha256": "778b03c5d8d185b8845c5e493c4bdb777337d967587f585ea4758fd9a1099cce"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0046.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0046.md",
+          "gitBlobSha": "a7d5a90e7ac7e97c694b01afa322839b6aed2485",
+          "sha256": "9b439034f0d1c50f082957cc6c9926c5d1350e1fc47cdd26dbf07654d461fcaf"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0047.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0047.md",
+          "gitBlobSha": "4a9c453d8a31f3b18c8caf2d233df6232b0281bf",
+          "sha256": "5024807197e05084734bce06dd78bd5991bcecfa53f8a966b003044398fb2c0d"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0048.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0048.md",
+          "gitBlobSha": "92998c695935743238e3893caa528655853b222b",
+          "sha256": "62680a8d0093bd714001c8be2d213683fbbd567b7eeeb96d19eb8a8733b526b6"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0049.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0049.md",
+          "gitBlobSha": "b74ebeff50d61174e6500f633f06a224d7a6791c",
+          "sha256": "6ac183ad78e865c81dc62c94e56adfca1fd03bedb39df28ed6e9a3625f758972"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0051.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0051.md",
+          "gitBlobSha": "c1dd4fe12dea7c19166cd77e216019474957d14e",
+          "sha256": "a40d7da15f9119cd6462d1ca32db0b820bb41abd473394b04d6d2930c955c824"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0056.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0056.md",
+          "gitBlobSha": "35a0bef3c710355c93993f7da2d12ed0debfb4ec",
+          "sha256": "1e2dd3615bc68a651c0b23fb97db5d882c9b72cf4e79a92026d7af0b5d88f7b0"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0060.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0060.md",
+          "gitBlobSha": "3ac88f5abcbc911c89ddc10a1ec89a4786536858",
+          "sha256": "b2b6aaeabcd6133174b5b49b3fd76886d51dc7c131f82eb0550fbe0c1d400d16"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0067.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0067.md",
+          "gitBlobSha": "64083c5641eb18ef738beba4abf934741e566b49",
+          "sha256": "81d7062f4c550fbf29346d2054685eb92f65169e4fb9d3a6e53137606e35b5dd"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0068.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0068.md",
+          "gitBlobSha": "032482a78659a327156f59492ffb322255158295",
+          "sha256": "dc09cfbf7022088f7ba5f823aec7cc93d97b943ef7795bedcab7b59ef09447d0"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0069.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0069.md",
+          "gitBlobSha": "f349f59cfcaaecfd2da3c19841748e34dc1d1b1b",
+          "sha256": "318110427b5636699443b3b87c31af9027c6fb271b8879dce26eb98c50498d2b"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0070.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0070.md",
+          "gitBlobSha": "5a2f73e0389c3af7a6785fe98e4b2542a57a7be0",
+          "sha256": "84ce59dafea7627c5d495931b0645dd7df956a8fed4f91666885fae519e08f54"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0071.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0071.md",
+          "gitBlobSha": "a427e19445669104907a7bfe9725166bb24de32f",
+          "sha256": "e0061efcf74bb7e9f6337e0ee6c533be8c378ed360e847e742c50ae860816675"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0072.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0072.md",
+          "gitBlobSha": "217942655f39ce3f47b01ca0876f0a5e811e683a",
+          "sha256": "78ac8d5e3a4a1fa1ecd39778e11649731c5a3f32c86e35061ed5eca51da5fc02"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0075.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0075.md",
+          "gitBlobSha": "d4a2473d84dba7ce1293a179f6bb0411a9b95c85",
+          "sha256": "246a17c2aeb0bfc5d839f856ecb3ab5abed1712ce626336d878dc6c3da50a20c"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0078.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0078.md",
+          "gitBlobSha": "e1aaf613a8f773aaf9302cadef599740af755c13",
+          "sha256": "10c2a69c761d0f4b366e03ed349af3463d4b512c160769aa2c841a95114dd77f"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0079.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0079.md",
+          "gitBlobSha": "44011e3420172a5d9cb3edf25ca7e8f641e97513",
+          "sha256": "03573460dd5db6cbdac784602433ebdf1580a3dee2133e3e34fbcc2c6e40c0a7"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0080.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0080.md",
+          "gitBlobSha": "519b4e0ba1e2bdc5e280e4e8dd2287d874cdccf2",
+          "sha256": "cf5752a67ff8cc9495010fb4c8eb92e6b564bb6f05045f19e64dd0c3b152bd5c"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0084.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0084.md",
+          "gitBlobSha": "70e30971c7e895f7e206f8519c4a2247a85b5f3f",
+          "sha256": "c7b33f8e06c22e3e2f22c3733afbb0aca2cfa3aa18bfe41e15414a73c87584af"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0086.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0086.md",
+          "gitBlobSha": "f19a1207336d7cafcb34ea981e4b0e78405d3759",
+          "sha256": "e02a4f0a96a201715c06f09279f0849bc34b67be94cec1ea7e15ee25b76a29cb"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0089.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0089.md",
+          "gitBlobSha": "3ce258fa8f2e0b9da3061aba1499799de8f4bd1f",
+          "sha256": "4f2888c05e1648b4fffd307e9f1a5272e7b81d34e004e96d53aca7914ab0bd46"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0090.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0090.md",
+          "gitBlobSha": "baa53e026a915af8ae8c74d7177f7def7ebcd827",
+          "sha256": "659d9db58ca0d908d845569db4e3f273df006a6b4a9ae5eb12c9b1ada41544b5"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0091.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0091.md",
+          "gitBlobSha": "43fa3981fcbbc119af949e9f40d060f9a34ba993",
+          "sha256": "ec4ee3394469ba8eb42e2308dc7e36fdd5cc0941ab404c92b21f5c75410c75fc"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0092.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0092.md",
+          "gitBlobSha": "df796ff81af418b56d7ad99e3eccfa166c587760",
+          "sha256": "2107c44d6b260b05705b345c439206726fa0def358fab347488bf6c6749913a5"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0093.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0093.md",
+          "gitBlobSha": "394b8ffff893adaf19f48e86ec5973ad42a54443",
+          "sha256": "917179fb286ac43c7fe87f46c7c3a2a5e237f78b440b90d6e0129a283ce4f54c"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0200.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0200.md",
+          "gitBlobSha": "6b36c178e1d9e105a5abf50627ecd3b036966f47",
+          "sha256": "30dc552a12d1c19ae487ce5458f73d86790eccf8369c49790af430b1df8a7337"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0201.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0201.md",
+          "gitBlobSha": "d5d27dc7de250024967476015009ae50ab34cc56",
+          "sha256": "ba21f48aeeb2267cc754682487439e173d3c2dc366330a582e94f1c00596bcf0"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0202.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0202.md",
+          "gitBlobSha": "36d9b933bcaa21897189f171452aefc91f894954",
+          "sha256": "61e8fc6ffd8879f76b9099829cc84638c16ad8c0bfc6a38fe32d0cf34c6d3944"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0203.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0203.md",
+          "gitBlobSha": "ee23904c78d770c2e99ef5f5f9d18409b654b511",
+          "sha256": "ceeec41fc05015ae66002655fc019978de37390f4147d9990af857f7c8eb4b01"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0204.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0204.md",
+          "gitBlobSha": "55b99924296cdfffab3a71442a082785b65b1287",
+          "sha256": "5398380a39a721994c8b56657f98fcb64244f820f9bedf5693b4dd432cc5cdb2"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0205.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0205.md",
+          "gitBlobSha": "f8b3dbfaf2118ed3ce16e3a4fe6c8a63663604b5",
+          "sha256": "0835e2deb70fe294c357f9339fc01df5f3dbbc1de590fe1ee28dcf3fbb5dc00b"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0206.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0206.md",
+          "gitBlobSha": "c5575190994da65cb6442064e20610c490afa257",
+          "sha256": "7075799c5cb01c0e7f264e220c4a5897e86dd5d7f573ed1586441a68fa3ace46"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0207.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0207.md",
+          "gitBlobSha": "73fb43ba1fa3910a7ae5e0918b86608ac17e2701",
+          "sha256": "1a2a1b66697cb86c349e0419fa9f410fc95bf50e4a7ee31e964803db66bd23a2"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0209.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0209.md",
+          "gitBlobSha": "a7a3869a88a07f367704cfce913c7b41ac9583bd",
+          "sha256": "e4d6ca91545e88c8c5fe9dcde7ff221fc8d6c5ec0e985a798df5a3f4daddb570"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0210.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0210.md",
+          "gitBlobSha": "9448547de38c31e20835d4a2a5862be724bbdfcf",
+          "sha256": "818c358599d75951968c00f16d35a2dae205862a1d3bac3dec81ce0af9a6cac7"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0211.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0211.md",
+          "gitBlobSha": "40cc2db7fb3ccd9fa2b80a0f095e550a3dc79b9d",
+          "sha256": "063e4492cf67b8f755bccec7608f2d65ca260ad1039a69cc6e710fd911d374d9"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0212.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0212.md",
+          "gitBlobSha": "a9e77d4ad9e1218ec5f02fb562061eecae76fe1e",
+          "sha256": "0310dba6f0bb914b46d95fd22ca2919b3b080a04df4e513d21a9e1a1b77ab6c7"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0213.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0213.md",
+          "gitBlobSha": "2dd6053aaa6f29c0aedda2b45977b632bf1e4863",
+          "sha256": "89d9584414f9b2f98514f56dec5a26fd1f181f958ed533572852be929059d1a7"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0214.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0214.md",
+          "gitBlobSha": "1a517bf71496b257f6c876fd5433262693efeffb",
+          "sha256": "a790bf488ebf462156f9a9cd6fff3146f4061fbd49cab021ded9bfef96552837"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0215.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0215.md",
+          "gitBlobSha": "f15805c457ae6e461166174ec62dc1d91e296ad7",
+          "sha256": "c281ed719f829d8c769817d81bae703f3b444caf8d8fc536c23d13876daa887b"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0216.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0216.md",
+          "gitBlobSha": "99d2dfc84770ab2a9b716301a6fb1ff2e41ec75b",
+          "sha256": "579fe13d9a69bb53a50a91ec15135fb4ca91e8e67f53ac31f14290c8bc210421"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0217.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0217.md",
+          "gitBlobSha": "971ee1f6b859098d8f4d566af41e1daafa1363e1",
+          "sha256": "ebfbf4a42aac1d11a8c103754fea2e5655b0d71103a331b41df2915d537feaca"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0218.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0218.md",
+          "gitBlobSha": "4d82f5de863e825f31f575ce58765cc0addcefdf",
+          "sha256": "11ce508cb19bffcc90c685022c020270032cfa3c37168826bf5dee75fda6873d"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0219.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0219.md",
+          "gitBlobSha": "45c5fc63e78b6ce644973b502c97b7a97fcda7bb",
+          "sha256": "a614381b0c98b0ad65fbdee105c518dd2976a0bb5bdfb274ad54849c500776af"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0220.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0220.md",
+          "gitBlobSha": "5221072ea899eed652032cff3b60522cda9c8304",
+          "sha256": "7117b314fe5efa0a4f6cb22362a136564369e05e5abbf6fac88dd96edc6c11cf"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0221.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0221.md",
+          "gitBlobSha": "7874fc153544cc1f3730c9bfdb2172553549edc8",
+          "sha256": "60f16dc566b5b7a5c3b8c39c50581196ee3c7dcbdf15fdcf3bdf056b41e898c5"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0222.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0222.md",
+          "gitBlobSha": "c4a4cc20cbf1493415d89b666f37a1331564fd19",
+          "sha256": "43015d30dab0b1217d28455a8e7f32fddf3f72d993779da44d9a1438eac5f969"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0223.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0223.md",
+          "gitBlobSha": "c2d14c1cc789b6a97b90825053d46e7720c0de78",
+          "sha256": "c4834329d3658afb384d1f9329e4a668b3f41e8f48d17bc995b779d3f7b974fb"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0224.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0224.md",
+          "gitBlobSha": "2e9b1e035c768423a16ca88ad6a199e98b468dab",
+          "sha256": "790f6c0f7401f3314146325dfb00f7231aff6027fabef56a8f000b913d61550e"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0225.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0225.md",
+          "gitBlobSha": "31838e0f712cdf47e197f16dee753551be1340e7",
+          "sha256": "e7a7485376216f09f642d4e2b3483a8b163a88523577a1a31607450d70c5f334"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0226.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0226.md",
+          "gitBlobSha": "b29a935297f351f625ba4b1dc56dfc086f8a87c7",
+          "sha256": "c832fec7f319f85adda63f12d1c84a2dcba8aeb48700a346f8bcd4bd1caa98b1"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0227.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0227.md",
+          "gitBlobSha": "aad756aeb133e77f90e8706ba6915b44523f8372",
+          "sha256": "14804456bca260e3ca0c35fc1b826c95967f51fd3311ee2f2e79de077219105e"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0228.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0228.md",
+          "gitBlobSha": "e4a9542675d37d5479621dcf529662fdaaff6672",
+          "sha256": "2b83bc612f1b52e5b6cb87a0ff68b054e1617af57dd1ffe5478d12d489439d14"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0229.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0229.md",
+          "gitBlobSha": "8a088a5f8c8f90d741a81564acc63de9b38ab621",
+          "sha256": "d005da5ba8eaa94e99d627f1e83f43c5f732ead20d073ae46dd4ea682afdf03b"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0230.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0230.md",
+          "gitBlobSha": "b11a4f371d60d32899d9857f85b774e1c28af617",
+          "sha256": "135c77a97c37e09c23e55731923d0e4cf35ca4458ecd6fa4a55b79f4a2b2b399"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0231.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0231.md",
+          "gitBlobSha": "ea582d99ff103eb4d5fd7d661cd973659ccd9f61",
+          "sha256": "57685ee42b242e01cafb8a56a8090df85fb7b0f274beaab702436d5d9a6d0514"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0233.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0233.md",
+          "gitBlobSha": "cb657c8e548cba1666b444ed5c6e37a48631211e",
+          "sha256": "a15bcbe0c51d5364e21c95c2b860371055987b1ca3b396d2de45fc4df37d20b2"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0234.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0234.md",
+          "gitBlobSha": "03b2fef8adcdefdffcbe5be8188aff74de1286aa",
+          "sha256": "d1fe9aafdeeb28d2eeb1b50258fdcd8f1da6795e28df6933afd0474847d80e1a"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0235.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0235.md",
+          "gitBlobSha": "b6794244da281001cfef44017c1bb4c4b2adb01e",
+          "sha256": "9b59659ee3925576c0c363be7ac21066c778e947d420f86c762745766583a151"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0236.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0236.md",
+          "gitBlobSha": "08c50f360f57dd79f0477e1e84b6e3120888835d",
+          "sha256": "00dbc519968065136523990b42669739c4d2c4ab6eba08bb5778dfcc2174dda5"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0237.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0237.md",
+          "gitBlobSha": "38e5dd16daea5a846152118ee87af25015f4ebee",
+          "sha256": "bc77550b42c199fc3cd5c22f04f276c9058843311dd98b1f8182c10fb2028363"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0238.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0238.md",
+          "gitBlobSha": "c5ddccc6d381cfb2b03ce16191c8859c80950277",
+          "sha256": "73565bd3145115dc1b01dce14d71b8548e168e8f5bc0e49ba1f31d5286c6a7d4"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0239.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0239.md",
+          "gitBlobSha": "18e857e315b8080c8d44f9b2ebbef7c904d5be4f",
+          "sha256": "cf9684fab9cb607c6cfc97e87606fc8024c89e3684abe832308eb462e9f8c4f4"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0240.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0240.md",
+          "gitBlobSha": "4a0fc28ccd261a0ef4fc65b238d97034c0733742",
+          "sha256": "4e0cf36ce53ded9e2c08deae9927ecc242a4f808c22f5e8cd0acf612144fce95"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0241.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0241.md",
+          "gitBlobSha": "002d096070d8720839554cc3473e9e74e7c8ccb5",
+          "sha256": "93f703b5250d74647df2284162a7d42354473bcb5608adc9637850b499bcdaf7"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0242.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0242.md",
+          "gitBlobSha": "a00700123322c0c37ad8fe628d8d02253da3aef3",
+          "sha256": "31e9af9357e855233989fde70e0bfa9b0a346bed5815c48a3d2e50481da28aaa"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0243.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0243.md",
+          "gitBlobSha": "d8e2b7bb6e945eab88b0d94579f23aab08021cbe",
+          "sha256": "1572a4f2c419c0ebbb798e533eae4efa637d8f3ce956d4ad84dbd12d5c4a3137"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0244.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0244.md",
+          "gitBlobSha": "36b21bc9306ef73ec187553b97bc5e4a6f53ec57",
+          "sha256": "7d6377f4282553ef80b90bff830fa24a8ddff43ead4cf452f2ebea02721ed913"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0247.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0247.md",
+          "gitBlobSha": "46d7a478c62a89d4bcdd52da29c5e20c7342d93f",
+          "sha256": "2add55d3c72c5c19aa7adc20a669b7989341e768f8f9d62c6f3af52d5f9cfdc2"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0249.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0249.md",
+          "gitBlobSha": "99e46f107c1cb34921d255d70fa6f6080e205e12",
+          "sha256": "9d296bf6d37e748e26f591ae82d06298b7499eef5601e117950d00ec2368272a"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0250.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0250.md",
+          "gitBlobSha": "c22d954e89f79776b004f358d90a85b6888ee9a0",
+          "sha256": "b047d4d78fb269ec5601dcaf4725eeb4452a9920b5f008e30cfb7126c711a571"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0251.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0251.md",
+          "gitBlobSha": "e92358d5e137dd1f95d9ed4016bf6b9de39963ca",
+          "sha256": "90401a743436834170a075f91a9a3d914eeb88ff98e34338282faface1554451"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0252.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0252.md",
+          "gitBlobSha": "178624ed20b007a421c3218e97c07fecf35a809c",
+          "sha256": "660ad391b9ceedaf216d7dd4913206e4ac612ac1d6cd6fe10f0b04002885959d"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0253.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0253.md",
+          "gitBlobSha": "429e2826947990839a2730e9a57b4cc7152b4cfc",
+          "sha256": "1106e17a4144c77fd0d96950ba18b73b8718b3d6e4d02b24f4ac000d6b0bee5b"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0254.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0254.md",
+          "gitBlobSha": "daa575259520c1b99323b3dd3d81e2f967d6de7f",
+          "sha256": "9b0a8e2d7501effe343399c8bf55b50c039a3bedabb00b29ad98b0691b6e9cb2"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0255.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0255.md",
+          "gitBlobSha": "4ab839a6d01e30f92e32ecb183e3b86adeb4a185",
+          "sha256": "4ee4ca6937674baf8004136154dbf99cc1a2a00a8cd5b9427ab26ee60cb454bc"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0256.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0256.md",
+          "gitBlobSha": "4431e32d8aa3110480644e380125c2126df13845",
+          "sha256": "964dc3294d24039790de4517b470c8d951b0d2d5fcb098d6123a044bbbde3eb8"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0257.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0257.md",
+          "gitBlobSha": "7c1049cdae97080128d3c772cf5b985fdf97f067",
+          "sha256": "7182a188fa7ece26606dfcab43c3d402ebc19de9a01d351ecda9286f033a3deb"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0258.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0258.md",
+          "gitBlobSha": "145aa155de1ee0bde458898d9544d2b29f8aa2d7",
+          "sha256": "3cf93bfc270a48da726e660c3f33bc8436923edaed7ae5d11671f65f7c3eae9e"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0261.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0261.md",
+          "gitBlobSha": "0bc9e17eb13c0d6aada7f1e997d2c8d7620c7d14",
+          "sha256": "5b0d65bbe66ad854d8fa8dbd57a5905091d1f2c74fe9dd4cb951473db841cbbf"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0263.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0263.md",
+          "gitBlobSha": "b9dd3c2476563c0769e961995b74b11090985bb1",
+          "sha256": "c5ed51426a2f5422d0ccf4d3ce465153ea6f64eb29c5b4d94209cc38632f3102"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0266.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0266.md",
+          "gitBlobSha": "10a3cdb24ac67b76941639d6bee8506f976253e5",
+          "sha256": "eb7f19cec820821eb171606ff738f14ce70b14cbe7580f8c106eb6f56077dfec"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0267.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0267.md",
+          "gitBlobSha": "4806d756f03f1cce876a04963810c8fab08ea3fa",
+          "sha256": "b7a3711c773b8641c7441e468c86cf843749597d9c49ae3dc002bf38c3ab26a5"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0268.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0268.md",
+          "gitBlobSha": "ce14ef169708a79999043ffdf5ed063d5a5ce414",
+          "sha256": "1c7acbc960e8b8cb4a347d45d5c62486a9f8c7146d75c0670c55669b3830d8aa"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0269.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0269.md",
+          "gitBlobSha": "e1744784a2b0fcea5619c01b2ba2c263dc9b74e3",
+          "sha256": "c4a64c0f7e05cd5e59e2d96c8642ddd0b7d57cfc44f2de98c768a460682c934e"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0270.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0270.md",
+          "gitBlobSha": "de13024977cf12fc1ff1999d36197afc1867bf26",
+          "sha256": "cdd219f585a8026526ca5ee2d6c58e082d675d098c33ef20f9293c35b701b93c"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0271.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0271.md",
+          "gitBlobSha": "4b628bedca1afd012e0c30f4839761922a5e529f",
+          "sha256": "5e8bf9ce39ab6be5b5054952163c07c7c2b6d10103057e4e0e3fb66ae8e13ab5"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0272.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0272.md",
+          "gitBlobSha": "30aee89d371cfb963d6121d899d773d25664701a",
+          "sha256": "652d8a39d5abbf7d37894384c940961bab484964cc43a0f15848c8b9b1c7d37c"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0273.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0273.md",
+          "gitBlobSha": "deec8acbe4adddbf00b46f4af3943bd8729d644f",
+          "sha256": "db4539675c713ba029b777164902fc5dc24906873b5caee8872e7b566dae4cd7"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0274.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0274.md",
+          "gitBlobSha": "aa9744f487d51ab4e19bd329f417a70789208a92",
+          "sha256": "a54b0acf803aa49b664f72df9811fed941cc04e67638b63728f49fcec8f4b434"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0275.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0275.md",
+          "gitBlobSha": "dd15bad38c384ec849a422a20f46af99d7d77e6e",
+          "sha256": "ce1c872ee7b9da3f4273472875185707c29cc008f03679cc21b03b23ac3366cc"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0276.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0276.md",
+          "gitBlobSha": "f4265a741beec894d8d59afcc0491db3e1f4b239",
+          "sha256": "bb98864c58b8d991024cd22b82af3ccbdb085be24d8ffa33d3d7970ba5c7500e"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0277.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0277.md",
+          "gitBlobSha": "0248e9d77d2faae1a2a9b81caa8cb0c667be0851",
+          "sha256": "0f7a800bb949284ae9bb79f58d71b0d994f9119e4e7f6b4d2d187cd710065ab9"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0278.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0278.md",
+          "gitBlobSha": "2aed8ee31ac8011e6ab6ce2db2b40fd912e3988a",
+          "sha256": "47025e07e3b7952dd683027aa9111d034d5e1aa5412bd513c54d0121c41a4c94"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0279.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0279.md",
+          "gitBlobSha": "ebdc2860c7c3e5e3955dbcdf23542ef40f4cd47f",
+          "sha256": "560bc9b3227f5cdb52ba538cef88d97fc9050e6e64eedfac53d2528c9fb61e2d"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0280.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0280.md",
+          "gitBlobSha": "3b5e2abaefdb9f5718dcd2aef8b2c4ba79e73897",
+          "sha256": "6cfc9ae8448829cd7b57b439f131cfaca3b11c2e9ae046b49f9c554dd17addeb"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0281.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0281.md",
+          "gitBlobSha": "5f1a74073aad3d6a303b6404eeb35786a349c69d",
+          "sha256": "72ef633ab00ed9dcc33844b161090651a4afcc3b8d09bf4ceae4284e7d97ded3"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0282.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0282.md",
+          "gitBlobSha": "382a533e468a806172d41b79a79d6985eec8f615",
+          "sha256": "0b1820a965e6519ced50916fd7c90784ebf480eeee6fea22053c881c78e92470"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0283.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0283.md",
+          "gitBlobSha": "b5117c5d979492d2ab8a75af2ebd8f1805db6f35",
+          "sha256": "305ffa57242496aff12290d8353cf8bb995ef78dfb44a352de3fec72be76a275"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0284.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0284.md",
+          "gitBlobSha": "0dc711ff82efc716de7c8d4038ed95dbbef82f67",
+          "sha256": "0812c3df76b15becfe0dd12b8e7379fb3f89e858f9777487e5423fd94059403f"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0285.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0285.md",
+          "gitBlobSha": "4d0c908053d7019dd198b402bacad5682e46da6f",
+          "sha256": "70d0e5017b3eb688c7ca1ea03d2eb39ab01b9297335f8a6cd9fe107f5ebb9ad0"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0286.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0286.md",
+          "gitBlobSha": "8308a2545e9b343a895168e661df3bc564b97a53",
+          "sha256": "b1c7523b5bea692980a94027051b36f6152e19f0e493376499567caaf203dc70"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0288.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0288.md",
+          "gitBlobSha": "395266dd204fb23dc615766bc92cf0512a1de3a6",
+          "sha256": "f2edc928a7008c04533a8cce41530736a7d29de61ef294ca4743b1ce6b9f406d"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0289.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0289.md",
+          "gitBlobSha": "76e84a722303691f1afcfceb2882e6571c39443a",
+          "sha256": "971de7e486c2806cdbf9fbba4f59297d100b877b670ee1c1489e67554bbf2e42"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0290.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0290.md",
+          "gitBlobSha": "7086bf98a201eec56aa5ca5491d3af7ec64355a2",
+          "sha256": "f050add813400af66264506a88a55c768512cd28af1e353cdb38dc8c0d9505ef"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0291.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0291.md",
+          "gitBlobSha": "63ee67ac3db8adf3e1d7b6950f3069ab0ada5ef6",
+          "sha256": "d47df2498f9940086866e17c72e3c9297d71a7f26d70e5b4daf6c93ee4ef1962"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0295.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0295.md",
+          "gitBlobSha": "bdbc88fbbb8c87e394f20d7dcbd89d38451e9aff",
+          "sha256": "01122ae9a5bb693769a559738e9fd5ed9bd7a4acf4f90682176b0b7931ab857e"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0296.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0296.md",
+          "gitBlobSha": "e3887c527ef60b9de791b5a14c9f54fe917927d1",
+          "sha256": "a9978131f7d8f97db6ceb8c90a2f60de55bd33023b247ad2279aae4ba16a16c2"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0297.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0297.md",
+          "gitBlobSha": "1cb1028ead02aa3e6a90dd3aa95a6b37bbcec15d",
+          "sha256": "2db13928136e7b3abe9ef183d325b11fdc9695402c21e1c368bd56084c78b533"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0298.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0298.md",
+          "gitBlobSha": "d98e9c2a913fa52708e66b604525d9a4500f35f3",
+          "sha256": "5c583655e2448fd21a06c53d916ac585082043295355e43b2480ba079ecf7f91"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0299.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0299.md",
+          "gitBlobSha": "48daa1455c3f19af16ec60a5c661ab7cc33129d3",
+          "sha256": "e9756c85310dacb6ad03b0b80af1ac31250bc0d36c5da7b580dc21aa5c644b3b"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0300.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0300.md",
+          "gitBlobSha": "88e98f4967ea89f104c8d8cdc36eb2ac5eba12d1",
+          "sha256": "3899667f66d3db033aea022181fc723ae671aa66afb1f39f676ca1b3b5261d07"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0301.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0301.md",
+          "gitBlobSha": "b8501684d880c7e8a43b438c1bf2a42a8bc59fff",
+          "sha256": "8e6045e797c1017ae9c68076f4631ec06aee56ec7294275aa5c73dab0a783597"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0302.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0302.md",
+          "gitBlobSha": "a8e00052dff07fd414473a682f63a1a977e29028",
+          "sha256": "8f6874e196a7c2a0be64573c202f4653f4d9db4a8ecc0f8223a0b250dae6aa00"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0303.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0303.md",
+          "gitBlobSha": "648d2461367dd88112da6c7da3fd21e2662a05c0",
+          "sha256": "1b685e8e5df727c3e3dbe5b91b3a8339266fdf2265db8cabe26d33f5517e7779"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0304.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0304.md",
+          "gitBlobSha": "eea3d2890540704384f6e5ebc097519a1193d045",
+          "sha256": "4f31645069d700f286d5669c9de3c1900b1de6ccb90164c15f97d6742a584822"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0305.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0305.md",
+          "gitBlobSha": "27cc3c4778655006ef4996fa135c6cfb7d99fba1",
+          "sha256": "5642f00d182f92bcfe118f04ce58b3d90954cee415ae195e10dd6220cea87100"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0306.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0306.md",
+          "gitBlobSha": "b27857ed5a5368611ff5fa6f089072555d3a915b",
+          "sha256": "a02e902625af979f1543bb8930f788f4d03f2cce47fc7cee6898b8b28e85992e"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0307.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0307.md",
+          "gitBlobSha": "c6ab68aa1d2db0fefbee82c5ad3e5c38ff75170e",
+          "sha256": "7b3297de72bd4d9a1912b6edca0971c566c3d9bf0fa1ed4ee1460449434221d7"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0308.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0308.md",
+          "gitBlobSha": "8c212a8fd3fc7173c6216997af914d73c1dce94b",
+          "sha256": "7dd6a3a3fb33fb0ed272c9ccd72d11f025f3863b81084b9c539dbe65d24a600b"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0309.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0309.md",
+          "gitBlobSha": "d9ca48aecba8e687d41b0d06815c4350d7863df3",
+          "sha256": "c57f57ec4014f4cca1d5dc1cfe0a55fbfd9d92a071b6a43be431652ca14c3d2c"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0310.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0310.md",
+          "gitBlobSha": "2240f2e4c6f01486e7aca104678b5dcd2f11801f",
+          "sha256": "8081b5d85929c9b2cdd24a8647f0c893ef944d7f6f2aad6c9c4d5a7f30987749"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0311.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0311.md",
+          "gitBlobSha": "32c38f5af922514ce0da573967f0e1e2789a8009",
+          "sha256": "76d96c1632b84235d1638a96e5b2ee41f719cb91106be4eaa5b68c3081c43d09"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0312.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0312.md",
+          "gitBlobSha": "e72e12a63b138afd5fc36cf68fbab693d1ab22c2",
+          "sha256": "9a240580213fd9a5a35e26b3b4d2a0b67bce15af75ff2a4c0e8271d6c450c310"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0313.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0313.md",
+          "gitBlobSha": "5c08613cd3a94cd624c772f0c75ed405f252893b",
+          "sha256": "093c5a4a75ead18aa2201df80f5f5cbea1cc183f23c774fa25483abb2d9a37a9"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0314.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0314.md",
+          "gitBlobSha": "813ef6134f00206886e3583272aac54de69c8dd8",
+          "sha256": "463394927907ecaaa131d3cc49edf22b832f61e39121c9133daf23a46ac81d68"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0315.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0315.md",
+          "gitBlobSha": "28b22d68e9b007c81e29a96f48dfb894817a6a83",
+          "sha256": "bcc12ab02e65e1095da95a9ac598766587b5d0f81a3714c1111cf6d973e78295"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0316.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0316.md",
+          "gitBlobSha": "4c49947b3e523556fe3edeb5ab9a9d06fd84b353",
+          "sha256": "8ee9d3a34086640f3036dd1c3578d6fe08f50f23da68a21472e9201246e9299f"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0318.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0318.md",
+          "gitBlobSha": "4dc1fd281e5ef0c206b5bda5309d3f05987336e5",
+          "sha256": "b67dbd62ea5072b495f3af15f68c7774127addfb490c149e0fdb72854eae410d"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0319.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0319.md",
+          "gitBlobSha": "838841911693b15093e65619092a85e7ebc4022f",
+          "sha256": "507224e954de2ffc2ad4c794fff90c8de9e2a8f31dfe5cb73f5d782eb5d4601b"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0320.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0320.md",
+          "gitBlobSha": "cf706273ec3586c3aacbbed0c8732f8dc84c3501",
+          "sha256": "87d18994c45af7cd6480247ed39acc2e63537e35ab5196b44bf1f9f5f51d875c"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0321.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0321.md",
+          "gitBlobSha": "3bb25db2655da01be3d7e1894415f9b26fc8b068",
+          "sha256": "19a8d41d337d2a592fc11bd9a2c7b15f826f3b1ff7ec7041920ddb5e92354231"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0322.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0322.md",
+          "gitBlobSha": "96707c61b48ef30ef17a87213dafddc235c86c41",
+          "sha256": "5b7198d34bc32405d2de42e86336b7da9b5b13b11512ef799dacf581eddcce30"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0324.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0324.md",
+          "gitBlobSha": "c1159dcbd298e42a1f6622345142cd52faae4e20",
+          "sha256": "a81a771fa881ab991bc0938b15825d8fe4cb6c08c954126a52ec5a694516d99d"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0325.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0325.md",
+          "gitBlobSha": "762f003abbe37f48f8690409425adfdaf66a9bcf",
+          "sha256": "1d48e13e8087d9087c9bbbbecdc862e8a1d8c5a15b1f1174e3b22678a37aedd6"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0326.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0326.md",
+          "gitBlobSha": "916b966fb86a8078c21bc59c7387af19ae44ca64",
+          "sha256": "579f5a5264088b8179164144f6d7acd880e58690c31855f6b56ecfa35bdc4dfc"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0327.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0327.md",
+          "gitBlobSha": "7f4e98de03d78a2d3a4b08b2be87979865422ba4",
+          "sha256": "47518bb138167de3afa64e66aabdd1d50c0ccc8a793407d20a72e514cc48c34d"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0328.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0328.md",
+          "gitBlobSha": "e17647a30a8fa99492dfb8ebe9f33f10dd03c3d1",
+          "sha256": "4e42297fdc0b8d975cb6d5b765771272f00a26d6fb8b524d694ef8b88230b903"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0329.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0329.md",
+          "gitBlobSha": "7f4658d6fed8f3f9baa6ec759dce1b136b30e892",
+          "sha256": "012db99894e8a34b78e88a014ab09bdeba79358d282d584e4b31c08c82f7c671"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0330.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0330.md",
+          "gitBlobSha": "6d4335e7fdfbf8ce8f8bc5db0613ad925bc10530",
+          "sha256": "4af3a9892fddabb8d2a1d8487c89bfa72837b801b25d36be25ea9edeac7f1f0f"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0331.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0331.md",
+          "gitBlobSha": "b171c05c6e74adb0682f7fa7be1c30352113e7e7",
+          "sha256": "75b79062874c8191f6658d80fd49a14e68a05e69658f9886b8fe603942086b8d"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0332.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0332.md",
+          "gitBlobSha": "9d0d8055cd092070d0e2a545594168d73b926d20",
+          "sha256": "46331e01402d4a7227963051b1ed7c008a59f4fbf31e4960c4a46dd4a576edf6"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0333.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0333.md",
+          "gitBlobSha": "32d50d247cb3650e4dd1b1cd82e85be030a5eddc",
+          "sha256": "15cfe8e2dbd749311689f145a3acdc7d0b025447c565a651d42f8f4c2208c4db"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0334.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0334.md",
+          "gitBlobSha": "22a24f26befce749f0876325851b240d68ca811c",
+          "sha256": "0b635dfa2f7db8aca44bc9cc73ead127ef78cd8bd922baacddf7e48c9fbe3745"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0335.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0335.md",
+          "gitBlobSha": "2794a3e88334a25361c2d53c10f91fab075d01cd",
+          "sha256": "500c46d130b5a8c009e0f8ae183956a83b2135e22816721ec4f2e577f63a5331"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0336.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0336.md",
+          "gitBlobSha": "4d0a8255348468b5c2d4c44409e78616e09f9726",
+          "sha256": "873d8f3290e4a48aae0c43d7043cbb786b48871f01d0c8dc9fc74bfebe76d401"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0337.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0337.md",
+          "gitBlobSha": "f9e96014da402ab5f0ac1581805c8d37e5f109d7",
+          "sha256": "a34765e5586272e2d10c4f6174fd6cdf2c7b35be094ca4d9e0b7c28957ffcc9b"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0338.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0338.md",
+          "gitBlobSha": "b09373c02698d7b4f3a521b0b2902c08c15118c0",
+          "sha256": "3daa3a7749195b883420ad28795bb2c79af06e6dbc5ceea1af768f0db9dd254b"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0339.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0339.md",
+          "gitBlobSha": "963e275be5db35bd6e97ebc80f19ef91dfe1db86",
+          "sha256": "3f99ba114ea2e3cc41502dd690833c92d5b94baf3e6837daea5fedc08460db60"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0340.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0340.md",
+          "gitBlobSha": "7bc4e99b3fc4207f136216649116fd6b6a24df0e",
+          "sha256": "4226695fe1d57b7b34dcf9f4dc0d168714c7f4ccd45c4640e429e6f8f6e8ce40"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0341.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0341.md",
+          "gitBlobSha": "34359021cc3bf1486937bd8cbcd190085f554d2c",
+          "sha256": "e439df5cdf886266a4d80d698f32741671f2ed3e08445aa0ca351c9f1a695885"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0342.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0342.md",
+          "gitBlobSha": "fa127f9b50577c8f32fbfd201e9c48ba61c7d5ea",
+          "sha256": "6dc53a8d0ebac5335957b6ed70a957d687ec44ae7938cba217c096610649cacd"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0343.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0343.md",
+          "gitBlobSha": "37dd7a43192127897febef03e0e79fd7958420f7",
+          "sha256": "14fd538cafccc24bc33dd07f5e02aeb1f53ceb5b8d777e2b989965e34aac5740"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0344.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0344.md",
+          "gitBlobSha": "f0e6bf5dd6a2a4f47bce72dde8ad81b3a4f7a07e",
+          "sha256": "22c8a0e8249d6c017b9ca9aee9725380c0dfe194747c5724ad6241c979d15937"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0345.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0345.md",
+          "gitBlobSha": "5d7b6160b3333a5988323f9fc6e6b7c46bcdeade",
+          "sha256": "acb1f7369dba1385a49fb6206ea74a015a993c3521d82bf7205d843d951542fb"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0346.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0346.md",
+          "gitBlobSha": "a7089cb6d725374b23885a5b44cd205958c38ab0",
+          "sha256": "c196dfa30fc43646d3f6667b559a76931ef57334a7fc651d577d19cc5d2173f5"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/MASTG-TEST-0347.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/MASTG-TEST-0347.md",
+          "gitBlobSha": "c4068c5628147bbe82e9103e99f76886e2eacbab",
+          "sha256": "cc307d0f5ae7835442baabf617ea56a47979c5d0acd976f3c6c81900bc3027d5"
+        },
+        {
+          "source": "plugins/code-security-skills/data/mastg/README.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/mastg/README.md",
+          "gitBlobSha": "a5db07803137bda82727e1c6649877b689dd16db",
+          "sha256": "8c462ca2033a1773855020dc286d3aafb6ed0570cc90767787d45ed0c9b51a48"
+        },
+        {
+          "source": "plugins/code-security-skills/data/masvs/MASVS-AUTH-1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/masvs/MASVS-AUTH-1.md",
+          "gitBlobSha": "3deed8a2c2c1b189de2e835dd96b55e742b89d46",
+          "sha256": "a113a28cc2d94ec304b65be24b629b0ad937dad982a943a0feef922d80660932"
+        },
+        {
+          "source": "plugins/code-security-skills/data/masvs/MASVS-AUTH-2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/masvs/MASVS-AUTH-2.md",
+          "gitBlobSha": "b2050509a11fd405adbf539f5c0c4000ca6f4d34",
+          "sha256": "b9742a3153c11ed61784a6f98a2281623207bc20c48fb7595c2711d9514e05fb"
+        },
+        {
+          "source": "plugins/code-security-skills/data/masvs/MASVS-AUTH-3.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/masvs/MASVS-AUTH-3.md",
+          "gitBlobSha": "3b67461c184d8db47d8df158f2c82742820b28dd",
+          "sha256": "489e3e5f59b72834d7f237b5598d02b8e76d9b0cb3978b237f2137099b4ba9ea"
+        },
+        {
+          "source": "plugins/code-security-skills/data/masvs/MASVS-AUTH.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/masvs/MASVS-AUTH.md",
+          "gitBlobSha": "236f18c412ede1ede0fe50f1439b663a56147532",
+          "sha256": "0bec5cde83420d93f21849fc1878ee1cf366e7495f3e82dffee17640eee8e7f1"
+        },
+        {
+          "source": "plugins/code-security-skills/data/masvs/MASVS-CODE-1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/masvs/MASVS-CODE-1.md",
+          "gitBlobSha": "26422d4ef5780320dc4e6fe4b79f2635d71d8d38",
+          "sha256": "6dea5d217a57486dd446c6ed5f098571683177af9eb70cac3d6af9af5c474cd3"
+        },
+        {
+          "source": "plugins/code-security-skills/data/masvs/MASVS-CODE-2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/masvs/MASVS-CODE-2.md",
+          "gitBlobSha": "d3bbc6e4374b02623318ef522142a4b6e8aa4456",
+          "sha256": "c5aa42c034931502fddcbc04cec68b1bcd7fb23c8848ee247208c53fef01b836"
+        },
+        {
+          "source": "plugins/code-security-skills/data/masvs/MASVS-CODE-3.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/masvs/MASVS-CODE-3.md",
+          "gitBlobSha": "9ebb725d7af7d64072aa24ed7944e6499ca53e08",
+          "sha256": "7d17e926fd3cc4f5b04f264f9935132921adb84d8dfa4f8c80d2ae29b82eee3f"
+        },
+        {
+          "source": "plugins/code-security-skills/data/masvs/MASVS-CODE-4.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/masvs/MASVS-CODE-4.md",
+          "gitBlobSha": "7dac21fdc7792c67514f36911753f7badb487fa9",
+          "sha256": "5a78043b2fcb6c1dcae0326702441f4f17099280953777d1c9579ae3da1e03e6"
+        },
+        {
+          "source": "plugins/code-security-skills/data/masvs/MASVS-CODE.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/masvs/MASVS-CODE.md",
+          "gitBlobSha": "057b15dd70fd3ce5829af9412e223cb8c8532024",
+          "sha256": "be64a2f5ffc6857fd6169628ce132675a83682b8a47a45afc592756cacb4cb2b"
+        },
+        {
+          "source": "plugins/code-security-skills/data/masvs/MASVS-CRYPTO-1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/masvs/MASVS-CRYPTO-1.md",
+          "gitBlobSha": "2155ff76eba2dcc7ceb620b1a3b21b0b639f7eb3",
+          "sha256": "e5c2fc9e4aafbce4b6974a60f8fc2aa9abfbc545267ee095905858791c279339"
+        },
+        {
+          "source": "plugins/code-security-skills/data/masvs/MASVS-CRYPTO-2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/masvs/MASVS-CRYPTO-2.md",
+          "gitBlobSha": "58b76f90b04fcfb60fabc574c2de4a0564b78b15",
+          "sha256": "97ddad5acfcff1a8c14e82326f5c90f44e3d32999b23b298c1254b9ddb4924cd"
+        },
+        {
+          "source": "plugins/code-security-skills/data/masvs/MASVS-CRYPTO.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/masvs/MASVS-CRYPTO.md",
+          "gitBlobSha": "a402f8c61f2636c3bc6a201c9eaa941de01317bb",
+          "sha256": "b7fbf45185249af3a1b06d2c5ffbbbd48c49142b25368ab69d67a28bd8909924"
+        },
+        {
+          "source": "plugins/code-security-skills/data/masvs/MASVS-NETWORK-1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/masvs/MASVS-NETWORK-1.md",
+          "gitBlobSha": "223b152abb9b6dbaf42727cfecbb5cad7ddd7c71",
+          "sha256": "1381cbb91ce6229d6f6376f8b98c63d08736e24ce1be2238f0e85d4d9a8785c8"
+        },
+        {
+          "source": "plugins/code-security-skills/data/masvs/MASVS-NETWORK-2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/masvs/MASVS-NETWORK-2.md",
+          "gitBlobSha": "37258cfc82f2011e44b46d5746b470db67a51880",
+          "sha256": "cef6f6e44be92b56f24f2f8d7e79418a388bb5191ad0946b7a6c3a460c734d2c"
+        },
+        {
+          "source": "plugins/code-security-skills/data/masvs/MASVS-NETWORK.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/masvs/MASVS-NETWORK.md",
+          "gitBlobSha": "129254068355b503ff72ec2b4378dfefc9ad9a0b",
+          "sha256": "d922281a98a40ca60b7bbe53dbbe073444eb0ee07c61b1ffcd3db6f787997615"
+        },
+        {
+          "source": "plugins/code-security-skills/data/masvs/MASVS-PLATFORM-1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/masvs/MASVS-PLATFORM-1.md",
+          "gitBlobSha": "b546d93552b7ee18f9e16ea40f84821db0b4ff70",
+          "sha256": "1fe92933ec9b6c353b335f3d0dde86f4e083a3a321260778435bc19d90406bbc"
+        },
+        {
+          "source": "plugins/code-security-skills/data/masvs/MASVS-PLATFORM-2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/masvs/MASVS-PLATFORM-2.md",
+          "gitBlobSha": "0c9ee980675cc4ade1375b1e34099efcad78bf47",
+          "sha256": "dcda8ed58f909d8462cb8f40685dc44d95039fc9e56d10c94e7d1673bd11b5f7"
+        },
+        {
+          "source": "plugins/code-security-skills/data/masvs/MASVS-PLATFORM-3.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/masvs/MASVS-PLATFORM-3.md",
+          "gitBlobSha": "01676f8d1c549292f4e9fa6a508354301b92262d",
+          "sha256": "1b194f0ed04433c592e030f00131c16f12f61793ef1416f0f570926737ca7953"
+        },
+        {
+          "source": "plugins/code-security-skills/data/masvs/MASVS-PLATFORM.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/masvs/MASVS-PLATFORM.md",
+          "gitBlobSha": "b735823bd7a25b2523ff94d8ed5216db961e20bd",
+          "sha256": "d70ff1982b9bff09c0afdea746c303cb739fff86d103b11cc0c9f9153e8522af"
+        },
+        {
+          "source": "plugins/code-security-skills/data/masvs/MASVS-PRIVACY-1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/masvs/MASVS-PRIVACY-1.md",
+          "gitBlobSha": "81ad2142db60284b58df1344546f64266f51f6fb",
+          "sha256": "90bd5a2543b54c545bdd78a5425416f748e0b478991c5a63eb8ecbbae2e76eab"
+        },
+        {
+          "source": "plugins/code-security-skills/data/masvs/MASVS-PRIVACY-2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/masvs/MASVS-PRIVACY-2.md",
+          "gitBlobSha": "d56e85c7209a900f29a1d80a1c59c42da03208d8",
+          "sha256": "0bbf72f6746ddb461d11293599a5e19a06aa7e27f2158b671922fa26f94b56f2"
+        },
+        {
+          "source": "plugins/code-security-skills/data/masvs/MASVS-PRIVACY-3.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/masvs/MASVS-PRIVACY-3.md",
+          "gitBlobSha": "f119958cbb09e43887a146f87561629cf134139c",
+          "sha256": "001b1919fda37ae2afefa9955b93c56548eb216ea9b8daf19a07e58d137fae49"
+        },
+        {
+          "source": "plugins/code-security-skills/data/masvs/MASVS-PRIVACY-4.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/masvs/MASVS-PRIVACY-4.md",
+          "gitBlobSha": "4cf41ad91004580157d6de6fa31cfcb0abe7130a",
+          "sha256": "2b283b26b770ad8a972e4b4da80dcb515c5c1dcec8bcb846d25fe322bc15c0ee"
+        },
+        {
+          "source": "plugins/code-security-skills/data/masvs/MASVS-PRIVACY.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/masvs/MASVS-PRIVACY.md",
+          "gitBlobSha": "a2f6b22368bed874243686e5a1fa8379f8bb82f1",
+          "sha256": "2e49ac4bdb3dedd483cbb168b08b79a8f944b5fa709d54aef76c8f875cc71aee"
+        },
+        {
+          "source": "plugins/code-security-skills/data/masvs/MASVS-RESILIENCE-1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/masvs/MASVS-RESILIENCE-1.md",
+          "gitBlobSha": "88a59cb1009fc7cce3c1bff66197442fd3d5e7c4",
+          "sha256": "f39e2d12e0dbd949b285b5d49384f5ea8c05c1fcb300f640fd65990f615ed7bf"
+        },
+        {
+          "source": "plugins/code-security-skills/data/masvs/MASVS-RESILIENCE-2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/masvs/MASVS-RESILIENCE-2.md",
+          "gitBlobSha": "61741a1b824e08dd5a302bc7d958b03d8c0c80a3",
+          "sha256": "e35f1b5f17670ab0cfef250f57bb263d532b9a24d42c870211e1bbc1e0be5185"
+        },
+        {
+          "source": "plugins/code-security-skills/data/masvs/MASVS-RESILIENCE-3.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/masvs/MASVS-RESILIENCE-3.md",
+          "gitBlobSha": "ed0c50e7415c2c82ba586b10a8afccb8025aca11",
+          "sha256": "81c17aa8bad4e9c37fc9cb40af535e21d86222adadc76849f3a7bdbe530be2cb"
+        },
+        {
+          "source": "plugins/code-security-skills/data/masvs/MASVS-RESILIENCE-4.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/masvs/MASVS-RESILIENCE-4.md",
+          "gitBlobSha": "ea4745c33e053ab3bb3fabc2877dbe28844f9d83",
+          "sha256": "85ef5ae29af40ebe8290c624f6039eabe44205ada3fe72f23626976f4999aced"
+        },
+        {
+          "source": "plugins/code-security-skills/data/masvs/MASVS-RESILIENCE.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/masvs/MASVS-RESILIENCE.md",
+          "gitBlobSha": "db381fe65f539a5378447e347f33298759f4c354",
+          "sha256": "f79dc49d5918afab1d02cc66cfd65b4bdd51d00b45b9161a76febdf8b13ac96b"
+        },
+        {
+          "source": "plugins/code-security-skills/data/masvs/MASVS-STORAGE-1.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/masvs/MASVS-STORAGE-1.md",
+          "gitBlobSha": "62f95f540dfc83d79a9fab68f85804bb5caff1f3",
+          "sha256": "ee1f1ed856ad3b681d55d3e2a922e81cfc6373099c6f250fd0d96f0aab240cf8"
+        },
+        {
+          "source": "plugins/code-security-skills/data/masvs/MASVS-STORAGE-2.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/masvs/MASVS-STORAGE-2.md",
+          "gitBlobSha": "82b22320067ba86c55edbba3c5aa107b3859fcdb",
+          "sha256": "08179047323f4107a940fc4f94b5897c11726d84ee9acddd97703a047138d270"
+        },
+        {
+          "source": "plugins/code-security-skills/data/masvs/MASVS-STORAGE.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/masvs/MASVS-STORAGE.md",
+          "gitBlobSha": "1d40d2dbd56e299d1203e05d973b14a9abf8c56b",
+          "sha256": "31dde5860b4a668b8424b772cb8caec6e42bd266b13a41c5c4d4fe6d8c924ad3"
+        },
+        {
+          "source": "plugins/code-security-skills/data/masvs/README.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/masvs/README.md",
+          "gitBlobSha": "b972ea96be40ec3464537fd94b81c4033f72a66c",
+          "sha256": "d15ebbcb9645676464ec6e197ab7f5bc7cb9b1cf77ab287399aaac8a492fd852"
+        },
+        {
+          "source": "plugins/code-security-skills/data/secure-code-prompts/README.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/secure-code-prompts/README.md",
+          "gitBlobSha": "63153a852a6cdb243b9b2e323020588aab0f6d35",
+          "sha256": "7787a79fdaf66dfcb27991bde90a3233347532437c56a68d68196cfdff1bb60a"
+        },
+        {
+          "source": "plugins/code-security-skills/data/secure-code-prompts/api-design.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/secure-code-prompts/api-design.md",
+          "gitBlobSha": "c90627bafaaaff85f1c4ede0f56765b05b2aba8f",
+          "sha256": "0a4e10dc45f507e43e368aac7da8efa69a5fc6d9b9b6f519bcb3a4f52527402e"
+        },
+        {
+          "source": "plugins/code-security-skills/data/secure-code-prompts/cloudformation.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/secure-code-prompts/cloudformation.md",
+          "gitBlobSha": "d9b10005c2a99b309a1c89c720ad5bc63e90ebb9",
+          "sha256": "9ed5e284853364edd9ee6c79db8ce2cfb7f47f045748a360d6f27db408d50c02"
+        },
+        {
+          "source": "plugins/code-security-skills/data/secure-code-prompts/kubernetes.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/secure-code-prompts/kubernetes.md",
+          "gitBlobSha": "a433997e515c92e468d67e43127bcc35627949b8",
+          "sha256": "9aa81fd57c40d5bd1b0dc869e035b04674061f75ae8f41c4e7e5547e3ad0261c"
+        },
+        {
+          "source": "plugins/code-security-skills/data/secure-code-prompts/terraform.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/data/secure-code-prompts/terraform.md",
+          "gitBlobSha": "5c0302d796c3bb58a8ec4fcd8321424594b3e846",
+          "sha256": "1d61087015fe285b2861d0fc34fbf16501c0810f084ff62041362477d526e5bb"
+        },
+        {
+          "source": "plugins/code-security-skills/plays/api-security-review.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/plays/api-security-review.md",
+          "gitBlobSha": "335958bb7e72718284b7d825d340e1da852c7a18",
+          "sha256": "11b888d839572a15fb473c2943ceb43074a0ec06bd91c205d6c43eeac008a6ef"
+        },
+        {
+          "source": "plugins/code-security-skills/plays/code-review-security.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/plays/code-review-security.md",
+          "gitBlobSha": "0b4038ae4a9beaef340b47c6cb5b85f6e3d0ce49",
+          "sha256": "019379b1ff328e2adb5132512b95591b370c31e7ec7a5c5900ee26c0524dccd1"
+        },
+        {
+          "source": "plugins/code-security-skills/plays/iac-security-review.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/plays/iac-security-review.md",
+          "gitBlobSha": "436d5c4940e23829a8cf962df5d0f341de9fb759",
+          "sha256": "8fb2ab579d051dadc0aa66c4428a753a9055f7ae1124b0bf933ebde439349a3d"
+        },
+        {
+          "source": "plugins/code-security-skills/plays/mobile-code-review.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/plays/mobile-code-review.md",
+          "gitBlobSha": "66adb07ee978d704526a7697fa5986e69fd6fa23",
+          "sha256": "83d0173628d85abce59ef917f3e5a2bb2eeb692a625658eb9abd5196200936ab"
+        },
+        {
+          "source": "plugins/code-security-skills/plays/owasp-top10-web-review.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/plays/owasp-top10-web-review.md",
+          "gitBlobSha": "52447ce5011c67f448ddf2fa94573c7ca91e8d63",
+          "sha256": "c53ea63a2d479a3e69fc7a6e94bf0fc8a6f5362c484b67799e7a1d05b3da23b2"
+        },
+        {
+          "source": "plugins/code-security-skills/plays/prd-fiasse-asvs-enhancement.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/plays/prd-fiasse-asvs-enhancement.md",
+          "gitBlobSha": "8227d3e1361413216bc453566aa5dda2fea9cf80",
+          "sha256": "b4069efc73900d5050c6d80afa757891c3ba64e1228dc23bf1628abfc072ecbd"
+        },
+        {
+          "source": "plugins/code-security-skills/plays/sca-audit.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/plays/sca-audit.md",
+          "gitBlobSha": "4d35969aec849457414f53753d68c6ba10f00173",
+          "sha256": "3c9d77b3dc3802f50e0cbca85cf3231d51d7060bc704749f051850b269ee85e7"
+        },
+        {
+          "source": "plugins/code-security-skills/plays/secrets-scan.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/plays/secrets-scan.md",
+          "gitBlobSha": "69ea1f6c7420dd4fd15571ef02099427cea67ef3",
+          "sha256": "69bd30f64b1202b68743e55cee96b92029c463c93b8035b385b0f96b83a438ac"
+        },
+        {
+          "source": "plugins/code-security-skills/plays/securability-engineering-review.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/plays/securability-engineering-review.md",
+          "gitBlobSha": "2b67ca6547c4f44ee64231c66e7af84769f7d4a2",
+          "sha256": "333d9794ea488b1453c1c1c23bd3c489615f2ab3e2900e7191c6ff38aea68d9a"
+        },
+        {
+          "source": "plugins/code-security-skills/plays/securable-generation.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/plays/securable-generation.md",
+          "gitBlobSha": "bfacd3ad44257176b33c36a90d6835d723f0e29a",
+          "sha256": "411d4a4cc683d15e32963c158a60b431866c1530aab12a8a3083b75a36e9922f"
+        },
+        {
+          "source": "plugins/code-security-skills/plugin.json",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/plugin.json",
+          "gitBlobSha": "95710dc3e3c2a5a38a344d1594e8aeb9f5587180",
+          "sha256": "2c86f8e204d8ffe6374af8d0a0da2a0d2025739d940c376a388c524a3f6b0f82"
+        },
+        {
+          "source": "plugins/code-security-skills/skills/api-security-review/SKILL.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/skills/api-security-review/SKILL.md",
+          "gitBlobSha": "8f3292fc3448162dbc3bc770acbd1d93efad1d60",
+          "sha256": "b1359b568cfaf72a322a8445c7b8ef6c3123df53bc3ee22dad5ae93658afc00b"
+        },
+        {
+          "source": "plugins/code-security-skills/skills/code-review-security/SKILL.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/skills/code-review-security/SKILL.md",
+          "gitBlobSha": "63831d069ef30e5715e5503fac5c797b5b4f3249",
+          "sha256": "a95dbecda4100e39b81fd7480fd76c228149b786ea5e66888044e9addf4abdd3"
+        },
+        {
+          "source": "plugins/code-security-skills/skills/iac-security-review/SKILL.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/skills/iac-security-review/SKILL.md",
+          "gitBlobSha": "3b56548e365c6e4d2e8652d5cb96dd596ddc2e7d",
+          "sha256": "996dbcba7ec3612445b11499a5a092a1770afd028feb931541ad3b9db6b7abd7"
+        },
+        {
+          "source": "plugins/code-security-skills/skills/mobile-code-review/SKILL.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/skills/mobile-code-review/SKILL.md",
+          "gitBlobSha": "640edc210dd043234febd8b04fb3ec49dca1345f",
+          "sha256": "dd58464283be64ec094b6394e8c98c6b2e4d47d83e951559bc0fc953f44695ba"
+        },
+        {
+          "source": "plugins/code-security-skills/skills/prd-securability-enhancement/SKILL.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/skills/prd-securability-enhancement/SKILL.md",
+          "gitBlobSha": "086ca12699031852f4fd80392b091e3f1566c158",
+          "sha256": "a5ad8514fd21703bff74a9506ae115efc3c62a43c40ef26f805cebf4e0f60030"
+        },
+        {
+          "source": "plugins/code-security-skills/skills/sca-audit/SKILL.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/skills/sca-audit/SKILL.md",
+          "gitBlobSha": "bee1f23ae969f1dfad38c8790bee22b788b33b0f",
+          "sha256": "afb2e55b0e9810aa4e5dbf89fcb71e2db36e830d5dc1c46627e8e32e64e7b7ff"
+        },
+        {
+          "source": "plugins/code-security-skills/skills/secrets-scan/SKILL.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/skills/secrets-scan/SKILL.md",
+          "gitBlobSha": "3f4a989a43bc94436514b640b06acb5944b4a9be",
+          "sha256": "dcb0c8236017a2f6530dcf310a02d5a1e49025623c800cf7fc2bd07100fa707d"
+        },
+        {
+          "source": "plugins/code-security-skills/skills/securability-engineering-review/SKILL.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/skills/securability-engineering-review/SKILL.md",
+          "gitBlobSha": "cabcccb419959fd3e6f33da169e429462233e077",
+          "sha256": "6dd060e1e1a38c93019fb3e33faeceaac5470c78cfc1f97e997716d1aab940ae"
+        },
+        {
+          "source": "plugins/code-security-skills/skills/securability-engineering/SKILL.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/skills/securability-engineering/SKILL.md",
+          "gitBlobSha": "2337f51f891c506d50f5f68d4d3923642230937a",
+          "sha256": "594edad2abcc0d418b0b2e1a9b8fb5eec91d6332ea0c39afc3bafddc812cc2e9"
+        },
+        {
+          "source": "plugins/code-security-skills/skills/security-guidance/SKILL.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/skills/security-guidance/SKILL.md",
+          "gitBlobSha": "e50d95134a729d3b80b6aaa61db17ee90c95e8be",
+          "sha256": "d19a7bd9e37a890eb166d48af73563bacdd97db28a31f919deb15a492dc1c78e"
+        },
+        {
+          "source": "plugins/code-security-skills/skills/web-security-review/SKILL.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/skills/web-security-review/SKILL.md",
+          "gitBlobSha": "677d617a2d10ee277a5c293571757f33a2c88329",
+          "sha256": "8c89babe48a6bd63e77af164d60507de4497e6c1febd08100e627aa7e0f79536"
+        },
+        {
+          "source": "plugins/code-security-skills/templates/finding.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/templates/finding.md",
+          "gitBlobSha": "65ea1a37330a0afa5db8a4f1911f58d33829224d",
+          "sha256": "aad190ef52d264f4704ef3b1a98cca4afeef09827a5f96dda9a4b825584993b2"
+        },
+        {
+          "source": "plugins/code-security-skills/templates/report.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/code-security-skills/templates/report.md",
+          "gitBlobSha": "f7aefbe5a2c7e55389e9226000358dc731c0d030",
+          "sha256": "8d99864c916d97ff8ade66d860fb08ff62914629698e60f2115abc64141b8766"
+        }
+      ],
+      "adaptations": [
+        "Host metadata and license notice added; repository-root data symlinks replaced with bundled local copies."
+      ]
+    },
+    {
+      "name": "owasp-ai-security-skills",
+      "repository": "https://github.com/OWASP/secure-agent-playbook",
+      "commit": "65d4efd2cd0b081d52101e9708792b944e4ddebb",
+      "sourcePath": "plugins/ai-security-skills",
+      "license": "CC-BY-4.0",
+      "licenseEvidence": "https://github.com/OWASP/secure-agent-playbook/blob/65d4efd2cd0b081d52101e9708792b944e4ddebb/LICENSE.md",
+      "files": [
+        {
+          "source": "plugins/ai-security-skills/.codex-plugin/plugin.json",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/ai-security-skills/.codex-plugin/plugin.json",
+          "gitBlobSha": "4fd46140e6df6ee3649a1920339dc66493ef8780",
+          "sha256": "31307b8db6103a470052435d11b67fe03db3cfa329a2fd335799e672d9300923"
+        },
+        {
+          "source": "plugins/ai-security-skills/agents/ai-security-assessor.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/ai-security-skills/agents/ai-security-assessor.md",
+          "gitBlobSha": "575c2bbb82e90932bf537ee8824c2d337e2407e6",
+          "sha256": "fb0fd7bd6cc87f2fc8b7f6c88eeab52737f84fd877b120ff44bb8419caa60d1c"
+        },
+        {
+          "source": "plugins/ai-security-skills/plays/agent-security-audit.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/ai-security-skills/plays/agent-security-audit.md",
+          "gitBlobSha": "23ba34d91445a97e567be9359e394bc53047fe93",
+          "sha256": "71d0c96f86c86684539d011cf6c5197f7eeca6fa4eb9f74e6a0eae9b3fd35c41"
+        },
+        {
+          "source": "plugins/ai-security-skills/plays/agentic-ai-risk-assess.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/ai-security-skills/plays/agentic-ai-risk-assess.md",
+          "gitBlobSha": "2c1e2e49c56916681a849e35c341b9472273096c",
+          "sha256": "b5057a98f5797a6c9770e836d9dbbfda5dbc02d5b3b1e491cc0f8eab4cfb3c9a"
+        },
+        {
+          "source": "plugins/ai-security-skills/plays/ai-security-verification.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/ai-security-skills/plays/ai-security-verification.md",
+          "gitBlobSha": "9b3a84a1bb2c5ad00759b6c83c60f0774fc6eee3",
+          "sha256": "6d7558231628ce1148d837e882c5e4d087006e72425b44b99adb61640af449c8"
+        },
+        {
+          "source": "plugins/ai-security-skills/plays/llm-risk-assess.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/ai-security-skills/plays/llm-risk-assess.md",
+          "gitBlobSha": "fb0db8144f31d5a2e7bcc7d42c28776e453a399d",
+          "sha256": "c0f73758853beacc2eccd7553fca7e9448de4a9452edad073ef68f10747e6b97"
+        },
+        {
+          "source": "plugins/ai-security-skills/plays/mcp-server-review.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/ai-security-skills/plays/mcp-server-review.md",
+          "gitBlobSha": "732f22070cbf1f2345bc7b11fd2db4748f9e62f6",
+          "sha256": "9db6d2fbc51ab6019d6b1757f48bf573e131de67802f6a73a5e12aba71c58ee9"
+        },
+        {
+          "source": "plugins/ai-security-skills/plays/multi-agentic-threat-model.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/ai-security-skills/plays/multi-agentic-threat-model.md",
+          "gitBlobSha": "b747d71afb0936c37c0f422cf89ce31da189d064",
+          "sha256": "88e3bfb5cb7a55401795beecf8df7c4609d4439eda63070de4100aded14e270c"
+        },
+        {
+          "source": "plugins/ai-security-skills/plays/prompt-injection-testing.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/ai-security-skills/plays/prompt-injection-testing.md",
+          "gitBlobSha": "9725b645749e35abe21f4e6948352566a914aaa6",
+          "sha256": "6e0b1bac318046cd793785b4bc307a3bd6f83822de8c3ffc5b74ec2b2eb4012b"
+        },
+        {
+          "source": "plugins/ai-security-skills/plugin.json",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/ai-security-skills/plugin.json",
+          "gitBlobSha": "2b4bd2b2613af72c6a7fba4ba6227fea845495c1",
+          "sha256": "e61c85977b2cb3683bda1e3e29eb6cbdebcc89d2d6328546970c46be2b604a33"
+        },
+        {
+          "source": "plugins/ai-security-skills/skills/agent-security-audit/SKILL.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/ai-security-skills/skills/agent-security-audit/SKILL.md",
+          "gitBlobSha": "98b2a6397d2967c042462f36ab0543fa741f4958",
+          "sha256": "634c3f23c2bcbc95c2f7fa661215fd028c29712b5fa467fa38f72ebbe5247acb"
+        },
+        {
+          "source": "plugins/ai-security-skills/skills/agentic-ai-risk-assess/SKILL.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/ai-security-skills/skills/agentic-ai-risk-assess/SKILL.md",
+          "gitBlobSha": "de5f1622c6a383bf35ceeed72ea2006d585e9fc6",
+          "sha256": "35e9f083430ceb5215fb57f4df30a27ff199956d0ba205388185676f83a40d7b"
+        },
+        {
+          "source": "plugins/ai-security-skills/skills/ai-security-verification/SKILL.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/ai-security-skills/skills/ai-security-verification/SKILL.md",
+          "gitBlobSha": "a8ad1dbcd1859d5a5a2929dc6ff2b963fe45ed3b",
+          "sha256": "d7729421adecbedf32626e1ae6f2f8d5d118ccc224fd7cb7172cbef91fae505d"
+        },
+        {
+          "source": "plugins/ai-security-skills/skills/llm-risk-assess/SKILL.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/ai-security-skills/skills/llm-risk-assess/SKILL.md",
+          "gitBlobSha": "c4ba6f94f7bd538eba77f2fb48963f5e3ed4d09b",
+          "sha256": "7f9678c22fe8a1e490bf606c8fe3c7de46a18258cf727c55f4e792f69af2b0e1"
+        },
+        {
+          "source": "plugins/ai-security-skills/skills/mcp-server-review/SKILL.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/ai-security-skills/skills/mcp-server-review/SKILL.md",
+          "gitBlobSha": "12da23aecff589d0d94257a3128e6d49123225be",
+          "sha256": "2ec817b977600cfc242a1d4bc8ec7666ddbf442ff3d8ec0b2b350fa1d481084f"
+        },
+        {
+          "source": "plugins/ai-security-skills/skills/multi-agentic-threat-model/SKILL.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/ai-security-skills/skills/multi-agentic-threat-model/SKILL.md",
+          "gitBlobSha": "9ee5784229ad3cdb7d1ea1859aebb08564ee6407",
+          "sha256": "97704a49ff5b73260a64c7b1556ef204d674c4c1071eb2879c5036e4cf0b397b"
+        },
+        {
+          "source": "plugins/ai-security-skills/skills/prompt-injection-test/SKILL.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/ai-security-skills/skills/prompt-injection-test/SKILL.md",
+          "gitBlobSha": "346d2d17e2db1084c4d0ceec123ce64fceb467c8",
+          "sha256": "d559ae59a7cbb33d487d19605145d3a3393274035bf1e3bd8c7547f212a2aa70"
+        },
+        {
+          "source": "plugins/ai-security-skills/templates/finding.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/ai-security-skills/templates/finding.md",
+          "gitBlobSha": "65ea1a37330a0afa5db8a4f1911f58d33829224d",
+          "sha256": "aad190ef52d264f4704ef3b1a98cca4afeef09827a5f96dda9a4b825584993b2"
+        },
+        {
+          "source": "plugins/ai-security-skills/templates/report.md",
+          "snapshot": "third_party/owasp-secure-agent-playbook/65d4efd2cd0b081d52101e9708792b944e4ddebb/ai-security-skills/templates/report.md",
+          "gitBlobSha": "f7aefbe5a2c7e55389e9226000358dc731c0d030",
+          "sha256": "8d99864c916d97ff8ade66d860fb08ff62914629698e60f2115abc64141b8766"
+        }
+      ],
+      "adaptations": [
+        "Host metadata and license notice added; repository-root data symlinks replaced with bundled local copies."
       ]
     }
   ]

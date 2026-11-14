@@ -1,0 +1,14 @@
+{
+  "name": "owasp-code-security",
+  "version": "1.0.0",
+  "description": "OWASP Secure Agent Playbook による Web/API/モバイル/IaC/依存関係のセキュリティレビュー。OWASP Top 10 と ASVS の観点を使う。",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "owasp-code-security",
+    "shortDescription": "owasp-code-security",
+    "longDescription": "OWASP Secure Agent Playbook による Web/API/モバイル/IaC/依存関係のセキュリティレビュー。OWASP Top 10 と ASVS の観点を使う。",
+    "developerName": "OWASP Secure Agent Playbook contributors",
+    "category": "Developer Tools"
+  },
+  "hooks": []
+}
